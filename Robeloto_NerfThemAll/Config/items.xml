@@ -1,0 +1,37 @@
+<configs>
+<!-- Stone tools do less damage on metal objects, except Sledge hammer -->
+<set xpath="/items/item[contains(@name, 'Stone')]/effect_group/passive_effect[@value='-.5' or @value='-.8']/@value">-1</set>
+<!-- All tools and weapons can break -->
+<set xpath="/items/item/property[@name='DegradationBreaksAfter' and @value='false']/@value">true</set>
+<!-- Nerfing ammo damage -->
+<set xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group/passive_effect[@name='EntityDamage']/@value">55.8</set> <!-- "65"   org -->
+<set xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group/passive_effect[@name='EntityDamage']/@value">72.6</set>   <!-- "84.5" org -->
+<set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group/passive_effect[@name='EntityDamage']/@value">69</set>     <!-- "80"   org -->
+<set xpath="/items/item[@name='ammo762mmBulletBall']/effect_group/passive_effect[@name='EntityDamage']/@value">43</set>      <!-- "50"   org -->
+<set xpath="/items/item[@name='ammo762mmBulletHP']/effect_group/passive_effect[@name='EntityDamage']/@value">56</set>        <!-- "65"   org -->
+<set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group/passive_effect[@name='EntityDamage']/@value">43</set>        <!-- "50"   org -->
+<set xpath="/items/item[@name='ammo9mmBulletBall']/effect_group/passive_effect[@name='EntityDamage']/@value">27</set>        <!-- "32"   original -->
+<set xpath="/items/item[@name='ammo9mmBulletHP']/effect_group/passive_effect[@name='EntityDamage']/@value">35.7</set>        <!-- "41.6" org -->
+<set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group/passive_effect[@name='EntityDamage']/@value">27</set>          <!-- "32"   org -->
+<set xpath="/items/item[@name='ammoRocketHE']/effect_group/passive_effect[@name='EntityDamage']/@value">190</set>            <!-- "210"  org -->
+<set xpath="/items/item[@name='ammoRocketFrag']/effect_group/passive_effect[@name='EntityDamage']/@value">212</set>          <!-- "225"  org -->
+<set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='EntityDamage']/@value">12</set>         <!-- "14"   org -->
+<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='EntityDamage']/@value">104</set>         <!-- "120"  org -->
+<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='EntityDamage']/@value">104</set><!-- "120"  org -->
+<!-- Nerfing explosive damage -->
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/effect_group/passive_effect[@name='EntityDamage']/@value">3</set> <!-- "5"    org -->
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/effect_group/triggered_effect[@value='16']/@value">8</set> <!-- Duration, 16 org -->
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/effect_group/triggered_effect[@value='17']/@value">8</set> <!-- Duration, 17 org -->
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/effect_group/display_value[@name='dDuration']/@value">8</set> <!-- Displays the modified value -->
+<set xpath="/items/item[@name='thrownAmmoPipeBomb']/effect_group/passive_effect[@name='EntityDamage']/@value">220</set>      <!-- "253"  org -->
+<set xpath="/items/item[@name='thrownDynamite']/effect_group/passive_effect[@name='EntityDamage']/@value">500</set>          <!-- "550"  org -->
+<set xpath="/items/item[@name='thrownGrenadeContact']/effect_group/passive_effect[@name='EntityDamage']/@value">293</set>    <!-- "341"  org -->
+<set xpath="/items/item[@name='thrownGrenade']/effect_group/passive_effect[@name='EntityDamage']/@value">293</set>           <!-- "341"  org -->
+<set xpath="/items/item[@name='thrownTimedCharge']/effect_group/passive_effect[@name='EntityDamage']/@value">700</set>       <!-- "800"  org -->
+<!-- Vehicles durablity nerfed -->
+<set xpath="/items/item[@name='vehicleBicyclePlaceable']/effect_group[@name='vehicleBicyclePlaceable']/passive_effect[@value='1500']/@value">400</set>
+<set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/effect_group[@name='vehicleGyrocopterPlaceable']/passive_effect[@value='3000']/@value">1100</set>
+<set xpath="/items/item[@name='vehicleMinibikePlaceable']/effect_group[@name='vehicleMinibikePlaceable']/passive_effect[@value='3000']/@value">800</set>
+<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group[@name='vehicleMotorcyclePlaceable']/passive_effect[@value='6000']/@value">1800</set>
+<set xpath="/items/item[@name='vehicle4x4TruckPlaceable']/effect_group[@name='vehicle4x4TruckPlaceable']/passive_effect[@value='7500']/@value">2400</set>
+</configs>

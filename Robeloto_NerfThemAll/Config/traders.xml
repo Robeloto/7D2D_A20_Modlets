@@ -1,0 +1,64 @@
+<configs>
+<!-- make your own auger -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/item[@name='meleeToolPickT3Auger']"/>
+<!-- make your own steel pickaxe -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/item[@name='meleeToolPickT2SteelPickaxe']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/item[@name='meleeToolSalvageT2Ratchet']"/>
+<!-- make your own steel sledgehammer -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/item[@name='meleeWpnSledgeT3SteelSledgehammer']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsMeleeT2']/item[@name='meleeWpnSledgeT3SteelSledgehammer']"/>
+<!-- make your own crucible -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsHigh']/item[@name='toolForgeCrucible']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/item[@name='toolForgeCrucible']"/>
+<!-- Make a wrench yourself -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='tools']/item[@name='meleeToolSalvageT1Wrench']"/>
+<!-- removing wrench schematic from trader -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsToolsCommon']/item[@name='meleeToolSalvageT1WrenchSchematic']"/>
+<!-- Make an iron pickaxe yourself or do quest -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='tools']/item[@name='meleeToolPickT1IronPickaxe']"/>
+<!-- make forged iron/steel yourself -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='tools']/item[@name='resourceForgedIron']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='tools']/item[@name='resourceForgedSteel']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceForgedIron']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceForgedSteel']"/>
+<!-- create your own motor vehicles -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT0']/item[@name='vehicleMinibikePlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT0']/item[@name='vehicleMotorcyclePlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT1']/item[@name='vehicle4x4TruckPlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT1']/item[@name='vehicleGyrocopterPlaceable']"/>
+<!-- Make your own workstations -->
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']/item[@name='forge']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']/item[@name='workbench']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']/item[@name='cementMixer']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']/item[@name='chemistryStation']"/>
+<!-- Ammo should be scarce -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo9mmBulletBall']/@count">10,22</set> <!-- original: 40,150 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo9mmBulletAP']/@count">10,22</set> <!-- original: 40,150 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo762mmBulletBall']/@count">8,13</set><!-- original: 20,100 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo762mmBulletAP']/@count">8,13</set><!-- original: 20,100 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletBall']/@count">4,7</set><!-- original: 15,60 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletAP']/@count">4,7</set><!-- original: 15,60 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoShotgunShell']/@count">4,13</set><!-- original: 15,100 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoShotgunSlug']/@count">1,4</set><!-- original: 6,25 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoRocketHE']/@count">1,1</set><!-- original: 1,4 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoRocketFrag']/@count">1,1</set><!-- original: 1,4 -->
+<!-- Building materials should also be scarce at trader -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='constructionSupplies']/item[@name='resourceCement']/@count">20,60</set> <!-- original: 50,500 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='constructionSupplies']/item[@name='resourceCobblestones']/@count">20,50</set> <!-- original: 50,500 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='constructionSupplies']/item[@name='resourceConcreteMix']/@count">20,50</set> <!-- original: 100,500 -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='books']/item[@group='schematicsToolsRare']/@prob">0.005</set>
+<!-- Trader Nerf -->
+<set xpath="/traders/trader_info[@id='1']/@min_inventory">15</set>
+<set xpath="/traders/trader_info[@id='1']/@max_inventory">30</set>
+<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">10</set>
+<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">20</set>
+<set xpath="/traders/trader_info[@id='1']/@reset_interval">14</set> <!-- every 2 weeks, new goods -->
+<set xpath="/traders/trader_info[@id='4']/@reset_interval">999</set> <!-- vending machines should not be restocked, as this is not realistic -->
+<set xpath="/traders/trader_info[@id='4']/@min_inventory">3</set>
+<set xpath="/traders/trader_info[@id='4']/@max_inventory">10</set>
+<set xpath="/traders/trader_info[@id='4']/@min_items_swapped">3</set>
+<set xpath="/traders/trader_info[@id='4']/@max_items_swapped">10</set>
+<!-- Turret probability chance -->
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']/item[@name='autoTurret']/@prob">0.05</set>
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']/item[@name='shotgunTurret']/@prob">0.08</set>
+</configs>

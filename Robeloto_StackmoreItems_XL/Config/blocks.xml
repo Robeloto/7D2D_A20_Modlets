@@ -1,0 +1,59 @@
+<configs>
+		<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="Stacknumber" value="250"/>
+		</append>
+		<append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+		<property name="Stacknumber" value="250"/>
+		</append>
+		<append xpath="/blocks/block[@name='trapSpikesNew']">
+		<property name="Stacknumber" value="250"/>
+		</append>
+		<append xpath="/blocks/block[@name='mineCandyTin']">	
+		<property name="Stacknumber" value="250"/>
+		</append>		
+		<append xpath="/blocks/block[@name='mineHubcap']">	
+		<property name="Stacknumber" value="250"/>
+		</append>
+		<append xpath="/blocks/block[@name='mineAirFilter']">
+		<property name="Stacknumber" value="250"/>
+		</append>
+		<append xpath="/blocks/block[@name='mineCookingPot']">
+		<property name="Stacknumber" value="250"/>
+		</append>		
+		<append xpath="/blocks/block[@name='rScrapIronPlateMine']">	
+		<property name="Stacknumber" value="250"/>
+		</append>	
+		<append xpath="/blocks/block[@name='officeChair01']">	
+		<property name="Stacknumber" value="100"/>
+		</append>		
+		<append xpath="/blocks/block[@name='woodChair1']">	
+		<property name="Stacknumber" value="100"/>
+		</append>		
+		<append xpath="/blocks/block[@name='barracksChair']">	
+		<property name="Stacknumber" value="100"/>
+		</append>		
+		<append xpath="/blocks/block[@name='oldChair1']">	
+		<property name="Stacknumber" value="100"/>
+		</append>		
+		<append xpath="/blocks/block[@name='tv']">	
+		<property name="Stacknumber" value="100"/>	
+		</append>		
+		<append xpath="/blocks/block[@name='wallTorchLightPlayer']">	
+		<property name="Stacknumber" value="500"/>
+		</append>		
+		<append xpath="/blocks/block[@name='candleWallLightPlayer']">	
+		<property name="Stacknumber" value="500"/>	
+		</append>		
+		<append xpath="/blocks/block[@name='burningBarrelPlayer']">	
+		<property name="Stacknumber" value="500"/>
+		</append>
+		<append xpath="/blocks/block[@name='dartTrap']">	
+		<property name="Stacknumber" value="500"/>
+		</append>		
+		<append xpath="/blocks/block[@name='bladeTrap']">	
+		<property name="Stacknumber" value="500"/>	
+		</append>		
+		<append xpath="/blocks/block[@name='burningBarrelPlayer']">	
+		<property name="Stacknumber" value="500"/>			
+		</append>			
+</configs>

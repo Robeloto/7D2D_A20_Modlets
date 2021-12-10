@@ -1,0 +1,42 @@
+<configs>
+
+<append xpath="/recipes">
+
+<recipe name="paintingBen" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>	
+	<ingredient name="resourcePaint" count="1"/>	
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+<recipe name="paintingDerek" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>	
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+<recipe name="paintingNoah" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>	
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+<recipe name="paintingDuke" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>	
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+<recipe name="paintingKen" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>	
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+<recipe name="paintingPictureRandomHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="resourcePaper" count="1"/>		
+	<ingredient name="glassBlockVariantHelper" count="1"/>
+</recipe>
+</append>
+</configs>

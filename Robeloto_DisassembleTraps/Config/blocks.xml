@@ -1,0 +1,67 @@
+<configs>
+<append xpath="/blocks/block[@name='trapSpikesWoodDmg2']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="trapSpikesWoodDmg0" prob="0.45" count="1" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesWoodDmg1']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+
+<append xpath="/blocks/block[@name='trapSpikesIronDmg2']">
+<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="trapSpikesIronDmg0" prob="0.45" count="1" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceScrapIron" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesIronDmg1']">
+<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceScrapIron" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceScrapIron" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+
+<append xpath="/blocks/block[@name='trapSpikesDamage1']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesDamage2']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesDamage3']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesDamage4']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesDamage5']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" name="trapSpikesNew" prob="0.45" count="1" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>
+<append xpath="/blocks/block[@name='trapSpikesNew']">
+<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="resourceWood" count="0" prob="0" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+</append>	
+</configs>	

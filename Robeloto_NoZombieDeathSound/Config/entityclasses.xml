@@ -1,0 +1,21 @@
+<configs>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male/zombiemalepain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female/zombiefemalepain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male2/zombiemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female2/zombiefemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='SoundDeath']/@value">Enemies/Acid_Puking_Hulk/hulkpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='SoundDeath']/@value">Enemies/Acid_Puking_Hulk/hulkpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female2/zombiefemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female2/zombiefemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male2/zombiemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female/zombiefemalepain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Female/zombiefemalescoutpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male2/zombiemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male/zombiemalepain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='SoundDeath']/@value">Enemies/Snow_Zombie_Male/zombiemalesnowpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='SoundDeath']/@value">Enemies/Spider_Zombie/spiderpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='SoundDeath']/@value">Enemies/Base_Zombie_Male2/zombiemale2pain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='SoundDeath']/@value">Enemies/Feral_Zombie/zombieferalpain</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">0</set>
+</configs>

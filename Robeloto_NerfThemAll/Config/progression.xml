@@ -1,0 +1,31 @@
+<configs>
+<!-- Club Nerf -->
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">39</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='70']/@value">53</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='80']/@value">63</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='90']/@value">72</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='100']/@value">83</set> 
+<!-- Sledge Hammers nerf, this nerf is really needed -->
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='15']/@value">11</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='30']/@value">22</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='45']/@value">35</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">48</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='75']/@value">60</set>
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='20']/@value">14</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='35']/@value">28</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='50']/@value">40</set>  
+<!-- Stun baton nerf -->
+<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='EntityDamage']/@value">.09,.4</set> <!-- original .1,.5 -->
+<!-- You now need to have Advanced Engineering level 4 to be able to craft a forge, tablesaw workbench, cementmixer and various traps -->
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='1,5']/@level">2,5</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@level">3,5</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@level">4,5</set>
+<!-- Unlock wrench at Salvage Operations level 3 instead of original: 1 -->
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@level">3,5</set>
+
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='1,5']/@tags">,foodBaconAndEggs,foodBakedPotato,foodCornBread,foodCornOnTheCob</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,foodBoiledMeat,foodGrilledMeat,drinkJarRedTea,drinkJarCoffee,drinkJarGoldenRodTea</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='3,5']/@tags">,foodSteakAndPotato,foodBlueberryPie,foodMeatStew,foodVegetableStew,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,foodShamChowder,foodHoboStew,foodFishTacos,drinkYuccaJuiceSmoothie,foodChiliDog,drinkJarBeer</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='5,5']/@tags">,foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast,drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir</set>
+</configs>

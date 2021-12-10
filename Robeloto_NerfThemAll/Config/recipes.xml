@@ -1,0 +1,21 @@
+<configs>
+
+<set xpath="/recipes/recipe[@name='resourceGunPowder']/ingredient[@name='resourceCoal']/@count">4</set>                   <!-- original:2 -->
+<set xpath="/recipes/recipe[@name='resourceGunPowder']/ingredient[@name='resourcePotassiumNitratePowder']/@count">4</set> <!-- original:2 -->
+<set xpath="/recipes/recipe[@name='ammoJunkTurretRegular']/ingredient[@name='resourceScrapIron']/@count">5</set>                 <!-- original:3 -->
+
+<append xpath="/recipes">
+
+<!-- Gunpowder should need more resources, as it is way too easy to get resources -->
+<recipe name="resourceGunPowderBundle" count="1" craft_time="2400" craft_area="chemistryStation" tags="learnable,chemStationCrafting"> <!-- craft time original: 1800 -->
+	<ingredient name="resourceCoal" count="2000"/> <!-- 800 org -->
+	<ingredient name="resourcePotassiumNitratePowder" count="2000"/>
+</recipe>
+<!-- Gunpowder should need more resources, as it is way too easy to get resources -->
+<recipe name="resourceGunPowder" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceCoal" count="3"/> <!-- 1 org -->
+	<ingredient name="resourcePotassiumNitratePowder" count="3"/>
+</recipe>
+</append>
+
+</configs>

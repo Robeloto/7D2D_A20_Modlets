@@ -1,0 +1,102 @@
+<configs>
+
+<!-- Lowered some annoying sounds -->
+
+<set xpath="/Sounds/SoundDataNode[@name='forge_fire_die']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?forge_fire_die</set><!-- Forge burns out -->
+<set xpath="/Sounds/SoundDataNode[@name='item_pickup']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?item_pickup</set>
+<set xpath="/Sounds/SoundDataNode[@name='ui_menu_click']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_menu_click</set>
+<set xpath="/Sounds/SoundDataNode[@name='ui_menu_start']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_menu_start</set>
+<set xpath="/Sounds/SoundDataNode[@name='ui_skill_purchase']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_skill_purchase</set>
+<set xpath="/Sounds/SoundDataNode[@name='keystone_impact_overlay']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?keystone_impact_overlay</set> <!--bedrock-->
+<set xpath="/Sounds/SoundDataNode[@name='turret_retarget_lp']/MaxVoices/@value">0</set> <!-- removed the turret active looping sound -->
+<set xpath="/Sounds/SoundDataNode[@name='wrench_harvest']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wrench_harvest</set> 
+<!-- Destroy sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy1</set>
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy2</set>
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy3</set>
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy1</set>
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy2</set>
+<set xpath="/Sounds/SoundDataNode[@name='earthDestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy3</set>
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy1</set> 
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy2</set> 
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy3</set> 
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy1</set>
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy2</set>
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy3</set>
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy1</set> 
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy2</set> 
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy3</set> 
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy1</set>
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy2</set>
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy3</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy1</set> 
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy2</set> 
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy3</set> 
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy1</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy2</set> 
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy3</set>
+<!-- Objects hit -->
+<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal1</set>
+<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal2</set>
+<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal3</set>
+<!-- Opening containers -->
+<set xpath="/Sounds/SoundDataNode[@name='open_chest']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?open_chest</set>
+<set xpath="/Sounds/SoundDataNode[@name='close_chest']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?close_chest</set> 
+<set xpath="/Sounds/SoundDataNode[@name='open_cupboard']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?open_cupboard</set>
+<set xpath="/Sounds/SoundDataNode[@name='close_cupboard']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?close_cupboard</set>
+<set xpath="/Sounds/SoundDataNode[@name='open_inventory']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?open_inventory</set>
+<set xpath="/Sounds/SoundDataNode[@name='close_inventory']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?close_inventory</set>
+<!-- Traders -->
+<set xpath="/Sounds/SoundDataNode[@name='trader_announce_open']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trader_announce_open</set>
+<set xpath="/Sounds/SoundDataNode[@name='trader_announce_closing']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trader_announce_closing</set>
+<set xpath="/Sounds/SoundDataNode[@name='trader_announce_closed']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trader_announce_closed</set>	
+<set xpath="/Sounds/SoundDataNode[@name='open_vending']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?open_vending</set>	 
+<set xpath="/Sounds/SoundDataNode[@name='close_vending']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?close_vending</set>	 
+<set xpath="/Sounds/SoundDataNode[@name='ui_vending_purchase']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_vending_purchase</set>	  
+<set xpath="/Sounds/SoundDataNode[@name='ui_trader_purchase']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_trader_purchase</set>	
+<set xpath="/Sounds/SoundDataNode[@name='ui_trader_inv_reset']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?ui_trader_inventory_reset</set>
+<!-- Trees -->
+<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact1</set> 
+<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact2</set> 
+<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact3</set> 
+<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact4</set> 
+<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact5</set> 
+<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak1</set> <!-- when tree breaks -->
+<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak2</set> <!-- when tree breaks -->
+<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak3</set> <!-- when tree breaks -->
+<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak4</set><!-- when tree breaks -->
+<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak5</set> <!-- when tree breaks -->
+<!-- Weapon Sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='junkturret_fire']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?junkturret_fire1</set>
+
+
+<append xpath="/Sounds">
+
+<SoundDataNode name="Auger_Idle1">
+	<Noise ID="3" noise="30" time="2" muffled_when_crouched="0.95"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?auger_idle1" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Auger_Fire_Start1"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/>
+	<Noise ID="4" noise="60" time="2" heat_map_strength="1.4" heat_map_time="180"/>
+	<Sequence/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?auger_fire_start1"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?auger_fire_lp1" Loop="true"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?auger_fire_end1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+
+<SoundDataNode name="chainsaw_idle1">
+	<Noise ID="3" noise="30" time="2" muffled_when_crouched="0.95"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?chainsaw_idle1" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="chainsaw_fire_start1"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="4" noise="60" time="2" heat_map_strength="1.4" heat_map_time="180"/>
+	<Sequence/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?chainsaw_fire_start1"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?chainsaw_fire_lp1" Loop="true"/>
+	<AudioClip ClipName="#@modfolder:Resources/loudsoundslowered.unity3d?chainsaw_fire_end1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+</append>
+</configs>

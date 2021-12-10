@@ -1,0 +1,5 @@
+<configs>
+<set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Buff']/@value">buffShocked2</set>
+<set xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Buff']/@value">buffShocked2</set>
+<set xpath="/blocks/block[@name='electricfencepost']/property[@name='Buff']/@value">buffShocked2</set>
+</configs>

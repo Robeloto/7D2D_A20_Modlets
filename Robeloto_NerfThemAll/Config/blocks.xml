@@ -1,0 +1,43 @@
+<configs>
+<!-- Don't let your fire burn too long, this will punish players with screamers and hordes -->
+<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">6</set>        <!-- original: 5    -->
+<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">6000</set>         <!-- original: 5000 -->
+<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapFrequency']/@value">1500</set>    <!-- original: 1000 -->
+<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">7</set>           <!-- original: 6    -->
+<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">6000</set>            <!-- original: 5000 -->
+<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapFrequency']/@value">1500</set>       <!-- original: 1000 -->
+<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">3</set>       <!-- original: 2    -->
+<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">6000</set>        <!-- original: 5000 -->
+<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapFrequency']/@value">1500</set>   <!-- original: 1000 -->
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">3</set>     <!-- original: 2    -->
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">6000</set>      <!-- original: 5000 -->
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapFrequency']/@value">1500</set> <!-- original: 1000 -->
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">6</set><!-- original: 5    -->
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">6000</set> <!-- original: 5000 -->
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapFrequency']/@value">1500</set> <!-- original: 1000 -->
+<!-- Harder to get honey from tree stumps -->
+<set xpath="/blocks/block[@name='treeStumpPOI']/drop[@prob='.4']/@prob">.3</set>
+<!-- Harvesting resources nerf -->
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceBrokenGlass']/@count">1,4</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceCloth']/@count">1,2</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceElectricParts']/@count">0,1</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceMechanicalParts']/@count">1,1</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceMetalPipe']/@count">1</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">1,2</set>
+<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceSpring']/@count">0,1</set>
+<!-- Much harder to farm -->
+<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">420.0</set> <!-- original: 63 -->
+<!-- Safes should NOT be easy to force open -->
+<append xpath="/blocks/block[@name='cntWallSafe']" >
+<property name="MaxDamage" value="9000"/> <!-- original: 2500  -->
+</append>
+<append xpath="/blocks/block[@name='cntGunSafe']" >
+<property name="MaxDamage" value="18000"/><!-- original: 5000  -->
+</append>
+<append xpath="/blocks/block[@name='cntHardenedChestSecure']" >
+<property name="MaxDamage" value="30000"/><!-- original: 10000  -->
+</append>
+
+
+
+</configs>

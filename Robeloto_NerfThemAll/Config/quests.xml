@@ -1,0 +1,6 @@
+<configs>
+<!-- Find the trader without the starter quest -->
+<remove xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@id='quest_whiteRiverCitizen1']" />
+<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
+<!-- Better quest reward for the challenges -->
+</configs>	

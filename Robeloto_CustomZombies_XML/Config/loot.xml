@@ -1,0 +1,43 @@
+<configs>
+
+<append xpath="/lootcontainers/lootgroup">
+
+<lootgroup name="groupQuestChallenge">
+<item name="VeteranKiller"/>
+<item name="KillTheMummy"/>
+<item name="KillSomeGhosts"/>
+</lootgroup>
+
+<lootgroup name="schematicsModsRare">
+<item name="gunToolSuperNailgunSchematic"/>
+<item name="drugAntibioticsAmoxilSchematic"/>
+</lootgroup>
+
+<lootgroup name="rareMedicine">
+<item name="drugAntibioticsAmoxil" count="1,2" prob="0.06"/>
+</lootgroup>
+
+
+<lootgroup name="airdropMedicine">
+<item name="drugAntibioticsAmoxil" count="1,2" prob="0.07"/>
+</lootgroup>
+
+<lootgroup name="labEquipment">
+<item name="drugAntibioticsAmoxil" prob="0.1"/>
+</lootgroup>
+
+<lootgroup name="groupQuestMedical">
+	<item name="drugAntibioticsAmoxil" count="1,2" prob="0.1"/>
+</lootgroup>
+</append>
+
+<append xpath="/lootcontainers">
+
+<lootgroup name="RobelotoQuests">
+	<item name="KillTheMummy" count="1" prob="0.3"/>
+	<item name="KillSomeGhosts" count="1" prob="0.3"/>
+	<item name="VeteranKiller" count="1" prob="0.06"/>	
+</lootgroup>
+</append>
+
+</configs>
