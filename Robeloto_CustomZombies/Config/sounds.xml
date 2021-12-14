@@ -3,7 +3,7 @@
 <set xpath="/Sounds/SoundDataNode[@name='explosion1']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion1</set><!-- lowered the volume -->
 <set xpath="/Sounds/SoundDataNode[@name='explosion2']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion2</set><!-- lowered the volume -->
 <set xpath="/Sounds/SoundDataNode[@name='explosion3']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion3</set><!-- lowered the volume -->
-<set xpath="/Sounds/SoundDataNode[@name='explosion_silly']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion1</set><!-- lowered the volume -->
+<!--<set xpath="/Sounds/SoundDataNode[@name='explosion_silly']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion1</set> -->
 <set xpath="/Sounds/SoundDataNode[@name='explosion_charge']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion_charge1</set><!-- lowered the volume -->
 <set xpath="/Sounds/SoundDataNode[@name='explosion_charge']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion_charge2</set><!-- lowered the volume -->
 <set xpath="/Sounds/SoundDataNode[@name='explosion_body']/AudioClip/@ClipName">#@modfolder:Resources/explosions.unity3d?explosion_body1</set><!-- lowered the volume -->

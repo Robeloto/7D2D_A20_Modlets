@@ -2113,8 +2113,8 @@
 		<effect_group name="meleeHandZombieIronMan" tiered="false">	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".12" tags="buffArmBroken"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryOpenWound"/>		
-		<passive_effect name="BuffProcChance" operation="base_set" value=".30" tags="buffInjuryKnockdown01"/>			
+		<passive_effect name="BuffProcChance" operation="base_set" value=".15" tags="buffInjuryOpenWound"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffInjuryKnockdown01"/>			
 	</effect_group>
 </item>
 

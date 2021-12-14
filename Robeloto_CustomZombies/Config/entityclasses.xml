@@ -29,7 +29,7 @@
 	<property name="AITask-6" value="Wander"/>
 	<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->		
 	<property name="PainResistPerHit" value="1"/>
-	<property name="MoveSpeedAggro" value="1.2, 1.9"/> 
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/> 
 	<property name="JumpMaxDistance" value="10, 15"/>		
 	<property name="HandItem" value="meleeHandZombieAnesthesia"/>
 	<property name="ExperienceGain" value="3400"/> <!-- XP strong -->	
@@ -52,7 +52,7 @@
 	<property name="Radiated" value=""/>
 	<property name="Mass" value="50"/>
 	<property name="MoveSpeed" value=".7"/>
-	<property name="MoveSpeedAggro" value="2, 2"/>
+	<property name="MoveSpeedAggro" value="1.5, 1.8"/>
 	<property name="MaxTurnSpeed" value="150"/>
 	<property name="HandItem" value="meleeHandZombieArch0n"/>
 	<property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,200"/>
@@ -263,7 +263,7 @@
 	<property name="PainResistPerHit" value=".65"/>
 	<!-- Gameplay -->
 	<property name="MoveSpeed" value="0.9"/>
-	<property name="MoveSpeedAggro" value="1.1, 1.5"/>	
+	<property name="MoveSpeedAggro" value="1, 1.5"/>	
 	<property name="HandItem" value="meleeHandZombieCandy"/>
 	<property name="JumpMaxDistance" value="9, 16"/>
 	<property name="ExperienceGain" value="1600"/> 
@@ -298,7 +298,7 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".17"/>	
 	<effect_group name="Base Effects">		
-		<passive_effect name="HealthMax" operation="base_set" value="400"/>
+		<passive_effect name="HealthMax" operation="base_set" value="333"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="2"/>		
@@ -334,14 +334,14 @@
 	<property name="HandItem" value="meleeHandZombieExploder" />
 	<property name="Explosion.ParticleIndex" value="13"/>
 	<property name="Explosion.RadiusBlocks" value="6"/>
-	<property name="Explosion.RadiusEntities" value="7"/>
-	<property name="Explosion.BlockDamage" value="1500"/>
-	<property name="Explosion.EntityDamage" value="730"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.BlockDamage" value="2000"/>
+	<property name="Explosion.EntityDamage" value="1500"/>
 	<property name="Explosion.DamageBonus.earth" value="25"/>	
 	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 	<property name="SoundTick" value="demolitionz_beep,.3,.7"/>		
 	<property name="JumpMaxDistance" value="2, 4"/>
-    <property name="MoveSpeedAggro" value="1.25, 1.7"/>		
+    <property name="MoveSpeedAggro" value="1.25, 1.6"/>		
 	<property name="ExperienceGain" value="3005"/> <!-- XP strong -->
 
 	<effect_group name="Base Effects">
@@ -385,7 +385,7 @@
 	<property name="PainResistPerHit" value="1"/>
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieBurningBoss"/>
-	<property name="ExperienceGain" value="7500"/> <!-- XP strong -->	
+	<property name="ExperienceGain" value="9999"/> <!-- XP strong -->	
 	<property name="LootDropProb" value=".8"/>	
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>	
 	<effect_group name="Base Effects">	
@@ -416,7 +416,7 @@
 	<property name="LootDropProb" value=".18"/>	
 	<property name="PainResistPerHit" value="1"/>
 	<property name="HandItem" value="meleeHandZombieElf"/>
-	<property name="ExperienceGain" value="3000"/> <!-- XP strong -->	
+	<property name="ExperienceGain" value="3800"/> <!-- XP strong -->	
 	<effect_group name="Base Effects">	
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="FireParticle"/>		
 		<passive_effect name="HealthMax" operation="base_set" value="700"/>
@@ -441,7 +441,7 @@
 	<property name="PainResistPerHit" value="1"/>
 	<property name="JumpMaxDistance" value="8, 12"/>	
 	<property name="HandItem" value="meleeHandZombieFreezer"/>
-	<property name="ExperienceGain" value="3100"/> <!-- XP strong -->
+	<property name="ExperienceGain" value="3300"/> <!-- XP strong -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".16"/>
 	<effect_group name="Base Effects">	
@@ -468,7 +468,7 @@
 	<property name="MoveSpeed" value=".7"/>
 	<property name="MoveSpeedAggro" value="2, 2"/>
 	<property name="MaxTurnSpeed" value="150"/>
-	<property name="ExperienceGain" value="5500"/>
+	<property name="ExperienceGain" value="5700"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".5"/>	
 	<property name="HandItem" value="meleeHandZombieGeist"/>
@@ -541,14 +541,14 @@
 	<property name="SoundFootstepModifier" value="bear_footstep"/>	
 	<property name="PainResistPerHit" value="1"/>
 	<property name="HandItem" value="meleeHandZombieGunner"/>
-	<property name="ExperienceGain" value="5000"/> <!-- XP strong -->	
+	<property name="ExperienceGain" value="10000"/> <!-- XP strong -->	
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".7"/> 
 	
 	<effect_group name="Base Effects">	
-		<passive_effect name="HealthMax" operation="base_set" value="800"/>
+		<passive_effect name="HealthMax" operation="base_set" value="700"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="55"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="52"/>
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="GunnerPrefab"/>		
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
@@ -569,7 +569,7 @@
 	<property name="JumpMaxDistance" value="10, 20"/>
     <property name="MoveSpeedAggro" value=".6, 1.2"/>	
 	<property name="HandItem" value="meleeHandZombieIronMan"/>
-	<property name="ExperienceGain" value="3300"/> <!-- XP strong -->
+	<property name="ExperienceGain" value="4444"/> <!-- XP strong -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".15"/>	
 	
@@ -578,8 +578,8 @@
 		<triggered_effect trigger="onSelfDied" action="RemoveBuff" target="self" buff="IronPrefab"/>			
 		<passive_effect name="HealthMax" operation="base_set" value="170"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="70"/>		
-		<passive_effect name="HealthChangeOT" operation="base_set" value="5"/> <!-- Boss regen, 1% -->	
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>		
+		<passive_effect name="HealthChangeOT" operation="base_set" value="3"/> <!-- Boss regen, 1% -->	
 	</effect_group>
 </entity_class>
 
@@ -676,7 +676,7 @@
 	<property name="MoveSpeedAggro" value="0.4, 0.8"/>	
 	<property name="HandItem" value="meleeHandZombieMummy"/>
 	<property name="JumpMaxDistance" value="9, 16"/>
-	<property name="ExperienceGain" value="2400"/> 
+	<property name="ExperienceGain" value="3800"/> 
 	<property name="LootDropProb" value=".16"/>		
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
@@ -723,9 +723,9 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".7"/>	
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="666"/>
+		<passive_effect name="HealthMax" operation="base_set" value="777"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="35"/>
 		<passive_effect name="WalkSpeed" operation="base_set" value="3"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="3"/>		
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
@@ -760,15 +760,15 @@
 	<property name="MoveSpeedAggro" value="0.03, 0.09"/>	
 	<property name="HandItem" value="meleeHandZombieRadRobot"/>
 	<property name="JumpMaxDistance" value="9, 18"/>
-	<property name="ExperienceGain" value="2800"/> 
+	<property name="ExperienceGain" value="4500"/> 
 	<property name="LootDropProb" value=".25"/>		
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
-		<passive_effect name="HealthMax" operation="base_set" value="900"/>
+		<passive_effect name="HealthMax" operation="base_set" value="700"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>		
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="57"/>		
 	</effect_group>
 </entity_class>	
 
@@ -801,14 +801,14 @@
 	<property name="PainResistPerHit" value="1"/>
 	<property name="MoveSpeedAggro" value="0.5, 0.9"/>		
 	<property name="HandItem" value="meleeHandZombieRPG"/>
-	<property name="ExperienceGain" value="5000"/> <!-- XP strong -->	
+	<property name="ExperienceGain" value="11000"/> <!-- XP strong -->	
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".7"/> 
 	
 	<effect_group name="Base Effects">	
 		<passive_effect name="HealthMax" operation="base_set" value="800"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="55"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="49"/>
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="RPGPrefab"/>		
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
@@ -841,11 +841,11 @@
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>	
 	<property name="PainResistPerHit" value="1"/>
-	<property name="MoveSpeedAggro" value="0.9, 1.9"/> <!-- chasing a target min/max (like day or night)-->
+	<property name="MoveSpeedAggro" value=".9, 1.55"/> <!-- chasing a target min/max (like day or night)-->
 	<property name="CanClimbVertical" value="true"/>
 	<property name="JumpMaxDistance" value="12, 20"/>	
 	<property name="HandItem" value="meleeHandZombieSanguis"/>
-	<property name="ExperienceGain" value="3500"/> 
+	<property name="ExperienceGain" value="4500"/> 
 	<property name="LootDropProb" value=".19"/>	
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>	
 	<effect_group name="Base Effects">	
@@ -872,7 +872,7 @@
 	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="HandItem" value="meleeHandZombieScarecrow"/>
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="3900"/>
 	<property name="SoundFootstepModifier" value=""/>
 	<effect_group name="Base Effects">
 	<passive_effect name="HealthMax" operation="base_set" value="550"/>
@@ -908,7 +908,7 @@
 	<property name="PainResistPerHit" value="1"/>
 	<property name="JumpMaxDistance" value="8, 12"/>	
 	<property name="HandItem" value="meleeHandZombieShadow"/>
-	<property name="ExperienceGain" value="3800"/> <!-- XP strong -->
+	<property name="ExperienceGain" value="4500"/> <!-- XP strong -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".19"/>	
 	<effect_group name="Base Effects">	
@@ -958,7 +958,7 @@
 	<property name="AITask-6" value="Wander"/>
 	<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->
 	<property name="JumpMaxDistance" value="8, 12"/>		
-		<property name="ExperienceGain" value="3600"/>
+		<property name="ExperienceGain" value="3900"/>
 	<property name="HandItem" value="meleeHandZombieShocker"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".2"/>		
@@ -1020,7 +1020,7 @@
 	<property name="JumpMaxDistance" value="10, 20"/>
     <property name="MoveSpeedAggro" value="1.2, 1.7"/>	
 	<property name="HandItem" value="meleeHandZombieTranslucent"/>
-	<property name="ExperienceGain" value="3300"/> <!-- XP strong -->
+	<property name="ExperienceGain" value="4000"/> <!-- XP strong -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".35"/>	
 	<effect_group name="Base Effects">	
@@ -1094,7 +1094,7 @@
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="35"/> <!-- animalZombieVulture -->
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="70"/>	
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="620"/>
+		<passive_effect name="HealthMax" operation="base_set" value="600"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
 	</effect_group>
@@ -1138,7 +1138,7 @@
 	<property name="MoveSpeed" value="1.8"/>
 	<property name="MoveSpeedAggro" value="2.7, 3.7"/>
 	<property name="MoveSpeedPanic" value="3.5"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="DeadBodyHitPoints" value="270"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="25"/> <!-- animalChicken -->
@@ -1338,13 +1338,11 @@
 	<property name="DeadBodyHitPoints" value="300"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="drinkJarRiverWater" tag="allToolsHarvest" count="10"/>	
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
-	<drop event="Harvest" name="drinkJarRiverWater" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<effect_group name="Base Effects">	
 		<passive_effect name="WalkSpeed" operation="base_set" value="4"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="4"/>	
-		<passive_effect name="HealthMax" operation="base_set" value="222"/>
+		<passive_effect name="HealthMax" operation="base_set" value="252"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> 
 	</effect_group>
 </entity_class>
