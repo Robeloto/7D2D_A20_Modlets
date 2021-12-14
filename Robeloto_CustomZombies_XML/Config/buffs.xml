@@ -224,18 +224,18 @@
 	
 	<buff name="buffAnesthesia" name_key="Drugged" description_key="buffAnesthesiaDesc" tooltip_key="buffAnesthesiaDesc" icon="ui_game_symbol_stunned" icon_color="205,21,21">
 		<damage_type value="disease"/>
-		<stack_type value="replace"/><duration value="7"/>
+		<stack_type value="replace"/><duration value="6"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Distortion"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Drunk"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>	
 			
-			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.7,.2" duration="0,7"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.7,.2" duration="0,7"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.7,.2" duration="0,7"/>
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.7,.3" duration="0,7"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.10,0" duration="0,7">
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.6,.2" duration="0,6"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.6,.2" duration="0,6"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.6,.2" duration="0,6"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.6,.2" duration="0,6"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.10,0" duration="0,6">
 			</passive_effect>
 		</effect_group>
 	</buff>
