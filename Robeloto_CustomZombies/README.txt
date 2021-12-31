@@ -1,7 +1,64 @@
-2021-11-15
-Added rocket launcher loading sound for the RPG zombie 
-New look for freezer and giant
-Candygirl now slows you down instead of giving you speed
+2021-12-31 (v2.80):
+
+• Reworked Entitygroups to make it smaller size.
+
+•  Lowered chance for harder zombies to appear. 
+Harder zombies can still appear in early game and that is because they are in groups without gamestages. 
+Without them there, my zombies would probably not be around so much on the outside. I have almost removed fireboss, gunner and RPG from the wanderinghordestages. 
+They are just too strong.
+
+• FireElf has only 42 arrows in his magazine now instead of 60.
+• Some zombies have now increased HP.
+
+• Any Giant will have a chance to get you a concussion and knockdown chance is increased.
+
+• The new mutated Giant has a different new sound now.
+
+• Anesthesias melee has decreased chance to make you drugged
+
+• AquaZeds melee has decreased chance to make you drowning.
+
+• AquaZeds vomit is now slower.
+• Blazingmans vomit ammo reduced. Less burst.
+
+• Shockers vomit ammo reduced. Less burst.
+
+• RPGs rockets fires a bit faster and have a higher lifetime. (vomit will not disappear too fast, not sure if this can be CPU-heavy, let me know)
+
+• RadRobots HP reduced, but vomit fires around him. New robot sounds.
+
+
+NerfThemAll - has gone through a heavy rework.
+
+•  No surface ores, except in wasteland and snow with extremely low probability.
+•  Traders can't show you the way to the next trader.
+
+•  Loot is reworked.
+
+•  Quest rewards are nerfed. 
+
+_________________________________________________________
+2021-12-14 (v2.78):
+• Nerfed speed on exploder zombie and some other zombies
+
+• Nerfed Ironman on physical resist
+• Removed getting water from HybridPanther
+• Anesthesia buff is only 6 seconds long instead of 7
+
+• Adjusted experience from zombies, more exp now!
+• Exploder have increased exploder area/entity damage
+• Higher chance getting knocked down by Ironman 
+
+_________________________________________________________
+2021-12-10 (v2.77):
+• Made it for Alpha 20
+
+2021-11-30 (v2.75):
+• Added rocket launcher loading sound (vomit warning) and custom zombie sound for the RPG zombie.
+• New look for the freezer and the giant
+• Candygirl now slows you down instead of giving you speed
+• XML version updated.
+• Atrocity handitem renamed correctly
 
 
 CREDITS:
