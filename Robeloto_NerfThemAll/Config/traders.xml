@@ -60,5 +60,5 @@
 <set xpath="/traders/trader_info[@id='4']/@max_items_swapped">10</set>
 <!-- Turret probability chance -->
 <set xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']/item[@name='autoTurret']/@prob">0.05</set>
-<set xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']/item[@name='shotgunTurret']/@prob">0.08</set>
+<set xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']/item[@name='shotgunTurret']/@prob">0.05</set>
 </configs>

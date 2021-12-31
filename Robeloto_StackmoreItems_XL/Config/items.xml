@@ -57,7 +57,7 @@
 	<set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">5000</set>
 	<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">5000</set>
 	<set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']/@value">1000</set>	
-	<!-- <set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">500</set> -->
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">500</set> 
 	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">500</set>
 	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">500</set>
 	<set xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Stacknumber']/@value">500</set>	

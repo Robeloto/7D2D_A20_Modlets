@@ -29,9 +29,9 @@
 <set xpath="/items/item[@name='thrownGrenade']/effect_group/passive_effect[@name='EntityDamage']/@value">293</set>           <!-- "341"  org -->
 <set xpath="/items/item[@name='thrownTimedCharge']/effect_group/passive_effect[@name='EntityDamage']/@value">700</set>       <!-- "800"  org -->
 <!-- Vehicles durablity nerfed -->
-<set xpath="/items/item[@name='vehicleBicyclePlaceable']/effect_group[@name='vehicleBicyclePlaceable']/passive_effect[@value='1500']/@value">400</set>
+<set xpath="/items/item[@name='vehicleBicyclePlaceable']/effect_group[@name='vehicleBicyclePlaceable']/passive_effect[@value='1500']/@value">650</set>
 <set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/effect_group[@name='vehicleGyrocopterPlaceable']/passive_effect[@value='3000']/@value">1100</set>
-<set xpath="/items/item[@name='vehicleMinibikePlaceable']/effect_group[@name='vehicleMinibikePlaceable']/passive_effect[@value='3000']/@value">800</set>
-<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group[@name='vehicleMotorcyclePlaceable']/passive_effect[@value='6000']/@value">1800</set>
-<set xpath="/items/item[@name='vehicle4x4TruckPlaceable']/effect_group[@name='vehicle4x4TruckPlaceable']/passive_effect[@value='7500']/@value">2400</set>
+<set xpath="/items/item[@name='vehicleMinibikePlaceable']/effect_group[@name='vehicleMinibikePlaceable']/passive_effect[@value='3000']/@value">1100</set>
+<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group[@name='vehicleMotorcyclePlaceable']/passive_effect[@value='6000']/@value">2100</set>
+<set xpath="/items/item[@name='vehicle4x4TruckPlaceable']/effect_group[@name='vehicle4x4TruckPlaceable']/passive_effect[@value='7500']/@value">2600</set>
 </configs>

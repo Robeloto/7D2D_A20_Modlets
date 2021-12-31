@@ -1,6 +1,3 @@
-2021-12-10
-Made to work with A.20 experimental
-
 2021-11-15
 Added rocket launcher loading sound for the RPG zombie 
 New look for freezer and giant

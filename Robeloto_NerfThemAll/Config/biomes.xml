@@ -1,0 +1,15 @@
+<configs>
+<!-- no surface ores, except snow and wasteland, very low chance -->
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0.0003</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/decorations/decoration[contains(@name, 'vein')]/@prob">0.0003</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='water']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0.0010</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[contains(@name, 'vein')]/@prob">0.0010</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+</configs>

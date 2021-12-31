@@ -8,6 +8,7 @@
 <set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='HandItem']/@value">meleeHandZombieCopRadiated2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">11, 16</set>
 <set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">13, 19</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">90</set>
 <append xpath="/entity_classes">  
 
 <!-- Template Zombie from Snufkins zombies. All credits go to Snufkin -->
@@ -123,7 +124,7 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>	
 	<property name="LootDropProb" value=".8"/> 	
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="1300"/>
+		<passive_effect name="HealthMax" operation="base_set" value="1500"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>			
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="HealthChangeOT" operation="base_set" value="3"/> <!-- Boss regen, 1% -->
@@ -202,7 +203,7 @@
 	<property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/> <!-- override the default replacement of meleeHandZombie02 with a specific hand item -->	
 	<effect_group name="Base Effects">		
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="FireParticle"/>	
-		<passive_effect name="HealthMax" operation="base_set" value="260"/>
+		<passive_effect name="HealthMax" operation="base_set" value="295"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -233,13 +234,46 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieBlazingMan"/>
 	<property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/> <!-- override the default replacement of meleeHandZombie02 with a specific hand item -->	
-	<property name="ExperienceGain" value="3700"/> 	
+	<property name="ExperienceGain" value="4400"/> 	
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>	
 	<property name="LootDropProb" value=".19"/>		
 	<effect_group name="Base Effects">	
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="FireParticle"/>		
-		<passive_effect name="HealthMax" operation="base_set" value="500"/>
+		<passive_effect name="HealthMax" operation="base_set" value="600"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	</effect_group>
+</entity_class>	
+
+<entity_class name="zombieGiantMutated" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker"/>		
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMutated.prefab"/>
+	<property name="WalkType" value="7"/>	
+	<property name="JumpMaxDistance" value="10, 20"/>		
+	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandZombieGiantM"/>
+	<property name="MoveSpeedAggro" value=".1,.4"/>	
+	<property name="SightRange" value="190"/>	
+	<property name="SizeScale" value="2.7"/>	
+	<property name="Mass" value="1500"/>	
+	<property name="Weight" value="888"/>	
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>	
+	<property name="SoundRandom" value="mgroam"/>
+	<property name="SoundAlert" value="mgalert"/>
+	<property name="SoundSense" value="mgsense"/>
+	<property name="SoundHurt" value="mgpain"/>
+	<property name="SoundDeath" value="mgdeath"/>
+	<property name="SoundAttack" value=""/>	
+	<property name="StompsSpikes" value="true"/>	
+	<property name="ExperienceGain" value="40000"/> <!-- XP strong -->
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".97"/>	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="53"/>
+		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
 	</effect_group>
 </entity_class>	
 
@@ -615,18 +649,18 @@
 	<property name="Explosion.ParticleIndex" value="13"/>
 	<property name="Explosion.RadiusBlocks" value="4"/>
 	<property name="Explosion.RadiusEntities" value="4"/>
-	<property name="Explosion.BlockDamage" value="555"/>
-	<property name="Explosion.EntityDamage" value="80"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="555"/>	
 	<property name="JumpMaxDistance" value="1.4, 1.8"/>
-	<property name="ExperienceGain" value="1005"/> <!-- XP strong -->
+	<property name="ExperienceGain" value="1250"/> <!-- XP strong -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="400"/>
+		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>		
 
-<entity_class name="zombieMoePukerFeral" extends="zombieMoePuker">  
+<entity_class name="zombieMPF" extends="zombieMoePuker">  
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_dirt"/>		
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
@@ -746,12 +780,12 @@
 	<property name="AITask-5" value="Look"/>
 	<property name="AITask-6" value="Wander"/>
 	<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->	
-	<property name="SoundRandom" value=""/>
-	<property name="SoundAlert" value=""/>
+	<property name="SoundRandom" value="rroam"/>
+	<property name="SoundAlert" value="rralert"/>
 	<property name="SoundAttack" value=""/>
-	<property name="SoundHurt" value=""/>
-	<property name="SoundDeath" value=""/>
-	<property name="SoundSense" value=""/>
+	<property name="SoundHurt" value="rrpain"/>
+	<property name="SoundDeath" value="rrdeath"/>
+	<property name="SoundSense" value="rrsense"/>
 	<property name="SoundFootstepModifier" value=""/>	
 	<property name="WalkType" value="1"/>
 	<property name="StompsSpikes" value="true"/>		
@@ -765,10 +799,10 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
-		<passive_effect name="HealthMax" operation="base_set" value="700"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="57"/>		
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="54"/>		
 	</effect_group>
 </entity_class>	
 
@@ -931,7 +965,7 @@
 	<property name="AITask-6" value="Wander"/>
 	<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->
 	<property name="PainResistPerHit" value="1"/>
-	<property name="MoveSpeedAggro" value="1, 1.5"/> <!-- chasing a target min/max (like day or night)-->
+	<property name="MoveSpeedAggro" value="1.3, 1.7"/> <!-- chasing a target min/max (like day or night)-->
 	<property name="JumpMaxDistance" value="10, 15"/>			
 	<property name="ExperienceGain" value="5700"/>
 	<property name="HandItem" value="meleeHandZombieShockerFeral"/>
@@ -939,7 +973,7 @@
 	<property name="LootDropProb" value=".28"/>		
 	<effect_group name="Base Effects">
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SparkParticle"/>		
-		<passive_effect name="HealthMax" operation="base_set" value="900"/>
+		<passive_effect name="HealthMax" operation="base_set" value="999"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -964,15 +998,14 @@
 	<property name="LootDropProb" value=".2"/>		
 	<effect_group name="Base Effects">		
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SparkParticle"/>		
-		<passive_effect name="HealthMax" operation="base_set" value="600"/>
+		<passive_effect name="HealthMax" operation="base_set" value="666"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->		
 	</effect_group>
 </entity_class>
 
-<!-- <entity_class name="zombieSpectre" extends="zombieTemplateMale">
+ <!--<entity_class name="zombieSpectre" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>		
-	<property name="ReplaceMaterial0" value="entities/buildings/materials/window_glass02_lod"/>
 	<property name="ReplaceMaterial1" value="materials/occludeeshadowcaster"/>		
 	<property name="SizeScale" value="0.85"/>	
 	<property name="SoundRandom" value="spectreroam"/>

@@ -12,6 +12,7 @@
 </append>		
 
 <append xpath="/Sounds/SoundDataNode[@name='quest_subtask_complete']">
+	<AudioClip ClipName="#@modfolder:Resources/robelotoquestmusic.unity3d?quest_subtask_complete1"/>
 	<AudioClip ClipName="#@modfolder:Resources/robelotoquestmusic.unity3d?quest_subtask_complete2"/>
 </append>	
 

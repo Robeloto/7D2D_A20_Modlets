@@ -850,7 +850,7 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="4"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.90" tags="buffAnesthesia"/>	
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.35" tags="buffAnesthesia"/>	
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInfectionCatch"/>	
 		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="70"/>	
 	</effect_group>
@@ -913,7 +913,7 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffDrowning04"/>			
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffDrowning04"/>			
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.05" tags="buffInfectionCatch"/>	
 	</effect_group>
 </item>	
@@ -927,9 +927,9 @@
 		<property name="DamageEntity" value="3"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Explosion.ParticleIndex" value="0"/>
-		<property name="Velocity" value="19"/>
-		<property name="FlyTime" value="2"/>
-		<property name="LifeTime" value="4"/>
+		<property name="Velocity" value="16"/>
+		<property name="FlyTime" value="3"/>
+		<property name="LifeTime" value="6"/>
 		<property name="CollisionRadius" value="0.5"/>
 		<property name="DamageBonus.earth" value="10"/>
 		<property name="DamageBonus.stone" value="2"/>		
@@ -940,7 +940,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>	
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffDrowning04"/>			
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.80" tags="buffDrowning04"/>			
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.05" tags="buffInfectionCatch"/>		
 	</effect_group>
 </item>	
@@ -994,9 +994,9 @@
 		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="30"/>
 		<property name="Explosion.ParticleIndex" value="10"/>		
-		<property name="Velocity" value="20"/>
-		<property name="FlyTime" value="0.3"/>
-		<property name="LifeTime" value="2.1"/>
+		<property name="Velocity" value="18"/>
+		<property name="FlyTime" value="0.4"/>
+		<property name="LifeTime" value="3"/>
 		<property name="CollisionRadius" value="0.5"/>
 		<property name="Buff" value="buffBurningMolotov"/>
 	</property>
@@ -1036,13 +1036,13 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryStunned01"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.80" tags="buffBurningMolotov"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.65" tags="buffBurningMolotov"/>		
 	</effect_group>
 </item>	
 
@@ -1057,13 +1057,13 @@
 		<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
 		<property name="Explosion.RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
 		<property name="Explosion.BlockDamage" value="50"/> <!-- damage for blocks in the center of the explosion -->
-		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
-		<property name="Explosion.EntityDamage" value="25"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->		
+		<property name="Explosion.RadiusEntities" value="3"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="21"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->		
 		<property name="Explosion.DamageBonus.water" value="0"/>
 		<property name="Explosion.DamageBonus.earth" value="0"/>		
 		<property name="Velocity" value="15"/>
-		<property name="FlyTime" value="1"/>
-		<property name="LifeTime" value="3"/>
+		<property name="FlyTime" value="1.5"/>
+		<property name="LifeTime" value="6"/>
 		<property name="CollisionRadius" value="0.5"/>
 		<property name="Buff" value="buffBurningMolotov"/>
 	</property>
@@ -1071,7 +1071,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.65" tags="buffBurningMolotov"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffBurningMolotov"/>		
 	</effect_group>	
 </item>
 
@@ -1108,7 +1108,7 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="12"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".30" tags="buffArmBroken"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffBurningMolotov"/>	
 	</effect_group>
 </item>	
@@ -1132,8 +1132,8 @@
 	    <property name="DamageBonus.stone" value="70"/>		
 		<property name="DamageBonus.metal" value="75"/>
 		<property name="Velocity" value="15"/>
-		<property name="FlyTime" value="0.6"/>
-		<property name="LifeTime" value="4"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="6"/>
 		
 		<property name="CollisionRadius" value="0.5"/>
 		<property name="Buff" value="buffBurningMolotov"/>
@@ -1157,59 +1157,55 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Delay" value="0.1"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="AnimType" value="1"/>
 		<property name="Range" value="200"/>
+		<property name="Delay" value=".2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="SpreadVerticalOffset" value="-50"/>
+		<property name="WarningDelay" value=".6"/>
+		<property name="WarningMax" value="1"/>		
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="ZombieRadRobotVomitProjectile"/>
-		<property name="Sound_warning" value=""/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value=""/>
-		<property name="Sound_reload" value=""/>
-		<property name="Buff" value="buffInfectionCatch,buffInjuryStunned01"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Buff" value="buffInfectionCatch"/>
 	</property>
 		<effect_group name="meleeHandZombieRadRobot" tiered="false">	
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="MaxRange" operation="base_set" value="65"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="5"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="90"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="30"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInfectionCatch"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.09" tags="buffInjuryStunned01"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.09" tags="buffInfectionCatch"/>	
 	</effect_group>
 </item>	
 
 <item name="ZombieRadRobotVomitProjectile">
-	<property name="Meshfile" value="particleeffects/p_drone_heal_beam"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Vomit/vomitRadPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="DamageEntity" value="9"/>
-		<property name="DamageBlock" value="20"/>
-		<property name="Explosion.ParticleIndex" value="7"/>
-		<property name="Explosion.RadiusBlocks" value="1"/> <!-- damage radius for blocks -->
-		<property name="Explosion.BlockDamage" value="25"/> <!-- damage for blocks in the center of the explosion -->
-		<property name="Explosion.RadiusEntities" value="1"/> <!-- damage radius for entities -->
-		<property name="Explosion.EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->				
-		<property name="Velocity" value="20"/>
-		<property name="FlyTime" value="1"/>
-		<property name="LifeTime" value="7"/>
+		<property name="DamageBlock" value="13"/>
+		<property name="Explosion.ParticleIndex" value="7"/>	
+		<property name="Explosion.RadiusEntities" value="2"/> <!-- damage radius for entities -->		
+		<property name="Velocity" value="9"/>
+		<property name="Gravity" value="-5"/>			
+		<property name="FlyTime" value="0"/>
+		<property name="LifeTime" value="4"/>
 		<property name="CollisionRadius" value="0.4"/>
-		<property name="DamageBonus.earth" value="0"/>
-		<property name="DamageBonus.stone" value="20"/>		
-		<property name="DamageBonus.metal" value="20"/>			
-		<property name="Buff" value="buffInjuryBleeding"/>
+		<property name="DamageBonus.earth" value="0"/>		
+		<property name="Buff" value="buffInfectionCatch"/>
 	</property>
 		<effect_group name="ZombieRadRobotVomitProjectile" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.99" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.35" tags="buffInfectionCatch"/>
 		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="60"/>
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"><!--InfectionRegular-->
 			<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
@@ -1242,12 +1238,12 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="60"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="4"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="42"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.45" tags="buffBurningMolotov"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.39" tags="buffBurningMolotov"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned01"/>			
 	</effect_group>
 </item>	
@@ -1563,13 +1559,13 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="9"/>
-		<property name="DamageBlock" value="20"/>
+		<property name="DamageEntity" value="12"/>
+		<property name="DamageBlock" value="25"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
 		<property name="Explosion.BlockDamage" value="10"/> <!-- damage for blocks in the center of the explosion -->
-		<property name="Explosion.RadiusEntities" value="3"/> <!-- damage radius for entities -->
-		<property name="Explosion.EntityDamage" value="25"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->				
+		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="35"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->				
 		<property name="Velocity" value="28"/>
 		<property name="FlyTime" value="0.2"/>
 		<property name="LifeTime" value="2"/>
@@ -1580,7 +1576,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffInfectionCatch"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInfectionCatch"/>
 		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="40"/>	
 	</effect_group>
 </item>
@@ -1636,9 +1632,9 @@
 		<property name="DamageBlock" value="50"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Explosion.RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
-		<property name="Explosion.BlockDamage" value="50"/> <!-- damage for blocks in the center of the explosion -->
-		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
-		<property name="Explosion.EntityDamage" value="50"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->				
+		<property name="Explosion.BlockDamage" value="60"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->				
 		<property name="Velocity" value="28"/>
 		<property name="FlyTime" value="0.2"/>
 		<property name="LifeTime" value="2"/>
@@ -1875,7 +1871,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
@@ -1910,7 +1906,7 @@
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>	
@@ -1925,14 +1921,15 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="8"/>
+		<property name="DamageEntity" value="9"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Explosion.ParticleIndex" value="12"/> <!-- which Prefab/particle is used -->
 		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
 		<property name="Explosion.BlockDamage" value="20"/> <!-- damage for blocks in the center of the explosion -->
 		<property name="Explosion.RadiusEntities" value="3"/> <!-- damage radius for entities -->
 		<property name="Explosion.EntityDamage" value="20"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->		
-		<property name="Velocity" value="15"/>
+		<property name="Gravity" value="-5"/>	
+		<property name="Velocity" value="13"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
 		<property name="DamageBonus.earth" value="0"/>
@@ -1989,9 +1986,9 @@
 		<property name="Class" value="Projectile"/>	
 		<property name="DamageEntity" value="30"/>
 		<property name="DamageBlock" value="150"/>
-		<property name="Velocity" value="12"/>
-		<property name="FlyTime" value="8"/>
-		<property name="LifeTime" value="8"/>	
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="5"/>
+		<property name="LifeTime" value="10"/>	
 		<property name="Explosion.ParticleIndex" value="2"/>
 		<property name="Explosion.RadiusBlocks" value="4"/>
 		<property name="Explosion.BlockDamage" value="100"/>
@@ -2030,7 +2027,7 @@
 	</property>
 <effect_group name="meleeHandZombieCandy" tiered="false">
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".38" tags="buffCandy"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".43" tags="buffCandy"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".09" tags="buffInfectionCatch"/>
 	</effect_group>
 </item>
@@ -2079,14 +2076,44 @@
 		<property name="Block_range" value="6"/>
 		<property name="DamageEntity" value="60"/>
 		<property name="DamageBlock" value="1500"/>
-		<property name="Buff" value="buffArmBroken,buffInjuryStunned01"/>			
+		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
 		<property name="Sound_start" value="swoosh"/>
 	</property>
 <effect_group name="meleeHandZombieGiant" tiered="false">
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".31" tags="buffArmBroken"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".34" tags="buffInjuryStunned01"/>		
-		<passive_effect name="BuffProcChance" operation="base_set" value=".35" tags="buffInjuryKnockdown01"/>				
+		<passive_effect name="BuffProcChance" operation="base_set" value=".19" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".19" tags="buffInjuryStunned01"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".40" tags="buffInjuryKnockdown01"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryConcussion"/>			
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieGiantM">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="Tags" value="blunt,melee,light"/>	
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Canhold" value="false"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Candrop" value="false"/>
+	<property class="Action0"><!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.9"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="4.5"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+		<property name="Sphere" value="0.5"/>
+		<property name="Block_range" value="10"/>
+		<property name="DamageEntity" value="90"/>
+		<property name="DamageBlock" value="4000"/>
+		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+<effect_group name="meleeHandZombieGiantM" tiered="false">
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInjuryStunned01"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffInjuryKnockdown01"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".40" tags="buffInjuryConcussion"/>		
 	</effect_group>
 </item>
 
@@ -2105,16 +2132,16 @@
 		<property name="Range" value="1.98"/> 
 		<property name="Sphere" value="0.4"/>
 		<property name="Block_range" value="2.4"/>
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="25"/>
 		<property name="DamageBlock" value="60"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryOpenWound,buffInjuryKnockdown01"/>			
 		<property name="Sound_start" value="swoosh"/>
 	</property>
 		<effect_group name="meleeHandZombieIronMan" tiered="false">	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".12" tags="buffArmBroken"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".15" tags="buffInjuryOpenWound"/>		
-		<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffInjuryKnockdown01"/>			
+		<passive_effect name="BuffProcChance" operation="base_set" value=".11" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".11" tags="buffInjuryOpenWound"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".30" tags="buffInjuryKnockdown01"/>			
 	</effect_group>
 </item>
 
@@ -2140,8 +2167,8 @@
 	</property>
 		<effect_group name="meleeHandZombieMummy" tiered="false">	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".37" tags="buffArmBroken"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".18" tags="buffInjuryStunnedX"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".15" tags="buffInjuryStunnedX"/>		
 	</effect_group>
 </item>
 

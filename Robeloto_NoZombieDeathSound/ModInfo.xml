@@ -4,7 +4,7 @@
 		<Name value="RobelotoNoZombieDeathSound" />
 		<Description value="Replaced death sound with their pain sound, now you can't be sure they're dead." />
 		<Author value="Robeloto" />
-		<Version value="20" />
+		<Version value="20.0" />
 		<Website value="" />
 	</ModInfo>
 </xml>

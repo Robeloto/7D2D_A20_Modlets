@@ -1,4 +1,6 @@
 <configs>
+<!-- Much harder to farm, takes 500 minutes for crops to grow, increase/decrease if u like -->
+<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">500.0</set> <!-- Original: 63 --> 
 <!-- Don't let your fire burn too long, this will punish players with screamers and hordes -->
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">6</set>        <!-- original: 5    -->
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">6000</set>         <!-- original: 5000 -->
@@ -25,8 +27,6 @@
 <set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceMetalPipe']/@count">1</set>
 <set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">1,2</set>
 <set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceSpring']/@count">0,1</set>
-<!-- Much harder to farm -->
-<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">420.0</set> <!-- original: 63 -->
 <!-- Safes should NOT be easy to force open -->
 <append xpath="/blocks/block[@name='cntWallSafe']" >
 <property name="MaxDamage" value="9000"/> <!-- original: 2500  -->
