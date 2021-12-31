@@ -60,7 +60,6 @@ _________________________________________________________
 • XML version updated.
 • Atrocity handitem renamed correctly
 
-
 CREDITS:
 
 Custom sound for RPG puke comes from this channel:
