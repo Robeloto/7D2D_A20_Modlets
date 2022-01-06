@@ -257,7 +257,7 @@
 	<property name="SizeScale" value="2.7"/>	
 	<property name="Mass" value="1500"/>	
 	<property name="Weight" value="888"/>	
-	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>	
+	<property name="SoundFootstepModifier" value="giantstep"/>	
 	<property name="SoundRandom" value="mgroam"/>
 	<property name="SoundAlert" value="mgalert"/>
 	<property name="SoundSense" value="mgsense"/>
@@ -273,6 +273,7 @@
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="53"/>
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="GiantScream"/>		
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
 	</effect_group>
 </entity_class>	
@@ -332,11 +333,11 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".17"/>	
 	<effect_group name="Base Effects">		
-		<passive_effect name="HealthMax" operation="base_set" value="333"/>
+		<passive_effect name="HealthMax" operation="base_set" value="300"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="2"/>		
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>			
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>			
 	</effect_group>
 </entity_class>
 
@@ -849,6 +850,30 @@
 	</effect_group>
 </entity_class>
 
+	<entity_class name="zombieRunningMan" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker"/>	
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZSpider.prefab"/>
+<property name="ReplaceMaterial0" value="entities/furniture/materials/candelabra"/>
+	<property name="WalkType" value="7"/>	
+	<property name="Mass" value="300"/>	
+	<property name="SizeScale" value="1.2"/>	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="JumpMaxDistance" value="10, 20"/>
+    <property name="MoveSpeedAggro" value=".6, 1.2"/>	
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="ExperienceGain" value="4444"/> <!-- XP strong -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="LootDropProb" value=".25"/>	
+	
+	<effect_group name="Base Effects">	
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRunningMan"/>	
+		<passive_effect name="WalkSpeed" operation="base_set" value="2.4"/>
+		<passive_effect name="RunSpeed" operation="base_set" value="2.4"/>
+		<passive_effect name="HealthMax" operation="base_set" value="666"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->	
+	</effect_group>
+</entity_class>
+
 <entity_class name="zombieSanguis" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="entities/animals/vulture/materials/vulture_v2"/>
@@ -1057,13 +1082,13 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".35"/>	
 	<effect_group name="Base Effects">	
-		<passive_effect name="HealthMax" operation="base_set" value="330"/>
+		<passive_effect name="HealthMax" operation="base_set" value="250"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>		
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
-		<passive_effect name="WalkSpeed" operation="base_set" value="4"/>
-		<passive_effect name="RunSpeed" operation="base_set" value="4"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffNoiseAOE01"/>		
+		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
+		<passive_effect name="RunSpeed" operation="base_set" value="2"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffNoiseAOE01"/>			
 	</effect_group>
 </entity_class>
 <!-- -->

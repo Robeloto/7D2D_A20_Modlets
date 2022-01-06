@@ -14,7 +14,7 @@
 	<ingredient name="plantedPumpkin1" count="3"/>
 	<ingredient name="foodCornMeal" count="1"/>	
 	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="foodCanChicken" count="1"/>
+<!--	<ingredient name="foodCanChicken" count="1"/> -->
 	<ingredient name="drinkJarBeer" count="1"/>	
 </recipe>
 

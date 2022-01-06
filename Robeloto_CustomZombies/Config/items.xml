@@ -420,7 +420,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="18"/>
 		<property name="DamageBlock" value="125"/>
 		<property name="Explosion.ParticleIndex" value="11"/>
 		<property name="Explosion.RadiusBlocks" value="4"/>
@@ -472,7 +472,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="50"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="35"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
@@ -845,7 +845,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
@@ -911,7 +911,7 @@
 		<passive_effect name="MagazineSize" operation="base_set" value="5"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffDrowning04"/>			
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.05" tags="buffInfectionCatch"/>	
@@ -974,14 +974,14 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleedingZombie"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryBleedingZombie"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned01"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.55" tags="buffBurningMolotov"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.35" tags="buffBurningMolotov"/>		
 	</effect_group>
 </item>	
 
@@ -991,8 +991,9 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="8"/>
+		<property name="DamageEntity" value="7"/>
 		<property name="DamageBlock" value="30"/>
+		<property name="Explosion.RadiusEntities" value="3"/>		
 		<property name="Explosion.ParticleIndex" value="10"/>		
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="0.4"/>
@@ -1041,8 +1042,8 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryStunned01"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.65" tags="buffBurningMolotov"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned01"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.55" tags="buffBurningMolotov"/>		
 	</effect_group>
 </item>	
 
@@ -1071,7 +1072,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffBurningMolotov"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.60" tags="buffBurningMolotov"/>		
 	</effect_group>	
 </item>
 
@@ -1103,7 +1104,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="5"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="12"/>
@@ -1189,8 +1190,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="9"/>
-		<property name="DamageBlock" value="13"/>
+		<property name="DamageEntity" value="7"/>
+		<property name="DamageBlock" value="9"/>
 		<property name="Explosion.ParticleIndex" value="7"/>	
 		<property name="Explosion.RadiusEntities" value="2"/> <!-- damage radius for entities -->		
 		<property name="Velocity" value="9"/>
@@ -1238,8 +1239,8 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="42"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="33"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
@@ -1261,7 +1262,7 @@
 		<property name="FlyTime" value="5"/>
 		<property name="LifeTime" value="5"/>
 		<property name="DamageBonus.earth" value="10"/>
-		<property name="DamageBonus.wood" value="80"/>			
+		<property name="DamageBonus.wood" value="70"/>			
 		<property name="DamageBonus.stone" value="5"/>		
 		<property name="DamageBonus.metal" value="4"/>		
 		<property name="CollisionRadius" value="0.5"/>
@@ -1325,7 +1326,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="9"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
@@ -1474,7 +1475,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="25"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="24"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="4"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
@@ -1541,13 +1542,13 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryBleedingZombie"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInfectionCatch"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.35" tags="buffInfectionCatch"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryStunned01"/>	
 		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="40"/>
 	</effect_group>
@@ -1559,8 +1560,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="12"/>
-		<property name="DamageBlock" value="25"/>
+		<property name="DamageEntity" value="8"/>
+		<property name="DamageBlock" value="22"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
 		<property name="Explosion.BlockDamage" value="10"/> <!-- damage for blocks in the center of the explosion -->
@@ -1576,7 +1577,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInfectionCatch"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.35" tags="buffInfectionCatch"/>
 		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="40"/>	
 	</effect_group>
 </item>
@@ -1748,7 +1749,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="12"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="7"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="4"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>

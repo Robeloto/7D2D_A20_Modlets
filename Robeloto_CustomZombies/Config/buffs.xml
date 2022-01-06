@@ -2,6 +2,7 @@
 	
 <append xpath="/buffs"> 
 
+
 <!-- Archon is a Snufkins server side zombie, all credit go to Snufkin -->
 	<buff name="Arch0nScream" hidden="true">
 	 <update_rate value="20"/>
@@ -75,6 +76,25 @@
 		<triggered_effect trigger="onSelfBuffStart"  target="self" action="ModifyStats" stat="Health" operation="subtract" value="174" duration="1"/>	
 		</effect_group>
 	</buff>	
+	
+		<buff name="GiantScream" hidden="true">
+			<update_rate value="10"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="giantscream"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffGiant"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffGiant" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="giantscream" play_in_head="true">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+
 	
 		<buff name="buffAtroScream" hidden="true">
 			<update_rate value="15"/>
@@ -330,6 +350,47 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="0"/>
 		</effect_group>
 	</buff>
+	
+	<buff name="buffPredator" description_key="buffPredatorDesc" tooltip_key="buffPredatorDesc" icon="ui_game_symbol_critical" icon_color="255,255,0" icon_blink="true" name_key="Severe wound">
+		<damage_type value="bloodloss"/>
+		<stack_type value="replace"/>		
+		<duration value="9"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="bleedCounter" operation="set" value="0">
+				<requirement name="NotHasBuff" buff="buffInjuryBleeding"/>
+				<requirement name="NotHasBuff" buff="buffInjuryBleedingZombie"/>				
+			</triggered_effect>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-8" duration="0,9"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.3,0" duration="0,9"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound=""/>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound=""/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound=""/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffRunningMan" hidden="true">
+			<update_rate value="10"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffStopVehicle"/>
+			</effect_group>
+		</buff>
+
+
+	<buff name ="buffStopVehicle" tooltip_key="Running Man have the ability to manipulate the engine" icon="ui_game_symbol_muscle" icon_color="255,255,255" icon_blink="true">
+		<stack_type value="replace"/>
+		<duration value="2"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="EntityHasMovementTag" tags="driving"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="10"/>
+		</effect_group>
+	</buff>
 
 	<buff name="buffShocked2" description_key="buffShockedDesc" tooltip_key="buffShockedTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockedName" icon_color="255,0,0">
 		<damage_type value="electrical"/>
@@ -358,28 +419,6 @@
 		</effect_group>
 	</buff>	
 	
-	<buff name="buffPredator" description_key="buffPredatorDesc" tooltip_key="buffPredatorDesc" icon="ui_game_symbol_critical" icon_color="255,255,0" icon_blink="true" name_key="Severe wound">
-		<damage_type value="bloodloss"/>
-		<stack_type value="replace"/>		
-		<duration value="9"/>
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="bleedCounter" operation="set" value="0">
-				<requirement name="NotHasBuff" buff="buffInjuryBleeding"/>
-				<requirement name="NotHasBuff" buff="buffInjuryBleedingZombie"/>				
-			</triggered_effect>
-			
-			<passive_effect name="HealthChangeOT" operation="base_add" value="-8" duration="0,9"/>
-			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.3,0" duration="0,9"/>
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.3,0" duration="0,9"/>
-
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound=""/>
-			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound=""/>
-			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound=""/>
-		</effect_group>
-	</buff>
-
 	<buff name="buffInjuryOpenWound" name_key="Open Wound" description_key="buffInjuryOpenWoundDesc" tooltip_key="buffInjuryOpenWoundDesc" icon="ui_game_symbol_critical" icon_color="255,255,0" icon_blink="true">
 		<damage_type value="bloodloss"/>
 		<duration value="50"/>

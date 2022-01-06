@@ -1,3 +1,31 @@
+2022-01-06
+VERSION 2.81
+
+• New zombie enters the building. Say hi to Running Man that has the ability to stop vehicles!
+
+• Anesthesia vomit decreased, from 8 to 6.
+
+• Burningmans vomit increased. Now with 3 flames instead.
+
+• Coptercorpse gun vomit reduced, from 50 to 35.
+
+• Fireboss vomit reduced by 1.
+
+• FireElf has only 33 arrows in magazine now. Decreased damage on wood by 10.
+
+• Freezers vomit reduced by 2. From 8 to 6.
+
+• Gunners vomit magazine reduced by 1.
+
+• RadRobots vomit increased and changed to vomitRad instead of vomitBulb.
+
+• Moepukers vomit reduced, less burst and damage.
+
+• Sanguis vomit reduced from 12 to 7
+
+Nerf them all - Removed a lot of trader rewards and what you can buy from traders. For example Schematic Tools, Workstations, and tools. The schematic that can be found at traders have a very low chance.
+
+
 2021-12-31 (v2.80):
 
 • Reworked Entitygroups to make it smaller size.
@@ -59,6 +87,7 @@ _________________________________________________________
 • Candygirl now slows you down instead of giving you speed
 • XML version updated.
 • Atrocity handitem renamed correctly
+
 
 CREDITS:
 
