@@ -807,7 +807,7 @@
 	</effect_group>
 </entity_class>	
 
-<entity_class name="zombieRPG" extends="Zombie_Template">
+<entity_class name="zombieRPG" extends="Zombie_Template1">
 	<property name="Archetype" value="zombie_RPG" />
 	<property name="Tags" value="entity,zombie,walker,boss,umazombie,zombie_RPG" />
 	<!--<property name="Tags" value="entity,zombie,walker"/>
