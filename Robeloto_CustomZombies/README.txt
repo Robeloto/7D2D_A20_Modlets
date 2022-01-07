@@ -53,17 +53,7 @@ They are just too strong.
 
 • RPGs rockets fires a bit faster and have a higher lifetime. (vomit will not disappear too fast, not sure if this can be CPU-heavy, let me know)
 
-• RadRobots HP reduced, but vomit fires around him. New robot sounds.
-
-
-NerfThemAll - has gone through a heavy rework.
-
-•  No surface ores, except in wasteland and snow with extremely low probability.
-•  Traders can't show you the way to the next trader.
-
-•  Loot is reworked.
-
-•  Quest rewards are nerfed. 
+• RadRobots HP reduced, but vomit fires around him. New robot sounds!
 
 _________________________________________________________
 2021-12-14 (v2.78):
