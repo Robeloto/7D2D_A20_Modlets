@@ -17,8 +17,8 @@
 <!-- ZOMBIES-->
 <entity_class name="zombieAnesthesia" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>	
-	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
+	<property name="ReplaceMaterial0" value="entities/animals/boar/materials/grace"/>
 	<property name="WalkType" value="7"/>	
 	<property name="Mass" value="90"/>	
 	<property name="SizeScale" value="1"/>	
@@ -136,7 +136,6 @@
 <entity_class name="zombieAquaZed" extends="zombieTemplateMale">  
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
-	<!--<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardStripperRagdoll.prefab"/> -->
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>	
 	<property name="ReplaceMaterial0" value="materials/waterinbucket"/>
@@ -244,40 +243,6 @@
 	</effect_group>
 </entity_class>	
 
-<entity_class name="zombieGiantMutated" extends="zombieTemplateMale">
-	<property name="Tags" value="entity,zombie,walker"/>		
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMutated.prefab"/>
-	<property name="WalkType" value="7"/>	
-	<property name="JumpMaxDistance" value="10, 20"/>		
-	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
-	<!-- Gameplay -->
-	<property name="HandItem" value="meleeHandZombieGiantM"/>
-	<property name="MoveSpeedAggro" value=".1,.4"/>	
-	<property name="SightRange" value="190"/>	
-	<property name="SizeScale" value="2.7"/>	
-	<property name="Mass" value="1500"/>	
-	<property name="Weight" value="888"/>	
-	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>		
-	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
-	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
-	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
-	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
-	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
-	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
-	<property name="StompsSpikes" value="true"/>	
-	<property name="ExperienceGain" value="50000"/> <!-- XP strong -->
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".97"/>	
-	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="5000"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="53"/>
-		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="GiantScream"/>		
-		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
-	</effect_group>
-</entity_class>	
-
 <entity_class name="zombieCandyGirl" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
@@ -343,8 +308,7 @@
 
 <entity_class name="zombieExploder" extends="zombieTemplateMale">  
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZSuit.prefab"/>	
-	<!--<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSuitRagdoll.prefab"/> -->
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZThug.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ReplaceMaterial0" value="entities/buildings/materials/chimney"/>
 	<property name="ReplaceMaterial2" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>	
@@ -522,7 +486,7 @@
 </entity_class>
 
 <entity_class name="zombieGiant" extends="zombieTemplateMale">
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZLumberjack.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZYo.prefab"/>
 	<property name="WalkType" value="7"/>	
 	<property name="JumpMaxDistance" value="10, 20"/>		
 	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
@@ -549,6 +513,40 @@
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
+	</effect_group>
+</entity_class>	
+
+<entity_class name="zombieGiantMutated" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker"/>		
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMutated.prefab"/>
+	<property name="WalkType" value="7"/>	
+	<property name="JumpMaxDistance" value="10, 20"/>		
+	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandZombieGiantM"/>
+	<property name="MoveSpeedAggro" value=".1,.4"/>	
+	<property name="SightRange" value="190"/>	
+	<property name="SizeScale" value="2.7"/>	
+	<property name="Mass" value="1500"/>	
+	<property name="Weight" value="888"/>	
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>		
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="StompsSpikes" value="true"/>	
+	<property name="ExperienceGain" value="50000"/> <!-- XP strong -->
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".97"/>	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="53"/>
+		<passive_effect name="HealthChangeOT" operation="base_set" value="1"/> <!-- Boss regen, 1% -->	
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="GiantScream"/>		
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>		
 	</effect_group>
 </entity_class>	
@@ -666,7 +664,6 @@
 <entity_class name="zombieMPF" extends="zombieMoePuker">  
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_dirt"/>		
-	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="Explosion.ParticleIndex" value="3"/>
 	<property name="Explosion.RadiusBlocks" value="6"/>
 	<property name="Explosion.RadiusEntities" value="6"/>
@@ -688,8 +685,7 @@
 
 <entity_class name="zombieMummy" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
-	<!-- <property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/> --> 		
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>	
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_wood"/>	
 	<property name="SizeScale" value="1.1"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -978,10 +974,9 @@
 <entity_class name="zombieShockerFeral" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="itemmodeffects/materials/baton_arc_fp"/>
-	<property name="ReplaceMaterial1" value="Entities/Animals/Boar/Materials/GRACE"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
 	<property name="SizeScale" value="1.2"/>	
-	<property name="WalkType" value="7"/>
+	<property name="WalkType" value="5"/>
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=8"/> <!-- type,cooldown,duration -->
 	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
