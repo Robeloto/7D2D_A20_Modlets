@@ -78,7 +78,7 @@
 	</buff>	
 	
 		<buff name="GiantScream" hidden="true">
-			<update_rate value="10"/>
+			<update_rate value="25"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="giantscream"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffGiant"/>
