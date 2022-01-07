@@ -2,9 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="Robeloto_CustomZombies" />
-		<Description value="An custom zombies mod." />
+		<Description value="An custom zombies mod with added sounds and imagery." />
 		<Author value="Robeloto" />
 		<Version value="A.20" />
-		<Website value="" />
+		<Website value="https://github.com/Robeloto/7D2D_A20_Modlets" />
 	</ModInfo>
 </xml>

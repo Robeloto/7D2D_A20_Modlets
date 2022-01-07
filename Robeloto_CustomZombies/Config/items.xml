@@ -452,7 +452,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.5"/>
+		<property name="Range" value="2.3"/>
 		<property name="DamageEntity" value="22"/>
 		<property name="DamageBlock" value="80"/>
 		<property name="Buff" value="buffInjuryStunned01"/>		
@@ -599,10 +599,10 @@
 	<property name="HoldType" value="55"/>
 	<property class="Action0">
 		<property name="Delay" value="1.0"/>
-		<property name="Range" value="4"/>
+		<property name="Range" value="3.5"/>
 		<property name="Sphere" value="2"/>
 		<property name="Block_range" value="5"/>		
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="15"/>
 		<property name="DamageBlock" value="100"/>
 		<property name="Buff" value="buffInjuryBleeding,buffBurningMolotov"/>
 		<property name="Buff_chance" value="0.2,0.8"/>
@@ -755,7 +755,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="Delay" value=".7"/>			
-		<property name="Range" value="1.75"/>	
+		<property name="Range" value="1.70"/>	
 		<property name="Sphere" value=".2"/>
 		<property name="DamageEntity" value="7"/>
 		<property name="DamageBlock" value="7"/>
@@ -821,7 +821,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>	
+		<property name="Range" value="1.70"/>	
 		<property name="Delay" value="0.5"/> <!-- obsolete if rounds per minute exists -->
 		<property name="DamageEntity" value="4"/>
 		<property name="DamageBlock" value="20"/>
@@ -885,7 +885,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
+		<property name="Range" value="1.70"/>
 		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="10"/>
 		<property name="Buff" value="buffDrowning04,buffInfectionCatch"/>	
@@ -951,7 +951,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
+		<property name="Range" value="1.70"/>
 		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="buffInjuryBleedingZombie,buffInjuryStunned01,buffBurningMolotov"/>		
@@ -1014,8 +1014,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="8"/>
+		<property name="Range" value="1.70"/>
+		<property name="DamageEntity" value="18"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="buffInjuryStunned01,buffBurningMolotov"/>		
 	</property>
@@ -1083,10 +1083,10 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Delay" value="0.9"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="2.4"/> 
+		<property name="Range" value="2.2"/> 
 		<property name="Sphere" value="0.3"/>
 		<property name="Block_range" value="5.5"/>
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="33"/>
 		<property name="DamageBlock" value="160"/>
 		<property name="Buff" value="buffArmBroken,buffBurningMolotov"/>		
 	</property>
@@ -1151,7 +1151,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
+		<property name="Range" value="1.70"/>
 		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="buffInjuryStunned01"/>		
@@ -1161,9 +1161,9 @@
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="AnimType" value="1"/>
 		<property name="Range" value="200"/>
-		<property name="Delay" value=".2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Delay" value="1.4"/> <!-- obsolete if rounds per minute exists -->
 		<property name="SpreadVerticalOffset" value="-50"/>
-		<property name="WarningDelay" value=".6"/>
+		<property name="WarningDelay" value=".9"/>
 		<property name="WarningMax" value="1"/>		
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="ZombieRadRobotVomitProjectile"/>
@@ -1175,7 +1175,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="65"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="5"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="90"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="30"/>
@@ -1190,7 +1190,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="7"/>
+		<property name="DamageEntity" value="6"/>
 		<property name="DamageBlock" value="9"/>
 		<property name="Explosion.ParticleIndex" value="7"/>	
 		<property name="Explosion.RadiusEntities" value="2"/> <!-- damage radius for entities -->		
@@ -1219,7 +1219,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.80"/>
+		<property name="Range" value="1.71"/>
 		<property name="DamageEntity" value="18"/>
 		<property name="DamageBlock" value="50"/>
 		<property name="Buff" value="buffBurningMolotov,buffInjuryStunned01"/>		
@@ -1288,7 +1288,7 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.15"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.75"/> 
+		<property name="Range" value="1.72"/> 
 		<property name="Sphere" value="0.4"/>
 		<property name="Block_range" value="5.5"/>
 		<property name="DamageEntity" value="7"/>
@@ -1308,7 +1308,7 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.70"/>
-		<property name="DamageEntity" value="11"/>
+		<property name="DamageEntity" value="16"/>
 		<property name="DamageBlock" value="30"/>
 		<property name="Buff" value="buffInfectionCatch"/>		
 	</property>
@@ -1374,7 +1374,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="Delay" value=".7"/>			
-		<property name="Range" value="1.75"/>	
+		<property name="Range" value="1.70"/>	
 		<property name="Sphere" value=".2"/>
 		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="8"/>
@@ -1437,7 +1437,7 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.8"/> 
+		<property name="Range" value="1.77"/> 
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="2.4"/>
 		<property name="DamageEntity" value="13"/>
@@ -1455,8 +1455,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.1"/>
-		<property name="DamageEntity" value="22"/>
+		<property name="Range" value="2"/>
+		<property name="DamageEntity" value="28"/>
 		<property name="DamageBlock" value="120"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01"/>		
 	</property>
@@ -1518,7 +1518,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
+		<property name="Range" value="1.70"/>
 		<property name="DamageEntity" value="11"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>		
@@ -1588,8 +1588,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="30"/>
+		<property name="Range" value="1.72"/>
+		<property name="DamageEntity" value="26"/>
 		<property name="DamageBlock" value="60"/>
 		<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>		
 	</property>
@@ -1662,8 +1662,8 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.1"/>
-		<property name="DamageEntity" value="28"/>
+		<property name="Range" value="2"/>
+		<property name="DamageEntity" value="35"/>
 		<property name="DamageBlock" value="130"/>
 		<property name="Buff" value="buffInjuryStunnedX,buffInjuryOpenWound"/>		
 	</property>
@@ -1700,7 +1700,7 @@
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>	
 		<property name="Gravity" value="-3"/>		
-		<property name="DamageEntity" value="4"/>
+		<property name="DamageEntity" value="6"/>
 		<property name="DamageBlock" value="10"/>			
 		<property name="Velocity" value="20"/>
 		<property name="FlyTime" value="2"/>
@@ -1725,7 +1725,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>	
+		<property name="Range" value="1.70"/>	
 		<property name="Delay" value="0.5"/> <!-- obsolete if rounds per minute exists -->
 		<property name="DamageEntity" value="5"/>
 		<property name="DamageBlock" value="40"/>
@@ -1792,7 +1792,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>	
+		<property name="Range" value="1.70"/>	
 		<property name="Delay" value="0.5"/> <!-- obsolete if rounds per minute exists -->
 		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="5"/>
@@ -1831,7 +1831,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="5"/>
+		<property name="DamageEntity" value="4"/>
 		<property name="DamageBlock" value="10"/>
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no explosion -->
 		<property name="Velocity" value="15"/>
@@ -1854,7 +1854,7 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.70"/>
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="25"/>
 		<property name="DamageBlock" value="60"/>
 		<property name="Buff" value="buffInjuryStunned01,buffShocked2"/>		
 	</property>
@@ -1888,7 +1888,7 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.70"/>
-		<property name="DamageEntity" value="11"/>
+		<property name="DamageEntity" value="14"/>
 		<property name="DamageBlock" value="30"/>
 		<property name="Buff" value="buffInjuryStunned01,buffShocked2"/>		
 	</property>
@@ -1950,8 +1950,8 @@
 	<property name="Extends" value="meleeHandMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>	
-		<property name="DamageEntity" value="20"/>
+		<property name="Range" value="1.85"/>	
+		<property name="DamageEntity" value="40"/>
 		<property name="DamageBlock" value="90"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
@@ -2019,7 +2019,7 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.6"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.70"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+		<property name="Range" value="1.72"/> 
 		<property name="Block_range" value="2"/>
 		<property name="DamageEntity" value="16"/>
 		<property name="DamageBlock" value="25"/>
@@ -2045,10 +2045,10 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.8"/> 
+		<property name="Range" value="1.72"/> 
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="2.4"/>
-		<property name="DamageEntity" value="13"/>
+		<property name="DamageEntity" value="17"/>
 		<property name="DamageBlock" value="35"/>
 		<property name="Buff" value="buffChroma,buffInjuryStunnedX"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2075,7 +2075,7 @@
 		<property name="Range" value="3.1"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.3"/>
 		<property name="Block_range" value="6"/>
-		<property name="DamageEntity" value="60"/>
+		<property name="DamageEntity" value="66"/>
 		<property name="DamageBlock" value="1500"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2104,7 +2104,7 @@
 		<property name="Range" value="4.5"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="10"/>
-		<property name="DamageEntity" value="90"/>
+		<property name="DamageEntity" value="98"/>
 		<property name="DamageBlock" value="4000"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2130,10 +2130,10 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.98"/> 
+		<property name="Range" value="1.9"/> 
 		<property name="Sphere" value="0.4"/>
 		<property name="Block_range" value="2.4"/>
-		<property name="DamageEntity" value="25"/>
+		<property name="DamageEntity" value="27"/>
 		<property name="DamageBlock" value="60"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryOpenWound,buffInjuryKnockdown01"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2158,10 +2158,10 @@
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="2"/> 
+		<property name="Range" value="1.82"/> 
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="5.5"/>
-		<property name="DamageEntity" value="28"/>
+		<property name="DamageEntity" value="40"/>
 		<property name="DamageBlock" value="180"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2200,10 +2200,10 @@
 	<property name="Candrop" value="false"/>
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
-		<property name="DamageEntity" value="8"/>
+		<property name="DamageEntity" value="13"/>
 		<property name="DamageBlock" value="55"/>		
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="1.85"/> 
+		<property name="Range" value="1.82"/> 
 		<property name="Sphere" value="0.4"/>
 		<property name="Block_range" value="2.3"/>
 		<property name="Buff" value="buffNoise,buffInjuryStunnedX"/>			
