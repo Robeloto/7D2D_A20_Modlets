@@ -1,0 +1,6 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+perkMasterChefRank1LongDesc,progression,perk Str,,,"Cooking is not your thing but you know some basics. Unlocks basic recipes such as bacon and eggs, baked potatoes and cornbread. Cook 10% faster.
+perkMasterChefRank2LongDesc,progression,perk Str,,,"Cooking is still not your thing but you know all the basics now. \nUnlocks Boiled and Grilled meat, Coffee and Teas. Cook 20% faster.
+perkMasterChefRank3LongDesc,progression,perk Str,,,"Just like grandma used to make, tasty hearty meals that fill you up for days. \nCraft steak and potatoes, meat stew, vegetable stew, blueberry pie and several pumpkin dishes. Cook 30% faster.
+perkMasterChefRank4LongDesc,progression,perk Str,,,"Cook for the whole family by making Sham Chowder, Hobo Stew, FishTacos, Chilidog, smoothies and beer. \nCook 40% faster. Use 20% less of a recipe's main ingredients.
+perkMasterChefRank5LongDesc,progression,perk Str,,,"Cook for an army by making GumboStew, ShepardsPie, Spaghetti, TunafishGravyToast + \nGrandpa's ass kicking recipes.\nLearn grandpa's secret recipes that boost stats and attributes! Cook 50% faster.
