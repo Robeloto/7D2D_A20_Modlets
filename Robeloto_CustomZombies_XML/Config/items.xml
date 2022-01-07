@@ -1,4 +1,4 @@
-<<configs>
+<configs>
 
 <append xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group" >
 <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffIce"/>
