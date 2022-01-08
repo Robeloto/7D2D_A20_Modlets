@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Slow zombies" />
+		<Description value="A modlet to slow zombies down." />
+		<Author value="Robeloto" />
+		<Version value="20" />
+		<Website value="https://github.com/Robeloto/7D2D_A20_Modlets" />
+	</ModInfo>
+</xml>
