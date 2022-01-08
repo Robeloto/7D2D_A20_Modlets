@@ -1,5 +1,5 @@
 <configs>
-<set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='MoveSpeed']/@value">.05, .08</set>
+<set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='MoveSpeed']/@value">0.05</set>
 <set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='MoveSpeedAggro']/@value">.08, .09</set>
 <set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='MoveSpeedRand']/@value">-.2, -.1</set>
 <set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='MoveSpeedPanic']/@value">.09, .1</set>
