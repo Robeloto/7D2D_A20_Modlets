@@ -1,14 +1,13 @@
 <configs>
 
-<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">150</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">100</set>
 <set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='HandItem']/@value">meleeHandZombieStrong2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='HandItem']/@value">meleeHandZombieStrong2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='HandItem']/@value">meleeHandZombieCop2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='HandItem']/@value">meleeHandZombieCopFeral2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='HandItem']/@value">meleeHandZombieCopRadiated2</set>
-<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">11, 16</set>
-<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">13, 19</set>
-<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">90</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">13, 18</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">14, 20</set>
 <append xpath="/entity_classes">  
 
 <!-- Template Zombie from Snufkins zombies. All credits go to Snufkin -->
@@ -359,7 +358,7 @@
 </entity_class>	
 
     <entity_class name="zombieFireBoss" extends="zombieTemplateMale"> 
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZCop.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZCopFeral.prefab"/>
 	<property name="ReplaceMaterial0" value="entities/gore/materials/torso_gore"/>	
 	<property name="ReplaceMaterial1" value="particleeffects/materials/p_spark_electricity"/>		
 	<property name="WalkType" value="1"/>
@@ -399,7 +398,7 @@
 
 <entity_class name="zombieFireElf" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_gib"/>	
 	<property name="WalkType" value="7"/>		
 	<property name="Mass" value="50"/>	
@@ -599,7 +598,7 @@
 	<property name="SurfaceCategory" value="metal"/>	
 	<property name="PainResistPerHit" value="1"/>
 	<property name="StompsSpikes" value="true"/>	
-	<property name="SoundFootstepModifier" value="bear_footstep"/>	
+	<property name="SoundFootstepModifier" value="stepmetal"/>	
 	<property name="JumpMaxDistance" value="10, 20"/>
     <property name="MoveSpeedAggro" value=".6, 1.2"/>	
 	<property name="HandItem" value="meleeHandZombieIronMan"/>
@@ -616,6 +615,32 @@
 		<passive_effect name="HealthChangeOT" operation="base_set" value="3"/> <!-- Boss regen, 1% -->	
 	</effect_group>
 </entity_class>
+
+    <entity_class name="zombieMini" extends="zombieSpider"> 
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
+	<property name="ReplaceMaterial0" value="entities/gore/materials/torso_gore"/>	
+	<property name="SizeScale" value=".5"/>	
+	<property name="Mass" value="66"/>		
+	<property name="PainResistPerHit" value="1"/>
+	<property name="JumpMaxDistance" value="18, 20"/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundAttack" value=""/>
+	 <property name="MoveSpeedAggro" value="1, 2"/>	
+	<property name="CanClimbVertical" value="true"/>	 
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandZombieMini"/>
+	<property name="ExperienceGain" value="1000"/> <!-- XP strong -->	
+	<effect_group name="Base Effects">	
+		<passive_effect name="WalkSpeed" operation="base_set" value="4"/>
+		<passive_effect name="RunSpeed" operation="base_set" value="4"/> 	
+		<passive_effect name="HealthMax" operation="base_set" value="200"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->	
+	</effect_group>
+</entity_class>	
 
 <entity_class name="zombieMoePuker" extends="zombieTemplateMale">  
 	<property name="Tags" value="entity,zombie,walker"/>
@@ -684,7 +709,7 @@
 
 <entity_class name="zombieMummy" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>	
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_wood"/>	
 	<property name="SizeScale" value="1.1"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -767,7 +792,7 @@
 
 <entity_class name="zombieRadRobot" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="ReplaceMaterial0" value="entities/electrical/materials/spotlight"/>
 	<property name="SizeScale" value="1.15"/>
 	<property name="SurfaceCategory" value="metal"/>		
@@ -973,7 +998,7 @@
 <entity_class name="zombieShockerFeral" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="itemmodeffects/materials/baton_arc_fp"/>	
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="SizeScale" value="1.2"/>	
 	<property name="WalkType" value="5"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -1001,7 +1026,7 @@
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/electrical_arc"/>	
 	<property name="ReplaceMaterial1" value="particleeffects/materials/p_spark_electricity"/>		
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="SizeScale" value="1.15"/>	
 	<property name="WalkType" value="7"/>
 	<property name="AITask-1" value="BreakBlock"/>

@@ -2135,14 +2135,39 @@
 		<property name="Block_range" value="2.4"/>
 		<property name="DamageEntity" value="27"/>
 		<property name="DamageBlock" value="60"/>
-		<property name="Buff" value="buffArmBroken,buffInjuryOpenWound,buffInjuryKnockdown01"/>			
+		<property name="Buff" value="buffArmBroken,buffInjuryKnockdown01"/>			
 		<property name="Sound_start" value="swoosh"/>
 	</property>
 		<effect_group name="meleeHandZombieIronMan" tiered="false">	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".11" tags="buffArmBroken"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".11" tags="buffInjuryOpenWound"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".11" tags="buffArmBroken"/>	
 		<passive_effect name="BuffProcChance" operation="base_set" value=".30" tags="buffInjuryKnockdown01"/>			
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieMini">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="Tags" value="blunt,melee,light"/>	
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Canhold" value="false"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Candrop" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value=".1"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="1.33"/> 
+		<property name="Sphere" value=".1"/>
+		<property name="Block_range" value="1.7"/>
+		<property name="DamageEntity" value="5"/>
+		<property name="DamageBlock" value="10"/>
+		<property name="Buff" value="buffInfectionCatch"/>			
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+		<effect_group name="meleeHandZombieMini" tiered="false">	
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".33" tags="buffInfectionCatch"/>		
 	</effect_group>
 </item>
 
