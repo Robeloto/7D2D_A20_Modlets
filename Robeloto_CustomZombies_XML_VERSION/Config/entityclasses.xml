@@ -307,7 +307,7 @@
 
 <entity_class name="zombieExploder" extends="zombieTemplateMale">  
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZThugFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZThug.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ReplaceMaterial0" value="entities/buildings/materials/chimney"/>
 	<property name="ReplaceMaterial2" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>	
@@ -399,7 +399,7 @@
 
 <entity_class name="zombieFireElf" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_gib"/>	
 	<property name="WalkType" value="7"/>		
 	<property name="Mass" value="50"/>	
@@ -485,7 +485,7 @@
 </entity_class>
 
 <entity_class name="zombieGiant" extends="zombieTemplateMale">
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZYoFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZYo.prefab"/>
 	<property name="WalkType" value="7"/>	
 	<property name="JumpMaxDistance" value="10, 20"/>		
 	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
@@ -518,7 +518,7 @@
 
 <entity_class name="zombieGiantMutated" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>		
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMutatedFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMutated.prefab"/>
 	<property name="WalkType" value="7"/>	
 	<property name="JumpMaxDistance" value="10, 20"/>		
 	<property name="ReplaceMaterial0" value="particleeffects/models/car_explode"/>
@@ -618,7 +618,7 @@
 </entity_class>
 
 <entity_class name="zombieMini" extends="zombieSpider"> 
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
 	<property name="ReplaceMaterial0" value="entities/gore/materials/torso_gore"/>	
 	<property name="SizeScale" value=".5"/>	
 	<property name="Mass" value="66"/>		
@@ -688,7 +688,6 @@
 
 <entity_class name="zombieMPF" extends="zombieMoePuker">  
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-		<property name="Mesh" value="#Entities/Zombies?Prefabs/ZMoeFeral.prefab"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_dirt"/>		
 	<property name="Explosion.ParticleIndex" value="3"/>
 	<property name="Explosion.RadiusBlocks" value="6"/>
@@ -711,7 +710,7 @@
 
 <entity_class name="zombieMummy" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntFeral.prefab"/>	
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>	
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_wood"/>	
 	<property name="SizeScale" value="1.1"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -794,7 +793,7 @@
 
 <entity_class name="zombieRadRobot" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
 	<property name="ReplaceMaterial0" value="entities/electrical/materials/spotlight"/>
 	<property name="SizeScale" value="1.15"/>
 	<property name="SurfaceCategory" value="metal"/>		
@@ -873,7 +872,7 @@
 
 	<entity_class name="zombieRunningMan" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>	
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZSpiderFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZSpider.prefab"/>
 <property name="ReplaceMaterial0" value="entities/furniture/materials/candelabra"/>
 	<property name="WalkType" value="7"/>	
 	<property name="Mass" value="300"/>	
@@ -1000,7 +999,7 @@
 <entity_class name="zombieShockerFeral" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="itemmodeffects/materials/baton_arc_fp"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
 	<property name="SizeScale" value="1.2"/>	
 	<property name="WalkType" value="5"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -1027,7 +1026,7 @@
 <entity_class name="zombieShocker" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/electrical_arc"/>	
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntFeral.prefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.prefab"/>
 	<property name="SizeScale" value="1.15"/>
 	<property name="WalkType" value="7"/>
 	<property name="AITask-1" value="BreakBlock"/>
