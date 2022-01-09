@@ -359,7 +359,6 @@
 
     <entity_class name="zombieFireBoss" extends="zombieTemplateMale"> 
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZCopFeral.prefab"/>
-	<!-- <property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCopRagdoll.prefab"/> -->
 	<property name="ReplaceMaterial0" value="entities/gore/materials/torso_gore"/>	
 	<property name="ReplaceMaterial1" value="particleeffects/materials/p_spark_electricity"/>		
 	<property name="WalkType" value="1"/>
