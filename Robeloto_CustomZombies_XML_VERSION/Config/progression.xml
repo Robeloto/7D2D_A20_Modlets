@@ -1,8 +1,0 @@
-<configs>
-
-<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@level='3,4']/@tags">,AmoxilIngredientParts1,AmoxilIngredientParts2</append>
-<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@level='4']/@tags">,drugAntibioticsAmoxil</append>
-<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,gunToolSuperNailgun</append>
-
-</configs>
-
