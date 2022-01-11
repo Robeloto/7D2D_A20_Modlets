@@ -221,7 +221,7 @@
 
 	<buff name="buffIce" name_key="Freezed" description_key="buffIceDesc" tooltip_key="buffIceDesc" icon="ui_game_symbol_stunned" icon_color="72,0,254" icon_blink="true">
 		<damage_type value="disease"/>
-		<stack_type value="replace"/><duration value="6"/>
+		<stack_type value="replace"/><duration value="5"/>
 		<effect_group>		
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn_warning" play_in_head="true"/>		
 			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="horde_spawn_warning" play_in_head="true"/>
@@ -233,11 +233,11 @@
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffElementFreezing">	
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Cold"/>	
 			</triggered_effect>
-			<passive_effect name="RunSpeed" operation="perc_subtract" value="1" duration="0,6"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1" duration="0,6"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1" duration="0,6"/>
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="1" duration="0,6"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-1" duration="0,6">	
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="1" duration="0,5"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1" duration="0,5"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1" duration="0,5"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="1" duration="0,5"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-1" duration="0,5">	
 		</passive_effect>	
         </effect_group>	
 	</buff>

@@ -1240,8 +1240,8 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.70"/>
-		<property name="DamageEntity" value="11"/>
-		<property name="DamageBlock" value="30"/>
+		<property name="DamageEntity" value="8"/>
+		<property name="DamageBlock" value="18"/>
 		<property name="Buff" value="buffInfectionCatch"/>		
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -1258,7 +1258,7 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
@@ -1291,6 +1291,68 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".1" tags="buffInfectionCatch"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".75" tags="buffIce"/>			
+	</effect_group>	
+</item>
+
+<item name="meleeHandZombieFreeza">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.70"/>
+		<property name="DamageEntity" value="25"/>
+		<property name="DamageBlock" value="40"/>
+		<property name="Buff" value="buffInfectionCatch"/>		
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0.3"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="200"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="ZombieFreezaVomitProjectile"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Buff" value="buffIce"/>
+	</property>
+		<effect_group name="meleeHandZombieFreeza" tiered="false">	
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>	
+		<passive_effect name="BuffProcChance" operation="base_set" value=".2" tags="buffInfectionCatch"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".7" tags="buffIce"/>			
+	</effect_group>
+</item>
+
+<item name="ZombieFreezaVomitProjectile">
+	<property name="Meshfile" value="prefabs/electricshock"/> 
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="25"/>
+		<property name="Explosion.ParticleIndex" value="0"/> <!-- No explosion -->		
+		<property name="Velocity" value="14"/>
+		<property name="FlyTime" value="1.4"/>
+		<property name="LifeTime" value="4"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>		
+		<property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.stone" value="5"/>		
+		<property name="DamageBonus.metal" value="5"/>		
+		<property name="CollisionRadius" value="0.5"/>
+		<property name="Buff" value="buffInfectionCatch,buffIce"/>
+	</property>
+		<effect_group name="ZombieFreezaVomitProjectile" tiered="false">	
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".1" tags="buffInfectionCatch"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".7" tags="buffIce"/>			
 	</effect_group>	
 </item>
 
@@ -1974,7 +2036,7 @@
 		<property name="Range" value="1.72"/> 
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="2.4"/>
-		<property name="DamageEntity" value="17"/>
+		<property name="DamageEntity" value="13"/>
 		<property name="DamageBlock" value="35"/>
 		<property name="Buff" value="buffChroma,buffInjuryStunnedX"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2001,7 +2063,7 @@
 		<property name="Range" value="3.1"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.3"/>
 		<property name="Block_range" value="6"/>
-		<property name="DamageEntity" value="60"/>
+		<property name="DamageEntity" value="65"/>
 		<property name="DamageBlock" value="1500"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
 		<property name="Sound_start" value="swoosh"/>
@@ -2030,7 +2092,7 @@
 		<property name="Range" value="4.5"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.5"/>
 		<property name="Block_range" value="10"/>
-		<property name="DamageEntity" value="90"/>
+		<property name="DamageEntity" value="92"/>
 		<property name="DamageBlock" value="4000"/>
 		<property name="Buff" value="buffArmBroken,buffInjuryStunned01,buffInjuryKnockdown01,buffInjuryConcussion"/>			
 		<property name="Sound_start" value="swoosh"/>

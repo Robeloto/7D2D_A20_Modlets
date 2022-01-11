@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/bodies">
 		
-		<body name="nolegsUMA">
+		<body name="IgotnolegsUMA">
 			<collider>
 				<property name="tag" value="E_BP_Body"/>
 				<property name="path" value="Hips"/>

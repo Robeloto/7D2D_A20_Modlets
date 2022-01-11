@@ -423,10 +423,10 @@
 </entity_class>
 
 <entity_class name="zombieFreezer" extends="Zombie_Template1">
-	<property name="Tags" value="entity,zombie,walker,umazombie,freezer,boss"/>	
+	<property name="Tags" value="entity,zombie,walker,umazombie,freezer"/>	
 	<property name="Archetype" value="Freezer" />	
 	<property name="WalkType" value="2"/>	
-	<property name="Mass" value="150"/>	
+	<property name="Mass" value="160"/>	
 	<property name="RightHandJointName" value="RightHand"/>
 	<property name="SizeScale" value="1"/>	
 	<property name="AITask-1" value="BreakBlock"/>
@@ -439,11 +439,35 @@
 	<property name="PainResistPerHit" value="1"/>
 	<property name="JumpMaxDistance" value="8, 12"/>	
 	<property name="HandItem" value="meleeHandZombieFreezer"/>
+	<property name="ExperienceGain" value="1200"/> 
+	<effect_group name="Base Effects">	
+		<passive_effect name="HealthMax" operation="base_set" value="350"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+	</effect_group>
+</entity_class>
+
+<entity_class name="zombieFreeza" extends="Zombie_Template1">
+	<property name="Tags" value="entity,zombie,walker,umazombie,freezer,boss"/>	
+	<property name="Archetype" value="Freeza" />	
+	<property name="WalkType" value="2"/>	
+	<property name="Mass" value="250"/>	
+	<property name="RightHandJointName" value="RightHand"/>
+	<property name="SizeScale" value="1"/>	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=8"/> <!-- type,cooldown,duration -->
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="JumpMaxDistance" value="8, 12"/>	
+	<property name="HandItem" value="meleeHandZombieFreeza"/>
 	<property name="ExperienceGain" value="4000"/> <!-- XP strong -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<property name="LootDropProb" value=".16"/>
 	<effect_group name="Base Effects">	
-		<passive_effect name="HealthMax" operation="base_set" value="612"/>
+		<passive_effect name="HealthMax" operation="base_set" value="888"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -462,7 +486,7 @@
 	<property name="SoundSense" value="Animals/Vulture/vulturesense"/>
 	<property name="SoundGiveUp" value="Animals/Vulture/vulturegiveup"/>
 	<property name="Mass" value="50"/>
-	<property name="PhysicsBody" value="nolegsUMA" />
+	<property name="PhysicsBody" value="IgotnolegsUMA" />
 	<property name="MoveSpeed" value=".7"/>
 	<property name="MoveSpeedAggro" value="2, 2"/>
 	<property name="MaxTurnSpeed" value="150"/>
@@ -938,7 +962,7 @@
 	<property name="Archetype" value="Sc4recrow" />
 	<property name="Tags" value="entity,zombie,walker,boss,umazombie,scarecrow" />
 	<property name="WalkType" value="7"/>
-	<property name="PhysicsBody" value="nolegsUMA" />
+	<property name="PhysicsBody" value="IgotnolegsUMA" />
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value="1"/>
 	<property name="SurfaceCategory" value="wood"/>
@@ -1111,7 +1135,7 @@
 	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="80"/> <!-- animalSnake -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="40"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="650"/>
+		<passive_effect name="HealthMax" operation="base_set" value="888"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
