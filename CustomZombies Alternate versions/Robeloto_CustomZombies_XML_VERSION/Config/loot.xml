@@ -14,16 +14,16 @@
 </lootgroup>
 
 <lootgroup name="rareMedicine">
-<item name="drugAntibioticsAmoxil" count="1,2" prob="0.06"/>
+<item name="drugAntibioticsAmoxil" count="1,2" prob="0.1"/>
 </lootgroup>
 
 
 <lootgroup name="airdropMedicine">
-<item name="drugAntibioticsAmoxil" count="1,2" prob="0.07"/>
+<item name="drugAntibioticsAmoxil" count="1,2" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="labEquipment">
-<item name="drugAntibioticsAmoxil" prob="0.1"/>
+<item name="drugAntibioticsAmoxil" prob="0.15"/>
 </lootgroup>
 
 <lootgroup name="groupQuestMedical">
@@ -34,9 +34,9 @@
 <append xpath="/lootcontainers">
 
 <lootgroup name="RobelotoQuests">
-	<item name="KillTheMummy" count="1" prob="0.3"/>
-	<item name="KillSomeGhosts" count="1" prob="0.3"/>
-	<item name="VeteranKiller" count="1" prob="0.06"/>	
+<item name="KillTheMummy" count="1" prob="0.5"/>
+<item name="KillSomeGhosts" count="1" prob="0.5"/>
+<item name="VeteranKiller" count="1" prob="0.08"/>	
 </lootgroup>
 </append>
 
