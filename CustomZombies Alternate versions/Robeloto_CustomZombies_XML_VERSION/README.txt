@@ -1,3 +1,10 @@
+2022-01-11
+Version 2.84
+• There is 2 different freezers, one easy and one medium difficulty.
+• Freezer buff is only 5 seconds now instead of 6
+• New zombie added called Mini. It is tiny. Not yet added to entitygroups.
+• Entitygroups, reworked entire entitygroups. Added new gamestages and groups. Harder zombies will appear at higher gamestages. At start you will only encounter easy ones. (some animals excluded from this)
+
 2022-01-08
 Version 2.83
 • Anesthesia has a new look
