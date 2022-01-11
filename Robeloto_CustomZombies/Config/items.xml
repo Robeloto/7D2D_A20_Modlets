@@ -1147,7 +1147,7 @@
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.70"/>
-		<property name="DamageEntity" value="8"/>
+		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="buffInjuryStunned01"/>		
 	</property>
@@ -1164,7 +1164,7 @@
 		<property name="Magazine_items" value="ZombieRadRobotVomitProjectile"/>
 		<property name="Sound_warning" value="hulkvomitwarning"/>
 		<property name="Sound_start" value="hulkvomitattack"/>
-		<property name="Buff" value="buffInfectionCatch"/>
+		<property name="Buff" value="buffInjuryKnockdown01"/>
 	</property>
 		<effect_group name="meleeHandZombieRadRobot" tiered="false">	
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -1175,7 +1175,7 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="90"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="30"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.09" tags="buffInfectionCatch"/>	
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.2" tags="buffInjuryKnockdown01"/>
 	</effect_group>
 </item>	
 

@@ -833,7 +833,7 @@
 	<property name="SoundHurt" value="rrpain"/>
 	<property name="SoundDeath" value="rrdeath"/>
 	<property name="SoundSense" value="rrsense"/>
-	<property name="SoundFootstepModifier" value=""/>	
+	<property name="SoundFootstepModifier" value="stepmetal"/>	
 	<property name="WalkType" value="1"/>
 	<property name="StompsSpikes" value="true"/>		
 	<property name="Mass" value="1500"/>
@@ -841,15 +841,14 @@
 	<property name="MoveSpeedAggro" value="0.03, 0.09"/>	
 	<property name="HandItem" value="meleeHandZombieRadRobot"/>
 	<property name="JumpMaxDistance" value="9, 18"/>
-	<property name="ExperienceGain" value="4555"/> 
-	<property name="LootDropProb" value=".25"/>		
+	<property name="ExperienceGain" value="2000"/> 
+	<property name="LootDropProb" value=".15"/>		
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
-		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="base_set" value="300"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-		<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="54"/>		
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="52"/>		
 	</effect_group>
 </entity_class>	
 
