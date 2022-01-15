@@ -574,6 +574,69 @@
   <HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
 		</SoundDataNode>
+		
+<SoundDataNode name="mmalert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyalert1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyalert2"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyalert3"/>	
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
+<SoundDataNode name="mmsense"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummysense1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummysense2"/>
+	<Channel name="Mouth"/>
+	<Priority name="5"/>
+	<maxVoicesPerEntity value="1"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
+<SoundDataNode name="mmpain"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummypain1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummypain2"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummypain3"/>	
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
+<SoundDataNode name="mmattack"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyattack1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyattack2"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<maxVoicesPerEntity value="1"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
+<SoundDataNode name="mmroam"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyroam1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?minimummyroam2"/>
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="1"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
 
 <SoundDataNode name="mummyalert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
 	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>

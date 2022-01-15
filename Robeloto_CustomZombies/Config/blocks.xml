@@ -1,5 +1,4 @@
 <configs>
-  <!-- the buff is now set to my custom buffShocked2, as the original sound is removed cause it looped the electric zombie -->
 <set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Buff']/@value">buffShocked2</set>
 <set xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Buff']/@value">buffShocked2</set>
 <set xpath="/blocks/block[@name='electricfencepost']/property[@name='Buff']/@value">buffShocked2</set>
