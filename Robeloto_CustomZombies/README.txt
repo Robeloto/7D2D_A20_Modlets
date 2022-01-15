@@ -1,10 +1,27 @@
 2022-01-12
 Version 2.85
 
-• Entitygroups has been updated. Even more groups added.
-• Radrobot has 2 versions now. Easy and Medium.
-• Mummy has 2 versions now. One easy that is smaller and one medium that is taller.
-• Mini has been added to the groups
+Easy zombies that you will encounter right from the start with a high chance: BurningMan, Freezer, MoePuker, MiniMummy, Radrobot1,  and Spectre.
+I will show video in a few days with an updated overview on all the zombies.
+
+• Spectre zombie is finally back! He has only 200hp and does not hit hard. He looks cool. 
+• The Mini zombie has been added to the groups
+• Radrobot has 2 versions now. Easy and Medium. RadRobot1 is the easy one.
+• Exploder zombie has been nerfed yet again. Reduced speed, physical resist and explosion blockdamage.
+• Entitygroups has been updated. Even more groups added. Added more chance to encounter harder zeds from level 200 and above.
+• Moepuker has less hp, does less damage/block damage and has decreased buffchances.
+• The easy Freezer has less hp, the harder freeze zombie 'Freeza' has more experience.
+• Mummy has 2 versions now. One easy that is smaller and one medium that is taller. The easy one has a lighter voice.
+• Predator buff chance lowered.About 10-15 %
+• RPG buff chance lowered with about 25%. His projectile is on 5 radius entities/blocks instead of 3 now and explosion is increased from 40 to 60.
+• Sanguis buff chance lowered with about 10% from both melee and vomit
+• Shadow buff decreased from 90% buffchance to 70%.
+• Shocker buffchance melee decreased from 65% to 30%. Vomit from 70 to 57.
+
+Nerfthemall
+• You can craft workbench, forge, cementmixer etc at Stage 3 now. Before I had it at 4 and think it's a bit too much. (original game is 2)
+• You will unlock Iron Pickaxe at Miner69r stage 3 instead of 1. (original game is 1)
+
 
 2022-01-11
 Version 2.84
