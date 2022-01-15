@@ -1,3 +1,10 @@
+2022-01-13
+Version 2.85
+• Entitygroups has been updated. Even more groups added.
+• Radrobot has 2 versions now. Easy and Medium.
+• Mummy has 2 versions now. One easy that is smaller and one medium that is taller.
+• Mini has been added to the groups
+
 2022-01-11
 Version 2.84
 • There is 2 different freezers, one easy and one medium difficulty.
