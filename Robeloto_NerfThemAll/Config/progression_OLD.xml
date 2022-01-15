@@ -19,6 +19,7 @@
 <!-- You now need to have Advanced Engineering level 3 to be able to craft a forge, workbench, cementmixer and various traps -->
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='1,5']/@level">2,5</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@level">3,5</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@level">4,5</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank1LongDesc']/@long_desc_key">In theory, you only know half of the basics. You need more skill to start crafting something.</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank2LongDesc']/@long_desc_key">Now we are seeing some progress. But you still need more skill to start crafting.</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank3LongDesc']/@long_desc_key">You are getting good. Next time you will be able to craft something.</set>
@@ -29,8 +30,6 @@
 <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank1LongDesc']/@long_desc_key">In theory, you don't know much. More skill is needed to craft something useful.</set>
 <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank2LongDesc']/@long_desc_key">Now we are getting better, but you can't craft something useful yet.</set>
 <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank3LongDesc']/@long_desc_key">Finally you can craft salvage tools. Good job!</set>
-<!-- Unlock ClawHammer,IronFireaxe,IronPickaxe,IronShovel at PerkMiner69r 3 instead of original: 1 -->
-<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@level">3,5</set>
 <!-- Some recipes are now ranked higher in master chef -->
 <set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='1,5']/@tags">,foodBaconAndEggs,foodBakedPotato,foodCornBread,foodCornOnTheCob</set>
 <set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,foodBoiledMeat,foodGrilledMeat,drinkJarRedTea,drinkJarCoffee,drinkJarGoldenRodTea</set>
