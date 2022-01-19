@@ -3,8 +3,5 @@
 <remove xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@id='quest_whiteRiverCitizen1']" />
 <remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
 <!-- The Trader cannot show you the way to the next trader  -->
-<remove xpath="/quests/quest[@id='tier2_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier3_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier4_nexttrader']" />
-<remove xpath="/quests/quest[@id='tier5_nexttrader']" />
+
 </configs>	
