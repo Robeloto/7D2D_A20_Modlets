@@ -87,7 +87,7 @@
 <!-- * LESS STUFF IN LOOT * -->
 
 <!-- Nerf the Buried Treasure Loot - original is 3000, 8000 -->
-<set xpath="/lootcontainers/lootgroup[@name='groupBuriedLootStashTreasure']/item[@name='casinoCoin']/@count">1200,4000</set> 
+<set xpath="/lootcontainers/lootgroup[@name='groupBuriedLootStashTreasure']/item[@name='casinoCoin']/@count">1500,4000</set> 
 <!-- Less water from suitcase / luggage -->
 <set xpath="/lootcontainers/lootgroup[@name='groupLuggage02']/item[@group='groupDrinksCommon']/@loot_prob_template">low</set>
 <!-- Less drinks from this group -->
