@@ -1,0 +1,43 @@
+<configs>
+<!-- Club Nerf -->
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">39</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='70']/@value">53</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='80']/@value">63</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='90']/@value">72</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='100']/@value">83</set> 
+<!-- Sledge Hammers nerf, this nerf is really needed -->
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='15']/@value">11</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='30']/@value">22</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='45']/@value">35</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">48</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='75']/@value">60</set>
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='20']/@value">14</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='35']/@value">28</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='50']/@value">40</set>  
+<!-- Stun baton nerf -->
+<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='EntityDamage']/@value">.09,.4</set> <!-- original .1,.5 -->
+<!-- You now need to have Advanced Engineering level 3 to be able to craft a forge, workbench, cementmixer and various traps -->
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='1,5']/@level">2,5</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@level">3,5</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank1LongDesc']/@long_desc_key">In theory, you only know half of the basics. You need more skill to start crafting something.</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank2LongDesc']/@long_desc_key">You are getting good. Next time you will be able to craft something..</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank3LongDesc']/@long_desc_key">You are now skilled enough to craft various traps, forges, workbenches and cementmixers.</set>
+<!-- Unlock wrench at Salvage Operations level 3 instead of original: 1 -->
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@level">3,5</set>
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank1LongDesc']/@long_desc_key">In theory, you don't know much. More skill is needed to craft something useful.</set>
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank2LongDesc']/@long_desc_key">Now we are getting better, but you can't craft something useful yet.</set>
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank3LongDesc']/@long_desc_key">Finally you can craft salvage tools. Good job!</set>
+<!-- Unlock ClawHammer,IronFireaxe,IronPickaxe,IronShovel at PerkMiner69r 3 instead of original: 1 -->
+<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@level">3,5</set>
+<!-- Some recipes are now ranked higher in master chef -->
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='1,5']/@tags">,foodBaconAndEggs,foodBakedPotato,foodCornBread,foodCornOnTheCob</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,foodBoiledMeat,foodGrilledMeat,drinkJarRedTea,drinkJarCoffee,drinkJarGoldenRodTea</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='3,5']/@tags">,foodSteakAndPotato,foodBlueberryPie,foodMeatStew,foodVegetableStew,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,foodShamChowder,foodHoboStew,foodFishTacos,drinkYuccaJuiceSmoothie,foodChiliDog,drinkJarBeer</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='5,5']/@tags">,foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast,drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/effect_description[@long_desc_key='perkMasterChefRank1LongDesc']/@long_desc_key">Cooking is not your thing but you know some basics. Unlocks basic recipes such as bacon and eggs, baked potatoes and cornbread. Cook 10% faster</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/effect_description[@long_desc_key='perkMasterChefRank2LongDesc']/@long_desc_key">Cooking is still not your thing but you know all the basics now. Unlocks Boiled and Grilled meat, Coffee and Teas. Cook 20% faster</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/effect_description[@long_desc_key='perkMasterChefRank3LongDesc']/@long_desc_key">Just like grandma used to make, tasty hearty meals that fill you up for days.Craft steak and potatoes, meat stew, vegetable stew, blueberry pie and several pumpkin dishes. Cook 30% faster.</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/effect_description[@long_desc_key='perkMasterChefRank4LongDesc']/@long_desc_key">Cook for the whole family by making Sham Chowder, Hobo Stew, FishTacos, Chilidog, smoothies and beer. Cook 40% faster. Use 20% less of a recipe's main ingredients</set>
+<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/effect_description[@long_desc_key='perkMasterChefRank5LongDesc']/@long_desc_key">Cook for an army by making GumboStew, ShepardsPie, Spaghetti, TunafishGravyToast and Grandpa's ass kicking recipes.Learn grandpa's secret recipes that boost stats and attributes! Cook 50% faster.</set>
+</configs>

@@ -4,10 +4,6 @@
 <set xpath="/worldgeneration/biomes/biome[@name='snow']/decorations/decoration[contains(@name, 'vein')]/@prob">0.0002</set>
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
-<!-- Less grass -->
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[contains(@blockname, 'TallGrass')]/@prob">0.1</set>
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'TallGrass')]/@prob">0.01</set>
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'ShortGrass')]/@prob">0.1</set>
 <set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
 <set xpath="/worldgeneration/biomes/biome[@name='desert']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
 <set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
@@ -16,6 +12,10 @@
 <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[contains(@name, 'vein')]/@prob">0.0006</set>
 <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
 <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/decorations/decoration[contains(@name, 'vein')]/@prob">0</set>
+<!-- Less grass -->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[contains(@blockname, 'TallGrass')]/@prob">0.1</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'TallGrass')]/@prob">0.01</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'ShortGrass')]/@prob">0.1</set>
 <!-- Less Chrystantemum, Cotton and birdnests -->
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'plantedC')]/@prob">0.001</set>
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[contains(@blockname, 'Birdnest')]/@prob">0.0006</set>
