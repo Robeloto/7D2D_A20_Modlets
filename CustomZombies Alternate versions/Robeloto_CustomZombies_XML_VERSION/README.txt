@@ -9,12 +9,13 @@ Version 2.90 (Big update)
 • Atrocity has increased health. (2000)
 • Aquazed has increased health. (825)
 
-• Burninggman has increased health. (295)
+• Burningman has increased health. (295)
 • Blazingman has +12 physicalresist and increased health. (777)
 
 • Candy does 5 points more in blockdamage.
 • Candy has +5 physicalresist and more health. (666)
 • CopterCorpse vomit magazine reduced with 6 bullets. Vomit entitydamage reduced with 4 points and buffInjuryStunnedX chance reduced from 80% chance to 33%.
+• Freezer is white now instead of blue
 
 • Fireboss has more health. (1234)
 • FireElf has +5 physicalresist.
@@ -27,7 +28,7 @@ Version 2.90 (Big update)
 • MoePukers vomit increased with 2 points.
 
 • Predator has more health. (1111)
-• RadRobot1 does not puke anymore. 
+• RadRobot1 does not puke anymore. New look!
 • RadRobot has new puke and puke warning sounds!
 • RadRobots vomit is now red laserbeams. Vomit entitydamage decreased with 9 points and vomit blockdamage increased with over 100 points. Blockdamage increased with 30 points.
 
