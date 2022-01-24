@@ -4,37 +4,37 @@
 		<archetype name="Freezer" male="true" hair_color="249,130,2" eye_color="255,255,255" skin_color="94,199,226" type="Player" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
-				<texture name="male_head_zombie" color="skin"/>
+				<texture name="male_head_zombie" color="255,255,255"/>
 				<texture name="male_eyebrow_curve" color="0,134,168"/>
 			</part>	
 			<part slot="head" layer="outer" mesh="female_hair_long">
-				<texture name="male_shaggy_hair" color="skin"/>
+				<texture name="male_shaggy_hair" color="255,255,255"/>
 			</part>	
 			<part slot="face" layer="base" mesh="male_shaggy_beard">
-				<texture name="male_shaggy_hair" color="skin"/>
+				<texture name="male_shaggy_hair" color="255,255,255"/>
 			</part>			
 			<part slot="eyes" layer="base" mesh="male_base_eyes">
 				<texture name="unisex_eye_shaded" color="255,255,255"/>
 				<texture name="unisex_iris" color="eye"/>
 			</part>
 			<part slot="hands" layer="base" mesh="male_base_hands">
-				<texture name="male_hands" color="skin"/>
+				<texture name="male_hands" color="255,255,255"/>
 			</part>
 			<part slot="chest" layer="outer" mesh="unisex_ghillie_suit_shirt">
-				<texture name="unisex_ghillie_suit" color="skin"/>		
+				<texture name="unisex_ghillie_suit" color="255,255,255"/>		
 			</part>
 			<part slot="chest" layer="base" mesh="male_base_chest">
-				<texture name="male_torso" color="skin"/>
-				<texture name="male_torso_wound" color="skin"/>				
+				<texture name="male_torso" color="255,255,255"/>
+				<texture name="male_torso_wound" color="255,255,255"/>				
 			</part>
 			<part slot="legs" layer="base" mesh="male_base_legs">	
-				<texture name="male_legs" color="skin"/>
+				<texture name="male_legs" color="255,255,255"/>
 			</part>
 			<part slot="legs" layer="outer" mesh="ghillie_suit_pants">
-				<texture name="unisex_ghillie_suit" color="skin"/>
+				<texture name="unisex_ghillie_suit" color="255,255,255"/>
 			</part>					
 			<part slot="feet" layer="base" mesh="male_base_feet">
-				<texture name="male_feet" color="skin"/>
+				<texture name="male_feet" color="255,255,255"/>
 				</part>
 		</base_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
