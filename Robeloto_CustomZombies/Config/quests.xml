@@ -1,3 +1,4 @@
+
 <configs>
 
 <!-- if you have a char playing a quest from an older version, this will reset your char to 0 -->
@@ -14,20 +15,19 @@
 		<property name="repeatable" value="true"/>	
 		<property name="category_key" value="challenge"/>
 		<property name="offer_key" value="rchallenge_VeteranKillerP1_offer"/>
-		<property name="completion_key" value="challenge_VeteranKillerP1_completion" />		
+		<property name="completion_key" value="rchallenge_VeteranKillerP1_completion"/>		
 		<property name="difficulty" value="insane"/>
 						
         <objective type="ZombieKill" id="zombieAnesthesia" value="1"/>
         <objective type="ZombieKill" id="zombieAquaZed" value="1"/>
         <objective type="ZombieKill" id="zombieFireElf" value="1"/>
-        <objective type="ZombieKill" id="zombieFreezer" value="1"/>    
-        <objective type="ZombieKill" id="zombieIronMan" value="1"/> 
-        <objective type="ZombieKill" id="zombieMummy" value="1"/> 		
+        <objective type="ZombieKill" id="zombieFreeza" value="1"/>		
+        <objective type="ZombieKill" id="zombieRadRobot" value="1"/>    
+        <objective type="ZombieKill" id="zombieIronMan" value="1"/> 	
         <objective type="ZombieKill" id="zombieSanguis" value="1"/>
-        <objective type="ZombieKill" id="zombieShocker" value="1"/>   
-		<objective type="ZombieKill" id="zombieTranslucent" value="1"/>   		
+        <objective type="ZombieKill" id="zombieShocker" value="1"/>   		
         
-		<reward type="Exp" value="5000"/>		
+		<reward type="Exp" value="6500"/>		
 		<reward type="Quest" id="rchallenge_VeteranKillerP2"/>
 	</quest>
 	
@@ -39,15 +39,17 @@
 		<property name="repeatable" value="true"/>	
 		<property name="category_key" value="challenge"/>
 		<property name="offer_key" value="rchallenge_VeteranKillerP2_offer"/>
-		<property name="completion_key" value="challenge_VeteranKillerP2_completion" />		
+		<property name="completion_key" value="rchallenge_VeteranKillerP2_completion" />		
 		<property name="difficulty" value="insane"/>
 		<property name="completiontype" value="TurnIn"/>
 				
-		<objective type="ZombieKill" id="zombieBlazingMan" value="1"/>	
+        <objective type="ZombieKill" id="zombieAtrocity" value="1"/>
+        <objective type="ZombieKill" id="zombieBlazingMan" value="1"/>		
 		<objective type="ZombieKill" id="zombieFireBoss" value="1"/>		
 		<objective type="ZombieKill" id="zombieGunner" value="1"/>
 		<objective type="ZombieKill" id="zombiePredator" value="1"/>	
-		<objective type="ZombieKill" id="zombieAtrocity" value="1"/>
+		<objective type="ZombieKill" id="zombieRPG" value="1"/> 		
+		<objective type="ZombieKill" id="zombieRunningMan" value="1"/>	
 		<objective type="ZombieKill" id="zombieShadow" value="1"/> 		        
    
 		<objective type="InteractWithNPC">
@@ -57,8 +59,9 @@
 		<reward type="SkillPoints" value="2" />
 		<reward type="Item" id="casinoCoin" value="25000"/>
 		<reward type="Item" id="armorSuperSetSchematic" value="1"/>
-		<reward type="Exp" value="12000"/>
+		<reward type="Exp" value="14000"/>
 	</quest>
+	
 	
 <quest id="rchallenge_KillTheMummy">
 		<property name="name_key" value="Kill The Mummy!"/>
@@ -68,19 +71,44 @@
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="offer_key" value="rchallenge_KillTheMummy_offer"/>
-		<property name="completion_key" value="challenge_KillTheMummy_completion" />		
+		<property name="completion_key" value="rchallenge_KillTheMummy_completion" />		
 		<property name="difficulty" value="insane"/>
 		<property name="completiontype" value="TurnIn"/>		
 
-		<objective type="ZombieKill" id="zombieMummy" value="1" phase="1"/>
+		<objective type="ZombieKill" id="zombieMummy" value="6" phase="1"/>
 		
 		<objective type="InteractWithNPC">
 			<property name="phase" value="2"/>
 		</objective>
 
-		<reward type="Exp" value="5000"/>
-		<reward type="Item" id="casinoCoin" value="2500"/>
-	    <reward type="Item" id="medicalPlasterCast" value="2"/>		
+		<reward type="Exp" value="8000"/>
+		<reward type="Item" id="casinoCoin" value="7500"/>
+		<reward type="LootItem" id="groupMedicalRare" ischosen="true" isfixed="true" value="2"/>
 	</quest>
+	
+<quest id="rchallenge_KillSomeGhosts">
+		<property name="name_key" value="Kill Some Ghosts!"/>
+		<property name="subtitle_key" value="Kill Some Ghosts!"/>
+		<property name="description_key" value="rchallenge_KillSomeGhosts_description"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="rchallenge_KillSomeGhosts_offer"/>
+		<property name="completion_key" value="rchallenge_KillSomeGhosts_completion" />		
+		<property name="difficulty" value="insane"/>
+		<property name="completiontype" value="TurnIn"/>		
+		
+		<objective type="ZombieKill" id="zombieSpectre" value="3" phase="1"/>
+		<objective type="ZombieKill" id="zombieTranslucent" value="2" phase="1"/>		
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		
+		<reward type="Exp" value="7000"/>
+		<reward type="Item" id="casinoCoin" value="7500"/>
+		<reward type="LootItem" id="groupQuestArmorT2" ischosen="true" isfixed="true" value="2"/>
+	</quest>
+	
 </append>
 </configs>

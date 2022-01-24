@@ -1,4 +1,47 @@
-2022-01-12
+2022-01-24
+Version 2.90 (Big update)
+
+• Quests changed and fixed. Tested and working!
+• Localization.txt updated to A20. All info and messages should work now!
+• Reduced change for Burning and DiamondPhoenix to show up at beginning. Still a very low chance.
+
+• Anesthesia has +5 physicalresist and increased health.(888)
+• Atrocity has increased health. (2000)
+• Aquazed has increased health. (825)
+
+• Burninggman has increased health. (295)
+• Blazingman has +12 physicalresist and increased health. (777)
+
+• Candy does 5 points more in blockdamage.
+• Candy has +5 physicalresist and more health. (666)
+• CopterCorpse vomit magazine reduced with 6 bullets. Vomit entitydamage reduced with 4 points and buffInjuryStunnedX chance reduced from 80% chance to 33%.
+
+• Fireboss has more health. (1234)
+• FireElf has +5 physicalresist.
+• Gunners BurstRoundCount decreased with 2 points.
+• HybridPanther has more health. (999)
+
+• Mini zombie has new sounds!
+• MiniMummy is a bit stronger. 3 more points in entitydamage and buffchances increased with about 10%.
+• Mummy is also a bit stronger. 3 more points in entitydamage and buffchances increased with about 10%.
+• MoePukers vomit increased with 2 points.
+
+• Predator has more health. (1111)
+• RadRobot1 does not puke anymore. 
+• RadRobot has new puke and puke warning sounds!
+• RadRobots vomit is now red laserbeams. Vomit entitydamage decreased with 9 points and vomit blockdamage increased with over 100 points. Blockdamage increased with 30 points.
+
+• RPGs vomit blockdamage increased with 30 points.
+• Sanguis vomit fixed(The particle was removed in A20). She now uses vomitRad particle. Melee entitydamage increased with 5 points and vomit damage increased with 2 points.
+• Sanguis has more health. (777)
+
+• Shadows melee entitydamage increased with 10 points. Melee blockdamage increased with 5 points and vomit blockdamage increased with 5 points.
+• Shadow has more health. (1099)
+• Shocker has +10 in physicalresist.
+• ShockerFeral has +10 in physicalresist and more health. (1000)
+
+
+2022-01-15
 Version 2.85
 
 Easy zombies that you will encounter right from the start with a high chance: BurningMan, Freezer, MoePuker, MiniMummy, Radrobot1,  and Spectre.
@@ -20,7 +63,10 @@ I will show video in a few days with an updated overview on all the zombies.
 
 Nerfthemall
 • You can craft workbench, forge, cementmixer etc at Stage 3 now. Before I had it at 4 and think it's a bit too much. (original game is 2)
-• You will unlock Iron Pickaxe at Miner69r stage 3 instead of 1. (original game is 1)
+• You will unlock Iron Pickaxe at Miner69r stage 3 instead of 1.
+• Less Grass in biomes
+More snow to craft water
+Less snow when digging
 
 
 2022-01-11
