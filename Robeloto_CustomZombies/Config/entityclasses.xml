@@ -905,7 +905,7 @@
 	<property name="SoundDeath" value="rrdeath"/>
 	<property name="SoundSense" value="rrsense"/>
 	<property name="SoundFootstepModifier" value="stepmetal"/>	
-	<property name="WalkType" value="1"/>
+	<property name="WalkType" value="7"/>
 	<property name="StompsSpikes" value="true"/>		
 	<property name="Mass" value="1500"/>
 	<property name="MoveSpeed" value="0.06"/>
