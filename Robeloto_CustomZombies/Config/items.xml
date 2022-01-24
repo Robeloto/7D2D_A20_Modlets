@@ -982,8 +982,7 @@
 </item>	
 
 <item name="firevomitSmallProjectile">
-	<property name="Meshfile" value="particleeffects/p_big_smoke"/> 
-	<!--<property name="Meshfile" value="particleeffects/p_torch_wall"/> -->
+	<property name="Meshfile" value="particleeffects/p_torch_wall"/> 
 	<property name="Material" value="Morganic" />
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
