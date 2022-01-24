@@ -858,6 +858,7 @@
 
 <entity_class name="zombieRadRobot1" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
+	<property name="ReplaceMaterial0" value="entities/furniture/materials/candelabra"/>	
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurnt.Prefab"/>
 	<property name="SizeScale" value="0.85"/>
 	<property name="SurfaceCategory" value="metal"/>		
@@ -868,7 +869,7 @@
 	<property name="SoundDeath" value="drone_shutdown"/>
 	<property name="SoundSense" value="drone_enemy_sense"/>
 	<property name="SoundFootstepModifier" value="stepmetal"/>	
-	<property name="WalkType" value="1"/>
+	<property name="WalkType" value="7"/>	
 	<property name="StompsSpikes" value="true"/>		
 	<property name="Mass" value="900"/>
 	<property name="MoveSpeed" value="0.06"/>

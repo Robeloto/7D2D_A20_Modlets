@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/archetypes">
 	
-		<archetype name="Freezer" male="true" hair_color="249,130,2" eye_color="255,255,255" skin_color="94,199,226" type="Player" stance="Like" voice_set="trader">
+		<archetype name="Freezer" male="true" hair_color="249,130,2" eye_color="255,255,255" skin_color="255,255,255" type="Player" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
 				<texture name="male_head_zombie" color="skin"/>
