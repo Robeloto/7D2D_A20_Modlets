@@ -3,6 +3,7 @@ Version 2.90 (Big update)
 
 • Quests changed and fixed. Tested and working!
 • Localization.txt updated to A20. All info and messages should work now!
+• Reduced change for Burning and DiamondPhoenix to show up at beginning. Still a very low chance.
 
 • Anesthesia has +5 physicalresist and increased health.(888)
 • Atrocity has increased health. (2000)
