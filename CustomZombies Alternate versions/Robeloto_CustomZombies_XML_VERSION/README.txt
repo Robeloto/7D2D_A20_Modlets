@@ -1,9 +1,72 @@
-2022-01-13
+2022-01-24
+Version 2.90 (Big update)
+
+• Quests changed and fixed. Tested and working!
+• Localization.txt updated to A20. All info and messages should work now!
+
+• Anesthesia has +5 physicalresist and increased health.(888)
+• Atrocity has increased health. (2000)
+• Aquazed has increased health. (825)
+
+• Burninggman has increased health. (295)
+• Blazingman has +12 physicalresist and increased health. (777)
+
+• Candy does 5 points more in blockdamage.
+• Candy has +5 physicalresist and more health. (666)
+• CopterCorpse vomit magazine reduced with 6 bullets. Vomit entitydamage reduced with 4 points and buffInjuryStunnedX chance reduced from 80% chance to 33%.
+
+• Fireboss has more health. (1234)
+• FireElf has +5 physicalresist.
+• Gunners BurstRoundCount decreased with 2 points.
+• HybridPanther has more health. (999)
+
+• Mini zombie has new sounds!
+• MiniMummy is a bit stronger. 3 more points in entitydamage and buffchances increased with about 10%.
+• Mummy is also a bit stronger. 3 more points in entitydamage and buffchances increased with about 10%.
+• MoePukers vomit increased with 2 points.
+
+• Predator has more health. (1111)
+• RadRobot1 does not puke anymore. 
+• RadRobot has new puke and puke warning sounds!
+• RadRobots vomit is now red laserbeams. Vomit entitydamage decreased with 9 points and vomit blockdamage increased with over 100 points. Blockdamage increased with 30 points.
+
+• RPGs vomit blockdamage increased with 30 points.
+• Sanguis vomit fixed(The particle was removed in A20). She now uses vomitRad particle. Melee entitydamage increased with 5 points and vomit damage increased with 2 points.
+• Sanguis has more health. (777)
+
+• Shadows melee entitydamage increased with 10 points. Melee blockdamage increased with 5 points and vomit blockdamage increased with 5 points.
+• Shadow has more health. (1099)
+• Shocker has +10 in physicalresist.
+• ShockerFeral has +10 in physicalresist and more health. (1000)
+
+
+2022-01-15
 Version 2.85
-• Entitygroups has been updated. Even more groups added.
-• Radrobot has 2 versions now. Easy and Medium.
-• Mummy has 2 versions now. One easy that is smaller and one medium that is taller.
-• Mini has been added to the groups
+
+Easy zombies that you will encounter right from the start with a high chance: BurningMan, Freezer, MoePuker, MiniMummy, Radrobot1,  and Spectre.
+I will show video in a few days with an updated overview on all the zombies.
+
+• Spectre zombie is finally back! He has only 200hp and does not hit hard. He looks cool. 
+• The Mini zombie has been added to the groups
+• Radrobot has 2 versions now. Easy and Medium. RadRobot1 is the easy one.
+• Exploder zombie has been nerfed yet again. Reduced speed, physical resist and explosion blockdamage.
+• Entitygroups has been updated. Even more groups added. Added more chance to encounter harder zeds from level 200 and above.
+• Moepuker has less hp, does less damage/block damage and has decreased buffchances.
+• The easy Freezer has less hp, the harder freeze zombie 'Freeza' has more experience.
+• Mummy has 2 versions now. One easy that is smaller and one medium that is taller. The easy one has a lighter voice.
+• Predator buff chance lowered.About 10-15 %
+• RPG buff chance lowered with about 25%. His projectile is on 5 radius entities/blocks instead of 3 now and explosion is increased from 40 to 60.
+• Sanguis buff chance lowered with about 10% from both melee and vomit
+• Shadow buff decreased from 90% buffchance to 70%.
+• Shocker buffchance melee decreased from 65% to 30%. Vomit from 70 to 57.
+
+Nerfthemall
+• You can craft workbench, forge, cementmixer etc at Stage 3 now. Before I had it at 4 and think it's a bit too much. (original game is 2)
+• You will unlock Iron Pickaxe at Miner69r stage 3 instead of 1.
+• Less Grass in biomes
+More snow to craft water
+Less snow when digging
+
 
 2022-01-11
 Version 2.84
@@ -11,6 +74,7 @@ Version 2.84
 • Freezer buff is only 5 seconds now instead of 6
 • New zombie added called Mini. It is tiny. Not yet added to entitygroups.
 • Entitygroups, reworked entire entitygroups. Added new gamestages and groups. Harder zombies will appear at higher gamestages. At start you will only encounter easy ones. (some animals excluded from this)
+
 
 2022-01-08
 Version 2.83
