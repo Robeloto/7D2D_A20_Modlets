@@ -387,6 +387,7 @@
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value="0.7"/> 
+		<property name="Range" value="2.4"/>		
 		<property name="DamageEntity" value="30"/>
 		<property name="DamageBlock" value="120"/>
 		<property name="Buff" value="buffBurningMolotov,buffInjuryBleeding,buffInfectionCatch"/>
@@ -454,7 +455,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.3"/>
+		<property name="Range" value="2.4"/>
 		<property name="DamageEntity" value="22"/>
 		<property name="DamageBlock" value="80"/>
 		<property name="Buff" value="buffInjuryStunned01"/>		
@@ -537,7 +538,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.1"/>
+		<property name="Range" value="2.4"/>
 		<property name="DamageEntity" value="24"/>
 		<property name="DamageBlock" value="110"/>
 		<property name="Buff" value="buffShocked2,buffInjuryStunned01"/>		
