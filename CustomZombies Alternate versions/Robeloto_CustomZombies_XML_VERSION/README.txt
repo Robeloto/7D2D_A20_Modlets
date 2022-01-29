@@ -1,4 +1,4 @@
-2022-01-26
+2022-01-29
 Version 2.91
 
 • zombieSpark - a smaller version of Shocker and has a different vomit. Much easier to handle than his big brother.
@@ -15,8 +15,7 @@ Version 2.91
 • Loot is updated. The custom quests is added to more lootgroups. Also added the custom medicine to more lootgroups.
 • Beaker is a bit easier to find.
 • Shadow, FeralShocker, Freeza and FireElf are now considered as bosses. Drops bossloot.
-
-
+• Fix for diamond and burning phoenix melee
 
 2022-01-24
 Version 2.90 (Big update)
