@@ -78,7 +78,7 @@
 	</buff>	
 	
 		<buff name="GiantScream" hidden="true">
-			<update_rate value="10"/>
+			<update_rate value="25"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffGiant"/>
@@ -97,7 +97,7 @@
 
 	
 		<buff name="buffAtroScream" hidden="true">
-			<update_rate value="15"/>
+			<update_rate value="16"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="zombiefemalescoutalert"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>
@@ -257,6 +257,19 @@
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.5,.3" duration="0,6"/>
 			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.10,0" duration="0,6">
 			</passive_effect>
+		</effect_group>
+	</buff>
+	
+			<buff name="buffzombieFatigue" name_key="StaminaLoss" description_key="buffzFatigueDesc" tooltip_key="buffzFatigueDesc" icon="ui_game_symbol_stunned" icon_color="75,188,0">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/><duration value="4"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#RunLoop" play_in_head="true"/>	
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Drunk"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="set" value="4"/>
 		</effect_group>
 	</buff>
 	

@@ -53,11 +53,43 @@
 </lootgroup>
 
 <lootgroup name="groupBuriedSuppliesT1_03">
-<item group="RobelotoQuests" loot_prob_template="low"/>
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="perkBooksT2">
 <item group="RobelotoQuests"/>
+</lootgroup>
+
+<lootgroup name="groupReading1">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackReg03">
+<item group="RobelotoQuests" loot_prob_template="verylow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong01">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong02">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong03">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss01">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss02">
+<item group="RobelotoQuests" loot_prob_template="medLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss03">
+<item group="RobelotoQuests" loot_prob_template="medLow"/>
 </lootgroup>
 </append>
 
