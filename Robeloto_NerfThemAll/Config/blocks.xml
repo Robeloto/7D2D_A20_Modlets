@@ -4,7 +4,7 @@
 <set xpath="/blocks/block[@name='terrSnow']/drop[@event='Harvest' and @name='resourceSnowBall']/@count">6</set> <!-- Original: 11 --> 
 <set xpath="/blocks/block[@name='terrSnow']/drop[@event='Fall' and @name='resourceSnowBall']/@count">12</set> <!-- Original: 22 --> 
 <!-- Much harder to farm, takes 400 minutes for crops to grow, increase/decrease if u like -->
-<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">400.0</set> <!-- Original: 63 --> 
+<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">250.0</set> <!-- Original: 63 --> 
 <!-- Don't let your fire burn too long, this will punish players with screamers and hordes -->
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">6</set>        <!-- original: 5    -->
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">6000</set>         <!-- original: 5000 -->

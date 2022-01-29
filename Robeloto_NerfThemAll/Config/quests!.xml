@@ -1,0 +1,64 @@
+<configs>
+<!-- Find the Trader without the starter quest -->
+<remove xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@id='quest_whiteRiverCitizen1']" />
+<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
+<!-- The Trader cannot show you the way to the next trader  -->
+<remove xpath="/quests/quest[@id='tier2_nexttrader']" />
+<remove xpath="/quests/quest[@id='tier3_nexttrader']" />
+<remove xpath="/quests/quest[@id='tier4_nexttrader']" />
+<remove xpath="/quests/quest[@id='tier5_nexttrader']" />
+<!--Tier 1 Quest Reward - Removing Bicycle, Wrench, Forge, etc -->
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestBicycle']" />
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestWrench']" />
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestForge']" />
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestFarmPlotsT1']" />
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestT0HeavyArmor']" />
+<remove xpath="/quests/quest[@id='quest_tier1complete']/reward[@id='groupQuestHelmetLightSchematic']" />
+<!-- Tier 1 Quest reward - Adding Bicycle parts   -->
+<append xpath="/quests/quest[@id='quest_tier1complete']">
+<reward type="LootItem" id="groupQuestBicycleParts" ischosen="true" value="2"/>
+</append>
+<!-- Tier 2 Quest reward - Removing Workbench and FarmplotsT2 -->
+<remove xpath="/quests/quest[@id='quest_tier2complete']/reward[@id='groupQuestWorkbench']" />
+<remove xpath="/quests/quest[@id='quest_tier2complete']/reward[@id='groupQuestFarmPlotsT2']" />
+<!-- Tier 2 Quest reward - Adding FarmplotsT1, HeavyArmor and HelmetLightSchematic  -->
+<append xpath="/quests/quest[@id='quest_tier2complete']">
+<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
+<reward type="LootItem" id="groupQuestT0HeavyArmor" ischosen="true" value="2"/>
+<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="2"/>
+</append>
+<!-- Tier 3 Quest reward - Removing FarmPlotsT3,DartTrap,GeneratorBank,Chemistrystation etc  -->
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestMotorcycleParts']" />
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestFarmPlotsT3']" />
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestDartTrap']" />
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestGeneratorBank']" />
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestChemistryStation']" />
+<remove xpath="/quests/quest[@id='quest_tier3complete']/reward[@id='groupQuestSecuritySystem']" />
+<!-- Tier 3 Quest reward - Adding FarmplotsT2,   -->
+<append xpath="/quests/quest[@id='quest_tier3complete']">
+<reward type="LootItem" id="groupQuestFarmPlotsT2" ischosen="true" value="3"/>
+</append>
+<!-- Tier 4 Quest reward - Removing 4x4Parts, BatteryBank, BladeTrap -->
+<remove xpath="/quests/quest[@id='quest_tier4complete']/reward[@id='groupQuest4x4Parts']" />
+<remove xpath="/quests/quest[@id='quest_tier4complete']/reward[@id='groupQuestBatteryBank']" />
+<remove xpath="/quests/quest[@id='quest_tier4complete']/reward[@id='groupQuestBladeTrap']" />
+<!-- Tier 4 Quest reward - Adding MCparts, FarmPlotsT3, DartTrap   -->
+<append xpath="/quests/quest[@id='quest_tier4complete']">
+<reward type="LootItem" id="groupQuestMotorcycleParts" ischosen="true" value="4"/>
+<reward type="LootItem" id="groupQuestFarmPlotsT3" ischosen="true" value="3"/>
+<reward type="LootItem" id="groupQuestDartTrap" ischosen="true" value="3"/>
+</append>
+<!-- Tier 5 Quest reward - Removing GyrocopterParts, SolarBank, Turrets, ForgedSteel and LegendaryFirearms  -->
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestGyrocopterParts']" />
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestSolarBank']" />
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestShotgunTurret']" />
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestAutoTurret']" />
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestForgedSteel']" />
+<remove xpath="/quests/quest[@id='quest_tier5complete']/reward[@id='groupQuestT3LegendaryFirearms']" />
+<!-- Tier 5 Quest reward - Adding 4x4 Parts, BladeTrap and GeneratorBank  -->
+<append xpath="/quests/quest[@id='quest_tier5complete']">
+<reward type="LootItem" id="groupQuest4x4Parts" ischosen="true" value="5"/>
+<reward type="LootItem" id="groupQuestBladeTrap" ischosen="true" value="4"/>
+<reward type="LootItem" id="groupQuestGeneratorBank" ischosen="true" value="4"/>
+</append>
+</configs>	
