@@ -1,3 +1,24 @@
+2022-01-26
+Version 2.91
+
+• zombieSpark - a smaller version of Shocker and has a different vomit. Much easier to handle than his big brother.
+• zombieFatigue - Doesn't hit hard. But her hits will drain your stamina. She also pukes. She is not that hard, but can be very dangerous with combo of other zombies around her.
+• These 2 zombies is added to all entitygroups and at the beginning of all gamestages. 
+• zombieFatiguebuff is added to localization.
+• Coptercorpse shadow fixed. No vulture shadow anymore.
+• Firesnake now only gives 40 raw meat instead of 80. 
+• Anaconda has 777 health now instead of 888.
+• Blazingmans vomit is a bit more dangerous now.
+• Fireboss vomit has also increased block and entitydamage.
+• Lowered the health and physicalresist on some zombies. 
+• Buffed up some zombies health - mostly bosses
+• Increased exp and loot prob on the harder zombies
+• Decreased exp and loot prob on the easier ones.
+• Loot is updated. The custom quests is added to more lootgroups. Also added the custom medicine to more lootgroups.
+• Beaker is a bit easier to find.
+• Shadow, FeralShocker, Freeza and FireElf are now considered as bosses. Drops bossloot.
+
+
 2022-01-24
 Version 2.90 (Big update)
 
@@ -9,7 +30,7 @@ Version 2.90 (Big update)
 • Atrocity has increased health. (2000)
 • Aquazed has increased health. (825)
 
-• Burninggman has increased health. (295)
+• Burningman has increased health. (295)
 • Blazingman has +12 physicalresist and increased health. (777)
 
 • Candy does 5 points more in blockdamage.

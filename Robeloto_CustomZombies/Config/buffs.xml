@@ -97,7 +97,7 @@
 
 	
 		<buff name="buffAtroScream" hidden="true">
-			<update_rate value="15"/>
+			<update_rate value="16"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="Atrobuffscream"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>
@@ -275,6 +275,19 @@
 		</effect_group>
 	</buff>
 	
+		<buff name="buffzombieFatigue" name_key="StaminaLoss" description_key="buffzFatigueDesc" tooltip_key="buffzFatigueDesc" icon="ui_game_symbol_stunned" icon_color="75,188,0">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/><duration value="4"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#RunLoop" play_in_head="true"/>	
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Drunk"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="set" value="4"/>
+		</effect_group>
+	</buff>
+		
 		<buff name="buffDrowning04" name_key="buffDrowning03Name" description_key="buffDrowning03Desc" tooltip_key="buffDrowning03Desc" icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Suffocation"/>
 		<duration value="8"/>
