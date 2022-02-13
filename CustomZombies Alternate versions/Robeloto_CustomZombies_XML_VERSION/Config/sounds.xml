@@ -1,9 +1,21 @@
 <configs>
+<set xpath="/Sounds/SoundDataNode[@name='vulturewingflap']/MaxVoices/@value">0</set> <!-- removed the wingflap sound from custom zeds, such as Fly and Coptercorpse -->
+<set xpath="/Sounds/SoundDataNode[@name='electric_arc_lp']/MaxVoices/@value">0</set> <!-- removed the looping sound for the shocker zombie, it is now working as intended -->
+
 
 
 <append xpath="/Sounds">
-
-
+			
+<SoundDataNode name="vulturewingflapp"> <AudioSource name="Sounds/AudioSource_Wingflaps"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vulturewingflap1"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vulturewingflap2"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vulturewingflap3"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<maxVoicesPerEntity value="1"/>
+	<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
 <SoundDataNode name="zombieExploder"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
 	<AudioClip ClipName="Sounds/Enemies/Feral_Zombie/zombieferalalert1"/>
 	<AudioClip ClipName="Sounds/Enemies/Feral_Zombie/zombieferalalert2"/>
@@ -14,7 +26,11 @@
 	<HighestPitch name="0.85"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
 	</SoundDataNode>
-	</append>	
 
+<SoundDataNode name="shockerbuff"> <AudioSource name="Sounds/AudioSource_Impact_Large"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_arc_lp"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+</append>	
 
 </configs>

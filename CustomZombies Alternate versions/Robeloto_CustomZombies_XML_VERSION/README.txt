@@ -1,3 +1,54 @@
+2022-02-08
+Version 2.92 (Bigger update again)
+
+New zombies here.
+• KaboomPhoenix, has the old look of diamond phoenix, very big and only show up at higher gamestages. Shoots rockets.
+• Ghastly Phoenix. A spooky zombie that vomits smoke and might manipulate your sight
+• TheFlyingPlague. A flying demon zombie with no legs and 2 steelspears in his hands. He throws shock particles at you. 
+• Frostyball. Vomit snowballs. Flying robotic white ball.
+These zombies below uses no vomit.
+• Pale Zombie. A completely white zombie that is pretty common and easy. But his hits can KO you (10%) and has a 20% chance to make your sight go blurry for 6 seconds. 
+• ElectricFly. Can shock you. 20% chance
+• FireFly is back. Can turn you on fire. 20% chance
+• FireChicken, what a cute little chicken, but it is on fire. Often seen in burnt biome.
+• KumaKub, Bears have children and this one is cute.
+• HellKuma added. A firebear.
+• ThunderKuma added. An electric bear. 
+Reworks, appearance, balancing and fixes.
+• RunningMan can now stop several vehicles at once.
+• CopterCorpse fixed. Zombie did not sit in the gyrocopter seat.
+• Freezers vomitwarning did not work, cause somehow I had removed it. Probably when I was doing the XML version.
+• FireElfs vomit is now flaming arrows, buff changed to flamingarrow and decreased buffchance to 20%. Also Decreased magazine size.
+• GiantMutated is now black and shiny.
+• Diamond Phoenix has now an electrical appearance.
+• Mini apperance changed. Red transparent jelly like.
+• Reworked entitygroups again. More likely to see some harder special zombies at lower gamestages. (Before 100).
+Buffs
+• New buffs removable with Amoxillin. Will work with most of the buffs.
+• Decreased chances on buffs yet again and made them more balanced.
+• Translucent Buff fixed. Did not work before because of a typo.
+• GiantMutated can beat you unconsious.
+• Giant use the knockdown02 buff. And some zeds use knockdown01 and KO.
+• Atrocity debuffed. 1500 health now, and the buff when she screams are only every 60 seconds if she is close. Before it was too often.
+Other
+• Nerfed chance that a Screamer can spawn another Screamer. Before it could result in screamer could spawn with nonstop incoming hordes. Now it is only a 27% chance that a screamer will spawn another Screamer.
+• Nerfed Physical resistance on biker(-6), demolition(-7), soldier(-6) and worker(-8). Too powerful as radiated with those resistances imo.
+• Bears give increased experience
+• Get charred meat from fire animals, but get 0 meat from electrified ones.
+• Balanced the experience you get from my custom zombies.
+• Reduced zombie-healing just a bit.
+• Removed wingflap from my custom Flies, Frosty Ball and CopterCorpse, while the regular vultures maintain their wingflap sound.
+• Localization updated to the new buffs and info.
+• Painresist 1 on several of my customzombies, most of the hard ones.
+• Stompspikes set to true on several of my customzombies. Water and flaming zombies should not be affected by spikes.
+
+For XML version: 
+Shock sounds added from original game to shocker, spark and diamondphoenix.
+Buffshocked works and no looping sounds.
+Ak47 reload sounds for gunner, coptercorpse.
+Rocket launcher reload sounds for RPG.
+
+
 2022-01-29
 Version 2.91
 
@@ -8,6 +59,8 @@ Version 2.91
 • Coptercorpse shadow fixed. No vulture shadow anymore.
 • Firesnake now only gives 40 raw meat instead of 80. 
 • Anaconda has 777 health now instead of 888.
+• Blazingmans vomit is a bit more dangerous now.
+• Fireboss vomit has also increased block and entitydamage.
 • Lowered the health and physicalresist on some zombies. 
 • Buffed up some zombies health - mostly bosses
 • Increased exp and loot prob on the harder zombies
@@ -15,7 +68,6 @@ Version 2.91
 • Loot is updated. The custom quests is added to more lootgroups. Also added the custom medicine to more lootgroups.
 • Beaker is a bit easier to find.
 • Shadow, FeralShocker, Freeza and FireElf are now considered as bosses. Drops bossloot.
-• Fix for diamond and burning phoenix melee
 
 2022-01-24
 Version 2.90 (Big update)
@@ -28,7 +80,7 @@ Version 2.90 (Big update)
 • Atrocity has increased health. (2000)
 • Aquazed has increased health. (825)
 
-• Burninggman has increased health. (295)
+• Burningman has increased health. (295)
 • Blazingman has +12 physicalresist and increased health. (777)
 
 • Candy does 5 points more in blockdamage.

@@ -24,7 +24,7 @@
 	</effect_group>
 	</buff>
 	
-	<buff name="buffCandy" name_key="Candy" description_key="buffCandyDesc" tooltip_key="buffCandyDesc" icon="ui_game_symbol_run" icon_color="255,255,255">
+	<buff name="buffCandy" name_key="Candy" description_key="buffCandyDesc" tooltip_key="Candygirl slowed you down" icon="ui_game_symbol_run" icon_color="255,255,255">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="4"/>
 		<effect_group>		
@@ -36,14 +36,14 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" effect_name="Drunk"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
 			
-			<passive_effect name="RunSpeed" operation="perc_subtract" value=".5" duration="0,4"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value=".5" duration="0,4"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".5" duration="0,4"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value=".6" duration="0,4"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value=".6" duration="0,4"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".6" duration="0,4"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value=".2" duration="0,4"/>		
 		</effect_group>
 	</buff>
 	 
-	<buff name="buffChroma" name_key="Brightness" description_key="buffChromaDesc" tooltip_key="buffChromaDesc" icon="ui_game_symbol_stunned" icon_color="255,255,255">
+	<buff name="buffChroma" name_key="Brightness" description_key="buffChromaDesc" tooltip_key="" icon="ui_game_symbol_stunned" icon_color="255,255,255">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="6"/>
 		<effect_group>		
@@ -77,69 +77,69 @@
 		</effect_group>
 	</buff>	
 	
-		<buff name="GiantScream" hidden="true">
-			<update_rate value="25"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffGiant"/>
-			</effect_group>
-		</buff>
+	<buff name="GiantScream" hidden="true">
+		<update_rate value="60"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffGiant"/>
+		</effect_group>
+	</buff>
 
-		<buff name="buffGiant" hidden="true">
-			<stack_type value="replace"/>
-			<duration value="2"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn" play_in_head="true">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</triggered_effect>
-			</effect_group>
-		</buff>
+	<buff name="buffGiant" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn" play_in_head="true">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
 
 	
-		<buff name="buffAtroScream" hidden="true">
-			<update_rate value="16"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="zombiefemalescoutalert"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>
-			</effect_group>
-		</buff>
+	<buff name="buffAtroScream" hidden="true">
+		<update_rate value="60"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="zombiefemalescoutalert"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>
+		</effect_group>
+	</buff>
 
-		<buff name="buffAtro" hidden="true">
-			<stack_type value="replace"/>
-			<duration value="4"/>
-			<effect_group>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
+	<buff name="buffAtro" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="4"/>
+		<effect_group>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
+			<requirement name="EntityTagCompare" tags="player"/>
+			</passive_effect>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
 				<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value="1,.3" duration="0,5">
-					<requirement name="EntityTagCompare" tags="player"/>	
-				</passive_effect>					
-				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".4" fade="1" effect_name="Posterize"/>				
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".6" fade="1" effect_name="Radiation" />
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1.5" fade="1" effect_name="Drunk" />
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>				
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize" />	
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation" />				
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize" />	
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation" />	
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk" />
-				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="zombiefemalescoutalert" play_in_head="true">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="zombiefemalescoutalert" play_in_head="true">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</triggered_effect>
-			</effect_group>
-		</buff>
+			</passive_effect>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="1,.3" duration="0,5">
+				<requirement name="EntityTagCompare" tags="player"/>	
+			</passive_effect>					
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1,.3" duration="0,5">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</passive_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".4" fade="1" effect_name="Posterize"/>				
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".6" fade="1" effect_name="Radiation" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1.5" fade="1" effect_name="Drunk" />
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>				
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize" />	
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation" />				
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize" />	
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation" />	
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk" />
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="atrobuffscream" play_in_head="true">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="atrobuffscream2" play_in_head="true">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
 				
 	<buff name="buffNoiseAOE01" hidden="true">
 		<duration value=".3"/>
@@ -155,14 +155,12 @@
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="20" buff="buffNoiseAOE"/>
 		</effect_group>
 	</buff>
-	<buff name="buffNoiseAOE" name_key="" tooltip_key="Translucent have the ability to penalize you, if you used ranged weapons" icon="ui_game_symbol_muscle" icon_color="255,255,255" icon_blink="true">
+	<buff name="buffNoiseAOE" name_key="Ranged weapon penalizer" description_key="buffNoiseName" tooltip_key="This enemy has the ability to penalize you, if you used ranged weapons" icon="ui_game_symbol_muscle" icon_color="255,255,255" icon_blink="true">
 		<stack_type value="replace"/>
-		<duration value="2"/>
+		<duration value="6"/>
 		<update_rate value="1"/>
 			<effect_group>
-			<requirement name="EntityTagCompare" tags="player"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" fade="0" effect_name="Radiation"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation"/>			
+			<requirement name="EntityTagCompare" tags="player"/>	
 			<passive_effect name="EntityDamage" operation="perc_subtract" value="0.8">
 				<requirement name="HoldingItemHasTags" tags="ranged"/>
 			</passive_effect>
@@ -175,57 +173,78 @@
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.4">
 				<requirement name="HoldingItemHasTags" tags="melee"/>
 			</passive_effect>
-			<passive_effect name="RunSpeed" operation="perc_add" value="0.25">
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.15">
 				<requirement name="HoldingItemHasTags" tags="melee"/>
 			</passive_effect>
-			<passive_effect name="WalkSpeed" operation="perc_add" value="0.25">
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.15">
 				<requirement name="HoldingItemHasTags" tags="melee"/>
 			</passive_effect>
 		</effect_group>
 		</buff>
 	
-	<buff name="buffNoise" name_key="WhiteNoise" description_key="buffNoiseDesc" tooltip_key="buffNoiseDesc" icon="ui_game_symbol_stunned" icon_color="255,255,255">
+	<buff name="buffNoise" name_key="Speed reduced" description_key="buffNoiseDesc" tooltip_key="Translucent hit you and your muscles has lost strength" icon="ui_game_symbol_stunned" icon_color="255,255,255">
 		<damage_type value="disease"/>
-		<stack_type value="replace"/><duration value="30"/>
+		<stack_type value="replace"/><duration value="6"/>
 		<effect_group>		
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn_warning" play_in_head="true"/>
 			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="horde_spawn_warning" play_in_head="true"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="horde_spawn_warning" play_in_head="true"/>
 		</effect_group>			
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" effect_name="Radiation"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Radiation"/>		
-			
-			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3,.1" duration="0,30"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3,.1" duration="0,30"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.3,.1" duration="0,30"/>
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.3,.1" duration="0,30"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3,0" duration="0,30">
+		<effect_group>			
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3,.1" duration="0,6"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3,.1" duration="0,6"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.3,.1" duration="0,6"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.3,.1" duration="0,6"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.1,0" duration="0,6">
 			</passive_effect>			
 		</effect_group>
 	</buff>
 	
-	<buff name="buffDark" name_key="Blind" description_key="buffDarkDesc" tooltip_key="buffDarkDesc" icon="ui_game_symbol_stunned" icon_color="255,255,255">
+	<buff name="buffDark" name_key="Blind" description_key="buffDarkDesc" tooltip_key="" icon="ui_game_symbol_stunned" icon_color="255,255,255">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="8"/>
 		<effect_group>		
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn_warning" play_in_head="true"/>
-			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="horde_spawn_warning" play_in_head="true"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="horde_spawn_warning" play_in_head="true"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="shadowbuff" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="shadowbuff" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="shadowbuff" play_in_head="true"/>		
 		</effect_group>			
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" effect_name="FadeToBlack"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="FadeToBlack"/>
 		</effect_group>
 	</buff>
+	
+	<buff name="buffPale" name_key="Blurry" description_key="buffPaleDesc" tooltip_key="" icon="ui_game_symbol_stunned" icon_color="255,255,255">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/>
+		<duration value="6"/>		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Blur"/>		
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Blur"/>		
+		</effect_group>
+	</buff>
 
-	<buff name="buffIce" name_key="Freezed" description_key="buffIceDesc" tooltip_key="buffIceDesc" icon="ui_game_symbol_stunned" icon_color="72,0,254" icon_blink="true">
+	<buff name="buffFoggy" name_key="Foggy" description_key="buffFoggyDesc" tooltip_key="buffFoggyDesc" icon="ui_game_symbol_stunned" icon_color="255,255,255">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/>
+		<duration value="12"/>		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Infected"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Greyscale"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Infected"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Blur"/>		
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Greyscale"/>					
+		</effect_group>
+	</buff>
+	
+	<buff name="buffIce" name_key="Freezed" description_key="buffIceDesc" tooltip_key="You have been freezed" icon="ui_game_symbol_stunned" icon_color="72,0,254" icon_blink="true">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="5"/>
 		<effect_group>		
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="horde_spawn_warning" play_in_head="true"/>		
-			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="horde_spawn_warning" play_in_head="true"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="horde_spawn_warning" play_in_head="true"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="freezerbuff" play_in_head="true"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" sound="freezerbuff" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="freezerbuff" play_in_head="true"/>	
 		</effect_group>	
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffBlackStrapCoffee"/>			
@@ -242,7 +261,7 @@
         </effect_group>	
 	</buff>
 	
-	<buff name="buffAnesthesia" name_key="Drugged" description_key="buffAnesthesiaDesc" tooltip_key="buffAnesthesiaDesc" icon="ui_game_symbol_stunned" icon_color="205,21,21">
+	<buff name="buffAnesthesia" name_key="Drugged" description_key="buffAnesthesiaDesc" tooltip_key="" icon="ui_game_symbol_stunned" icon_color="205,21,21">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="6"/>
 		<effect_group>
@@ -260,20 +279,7 @@
 		</effect_group>
 	</buff>
 	
-			<buff name="buffzombieFatigue" name_key="StaminaLoss" description_key="buffzFatigueDesc" tooltip_key="buffzFatigueDesc" icon="ui_game_symbol_stunned" icon_color="75,188,0">
-		<damage_type value="disease"/>
-		<stack_type value="replace"/><duration value="4"/>
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#RunLoop" play_in_head="true"/>	
-		</effect_group>
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Drunk"/>			
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="set" value="4"/>
-		</effect_group>
-	</buff>
-	
-		<buff name="buffSanguis" name_key="StaminaLoss_BadSight" description_key="buffSanguisDesc" tooltip_key="buffSanguisDesc" icon="ui_game_symbol_stunned" icon_color="75,188,0">
+		<buff name="buffSanguis" name_key="StaminaLoss_BadSight" description_key="buffSanguisDesc" tooltip_key="" icon="ui_game_symbol_stunned" icon_color="75,188,0">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="9"/>
 		<effect_group>
@@ -288,7 +294,20 @@
 		</effect_group>
 	</buff>
 	
-		<buff name="buffDrowning04" name_key="buffDrowning03Name" description_key="buffDrowning03Desc" tooltip_key="buffDrowning03Desc" icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
+		<buff name="buffzombieFatigue" name_key="StaminaLoss" description_key="buffzFatigueDesc" tooltip_key="The fatigue zombie sucked all the energy of you" icon="ui_game_symbol_stunned" icon_color="75,188,0">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/><duration value="4"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#RunLoop" play_in_head="true"/>	
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Drunk"/>			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="set" value="4"/>
+		</effect_group>
+	</buff>
+		
+		<buff name="buffDrowning04" name_key="buffDrowning03Name" description_key="buffDrowning03Desc" tooltip_key="" icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Suffocation"/>
 		<duration value="8"/>
 		<effect_group>
@@ -308,7 +327,7 @@
 			</effect_group>				
 	 </buff>
 	
-	<buff name="buffIllPneumonia01" name_key="Pneumonia" description_key="buffIllPneumonia01Desc" tooltip_key="buffIllPneumonia01Desc" icon="ui_game_symbol_infection" icon_color="72,0,254" icon_blink="true">
+	<buff name="buffIllPneumonia01" name_key="Pneumonia" description_key="buffIllPneumonia01Desc" tooltip_key="" icon="ui_game_symbol_infection" icon_color="72,0,254" icon_blink="true">
 		<damage_type value="Disease"/>
 		<stack_type value="ignore"/>
 		<duration value="250"/>
@@ -386,25 +405,34 @@
 		</effect_group>
 	</buff>
 	
+
 	<buff name="buffRunningMan" hidden="true">
-			<update_rate value="10"/>
+			<update_rate value="8"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="20" buff="buffStopVehicle"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="30" buff="buffStopVehicle"/>
 			</effect_group>
 		</buff>
 
 
 	<buff name ="buffStopVehicle" tooltip_key="Running Man have the ability to manipulate the engine" icon="ui_game_symbol_muscle" icon_color="255,255,255" icon_blink="true">
 		<stack_type value="replace"/>
-		<duration value="2"/>
+		<duration value="6"/>
 		<update_rate value="1"/>
 		<effect_group>
-			<requirement name="EntityHasMovementTag" tags="driving"/>
-			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="10"/>
+			<requirement name="EntityTagCompare" tags="player"/>				
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_subtract" value="3"/>			
+			<requirement name="EntityHasMovementTag" tags="driving"/>						
 		</effect_group>
 	</buff>
-
+	
 	<buff name="buffShocked2" description_key="buffShockedDesc" tooltip_key="buffShockedTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockedName" icon_color="255,0,0">
 		<damage_type value="electrical"/>
 		<stack_type value="replace"/>
@@ -426,13 +454,13 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ETrapHit" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Sounds/Electricity/ElectricFence/electric_arc_lp"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="Sounds/Electricity/ElectricFence/electric_arc_lp"/>
-			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="Sounds/Electricity/ElectricFence/electric_arc_lp"/>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="shockerbuff"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="shockerbuff"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="shockerbuff"/>
 		</effect_group>
 	</buff>	
 	
-	<buff name="buffInjuryOpenWound" name_key="Open Wound" description_key="buffInjuryOpenWoundDesc" tooltip_key="buffInjuryOpenWoundDesc" icon="ui_game_symbol_critical" icon_color="255,255,0" icon_blink="true">
+	<buff name="buffInjuryOpenWound" name_key="Open Wound" description_key="buffInjuryOpenWoundDesc" tooltip_key="" icon="ui_game_symbol_critical" icon_color="255,255,0" icon_blink="true">
 		<damage_type value="bloodloss"/>
 		<duration value="50"/>
 		<effect_group>
@@ -456,17 +484,38 @@
 		</effect_group>
 	</buff>
 	
+	<buff name="buffInjuryUnconsciousX" name_key="buffInjuryUnconsciousName" description_key="buffInjuryUnconsciousDesc" tooltip_key="You got knocked down" icon="ui_game_symbol_critical">
+		<damage_type value="knockout"/>
+		<stack_type value="replace"/>
+		<duration value="10"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+			<passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="9">
+				<requirement name="!EntityTagCompare" tags="trader"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+		</effect_group>
+	</buff>
+	
 	<!-- Prefabs -->
 	
-	<!-- Snufkins Archon zombie, all credits go to Snufkin -->
-	<buff name="Arch0nPrefab" hidden="true">
-			<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/vulture/vulture" local_offset="0,-.3,.25" local_rotation="-45,0,0" parent_transform="Spine3"/>
-			<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  parent_transform="Spine" transform_path="body_mesh"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".2,0,0" local_rotation="0,0,0" parent_transform="RightHand"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="-.2,0,0" local_rotation="0,0,0" parent_transform="LeftHand"/>
-			</effect_group>
-	</buff>	
+	<buff name="BallPrefab" hidden="true">
+		<effect_group>	
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="shapes/1m_sphere" local_offset=".40,-.25,.1" local_rotation="0,0,0" parent_transform="Head"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bicycle_coast_lp"/>					
+				<!--<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Mods/Sides/side_attachment_flashlightPrefab.prefab" local_offset="1,2,1" local_rotation="90,0,0"  parent_transform="Head" />	-->			
+		</effect_group>
+	</buff>		
 	
 	<buff name="CandyPrefab" hidden="true">
 			<effect_group>
@@ -480,9 +529,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Vehicles/Gyrocopter/gyrocopter_start"/>	
 			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="Vehicles/Gyrocopter/gyrocopter_med_lp"/>			
-			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_gunfire_ak47" local_offset="0,-.2,1.45" local_rotation="35,360,0" parent_transform="Head"/>					
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_gunfire_ak47" local_offset="0,-.3,1.3" local_rotation="35,360,0" parent_transform="Head"/>					
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?gyrocopter_Prefab.prefab" local_offset="0,-.28,-.6" local_rotation="35,360,0" parent_transform="Head"/>		
-			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/corpse3Prefab.prefab" local_offset="0,.1,1" local_rotation="35,360,0" parent_transform="Head"/>																					
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/corpse3Prefab.prefab" local_offset="0,.1,.45" local_rotation="35,360,0" parent_transform="Head"/>																					
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="entities/traps/autoturret/auto_turret" local_offset="0,-.37,.6" local_rotation="35,360,0" parent_transform="Head"/>	
 			<triggered_effect trigger="onSelfDied" action="AttachParticleEffectToEntity" particle="p_fire_small" local_offset="0,.01,-.45" local_rotation="35,360,0" parent_transform="Head"/>		
 			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="prefabs/prefabexplosion5" local_offset="0,-.53,-0.2" local_rotation="35,360,0" parent_transform="Head"/>		
@@ -500,6 +549,15 @@
 			</effect_group>
 	</buff>
 	
+	<buff name="FlyingZombiePrefab" hidden="true">
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".2,0,0" local_rotation="0,0,-95" parent_transform="RightHand"/> 
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.24,-.03,0" local_rotation="0,180,-95" parent_transform="LeftHand"/>
+			<!--<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/> -->					
+			<!--<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>-->								
+		</effect_group>
+	</buff>
+	
 	<buff name="GunnerPrefab" hidden="true">
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/m60/m60Prefab.prefab" local_offset=".17,.05,-.2" local_rotation="0,180,-101" parent_transform="RightHand"/>
@@ -514,9 +572,25 @@
 	
 	<buff name="IronPrefab" hidden="true">
 		<effect_group>	
-				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Tools/pickaxe_ironPrefab.prefab" local_offset=".1,.01,0" local_rotation="0,50,-75" parent_transform="RightHand"/>							
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Tools/pickaxe_ironPrefab.prefab" local_offset=".1,.01,0" local_rotation="0,50,-75" parent_transform="RightHand"/>						
 				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Tools/pickaxe_ironPrefab.prefab" local_offset="-.1,-.02,0" local_rotation="0,-90,-75" parent_transform="LeftHand"/>													
 		</effect_group>
+	</buff>
+
+	<buff name="VulturePrefab" hidden="true">	<!-- for vultures and flying creatures with wings -->	
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="vulturewingflapp"/>					
+		</effect_group>
+	</buff>
+
+		<!-- Snufkins Archon zombie, all credits go to Snufkin -->
+	<buff name="Arch0nPrefab" hidden="true">
+			<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,-.3,.25" local_rotation="-45,0,0" parent_transform="Spine3"/>
+			<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  parent_transform="Spine" transform_path="body_mesh"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".2,0,0" local_rotation="0,0,0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="-.2,0,0" local_rotation="0,0,0" parent_transform="LeftHand"/>
+			</effect_group>
 	</buff>	
 
 	<!-- Snufkins scarecrow zombie, all credits go to Snufkin -->
@@ -547,6 +621,13 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="-.15,-.12,0" local_rotation="0,0,0" parent_transform="LeftHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_torch_wall" />		
 			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_torch_wall" />				
+		</effect_group>
+	</buff>
+
+	<buff name="FireFlyParticle" hidden="true">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".0,0,0" local_rotation="0,0,0" parent_transform="Head"/>					
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_torch_wall" />			
 		</effect_group>
 	</buff>
 			

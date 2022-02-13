@@ -76,7 +76,7 @@
 			<gene name="midBrowUp_Down" value="0"/>
 		</expression>
 		<dna>
-			<gene name="height" value="1.5"/>
+			<gene name="height" value=".5"/>
 			<gene name="headSize" value="1"/>
 			<gene name="headWidth" value="1"/>
 			<gene name="handsSize" value="1"/>
