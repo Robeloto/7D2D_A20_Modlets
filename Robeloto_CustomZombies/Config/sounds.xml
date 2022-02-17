@@ -153,7 +153,7 @@
 		
 <!-- Atrocity -->
 <SoundDataNode name="atrobuffscream"> <AudioSource name="Sounds/AudioSource_Screamer"/>
-	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?atrobuffscream1"/>
+	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?atroalert2"/>
 	<Channel name="Mouth"/>
 	<Priority name="3"/>
   <maxVoicesPerEntity value="1"/>
@@ -346,19 +346,6 @@
   <HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
 		</SoundDataNode>
-
-<SoundDataNode name="gunnerpain"> <AudioSource name="Sounds/AudioSource_Sounds/AudioSource_Pain"/>
-	<Noise ID="2" noise="11" time="2" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?gunnerpain1"/>
-	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?gunnerpain2"/>
-	<AudioClip ClipName="#@modfolder:Resources/robelotozombiesounds.unity3d?gunnerpain3"/>	
-	<Channel name="Mouth"/>
-	<Priority name="1"/>
-	<maxVoicesPerEntity value="1"/>
-	<LowestPitch name="0.9"/>
-	<HighestPitch name="1.0"/>
-	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.8"/> 
-</SoundDataNode>
 
 <SoundDataNode name="gunnerattack"> <AudioSource name="Sounds/AudioSource_Creatures"/>
 	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>

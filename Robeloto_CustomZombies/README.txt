@@ -1,3 +1,27 @@
+2022-02-17
+V2.93
+XML version also updated.
+Entitygroups reworked. CopterCorpse removed from most of the zombiegroups. buffed up chances on wanderinghordes.
+Biker(13), Soldier(43), Worker(12) and Demolition(53). Numbers is their PDR. Original is: 20, 50, 20, 60. (PDR=PhysicalDamageResist).
+Buffed up many zombies HP a bit + PDR.
+Radrobot1 is now just called Robot (how original right?). His older brother RadRobot still has the same name.
+Freezer is now called Cold and his vomit is Snowballs. His dad Freeza still has the same name.
+Fixed my custom Snakes and Chickens buff. Did not work properly before.
+Anaconda - Infection buff decreased from 0.8 to 0.6.
+AquaZed - Magazine size increased to 10.
+BlazingMan - Vomit blockdamage increased to 200.
+FireBoss -Vomit blockdamage increased to 300.
+FireElf - Vomit buffchance increased a bit.
+RPG - Vomit blockdamage increased to 300.
+KaboomPhoenix - Vomit Blockdamage increased to 220.
+BurningMan - Melee and Firevomit buff decreased.
+CopterCorpse -Magazine size 20, Buffchances decreased.
+Fire/Electricfly Buffchances decreased. Catching fire or shocked is 0.15.
+ChickenDemon - Decreased buffchances. Infection catch is still high, 0.3 and bleedingout 0.2 so watch out.
+Gunner - Melee and Vomit buff chances decreased. Vomit burstcount decreased from 2 to 1. Let us see how much he lags now.
+PlagueFlyer - Buffs fixed and Melee+Vomit Buffchances decreased
+
+
 2022-02-08
 Version 2.92 (Bigger update again)
 
