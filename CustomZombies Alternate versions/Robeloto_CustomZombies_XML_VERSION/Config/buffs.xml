@@ -97,7 +97,7 @@
 
 	
 	<buff name="buffAtroScream" hidden="true">
-		<update_rate value="60"/>
+		<update_rate value="40"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="zombiefemalescoutalert"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>
@@ -407,7 +407,7 @@
 	
 
 	<buff name="buffRunningMan" hidden="true">
-			<update_rate value="8"/>
+			<update_rate value="10"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="horde_spawn"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="30" buff="buffStopVehicle"/>
@@ -417,7 +417,7 @@
 
 	<buff name ="buffStopVehicle" tooltip_key="Running Man have the ability to manipulate the engine" icon="ui_game_symbol_muscle" icon_color="255,255,255" icon_blink="true">
 		<stack_type value="replace"/>
-		<duration value="6"/>
+		<duration value="12"/>
 		<update_rate value="1"/>
 		<effect_group>
 			<requirement name="EntityTagCompare" tags="player"/>				

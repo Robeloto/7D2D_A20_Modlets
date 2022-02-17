@@ -5,6 +5,13 @@
 
 
 <append xpath="/Sounds">
+
+<!-- Atrocity -->
+
+<SoundDataNode name="atrobuffscream2"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+	<AudioClip ClipName="Sounds/Ambient_Oneshots/a_horde_oneshot2"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1"/>
+	</SoundDataNode>
 			
 <SoundDataNode name="vulturewingflapp"> <AudioSource name="Sounds/AudioSource_Wingflaps"/>
 	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>

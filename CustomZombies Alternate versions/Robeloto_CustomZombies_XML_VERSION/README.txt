@@ -1,10 +1,33 @@
+2022-02-17
+V2.93
+XML version also updated.
+Entitygroups reworked. CopterCorpse removed from most of the zombiegroups. buffed up chances on wanderinghordes.
+Biker(13), Soldier(43), Worker(12) and Demolition(53). Numbers is their PDR. Original is: 20, 50, 20, 60. (PDR=PhysicalDamageResist).
+Buffed up many zombies HP a bit + PDR.
+Radrobot1 is now just called Robot (how original right?). His older brother RadRobot still has the same name.
+Freezer is now called Cold and his vomit is Snowballs. His dad Freeza still has the same name.
+Fixed my custom Snakes and Chickens buff. Did not work properly before.
+Anaconda - Infection buff decreased from 0.8 to 0.6.
+AquaZed - Magazine size increased to 10.
+BlazingMan - Vomit blockdamage increased to 200.
+FireBoss -Vomit blockdamage increased to 300.
+FireElf - Vomit buffchance increased a bit.
+RPG - Vomit blockdamage increased to 300.
+KaboomPhoenix - Vomit Blockdamage increased to 220.
+BurningMan - Melee and Firevomit buff decreased.
+CopterCorpse -Magazine size 20, Buffchances decreased.
+Fire/Electricfly Buffchances decreased. Catching fire or shocked is 0.15.
+ChickenDemon - Decreased buffchances. Infection catch is still high, 0.3 and bleedingout 0.2 so watch out.
+Gunner - Melee and Vomit buff chances decreased. Vomit burstcount decreased from 2 to 1. Let us see how much he lags now.
+PlagueFlyer - Buffs fixed and Melee+Vomit Buffchances decreased
+
+
 2022-02-08
 Version 2.92 (Bigger update again)
 
 New zombies here.
-• KaboomPhoenix, has the old look of diamond phoenix, very big and only show up at higher gamestages. Shoots rockets.
 • Ghastly Phoenix. A spooky zombie that vomits smoke and might manipulate your sight
-• TheFlyingPlague. A flying demon zombie with no legs and 2 steelspears in his hands. He throws shock particles at you. 
+• TheFlyingPlague. A flying demon zombie with no legs and 2 steelspears in his hands. He throws shock particles at you. Sounds added.
 • Frostyball. Vomit snowballs. Flying robotic white ball.
 These zombies below uses no vomit.
 • Pale Zombie. A completely white zombie that is pretty common and easy. But his hits can KO you (10%) and has a 20% chance to make your sight go blurry for 6 seconds. 
@@ -13,14 +36,13 @@ These zombies below uses no vomit.
 • FireChicken, what a cute little chicken, but it is on fire. Often seen in burnt biome.
 • KumaKub, Bears have children and this one is cute.
 • HellKuma added. A firebear.
-• ThunderKuma added. An electric bear. 
-Reworks, appearance, balancing and fixes.
+• ThunderKuma added. An electric bear. Sounds added.
+Reworks, apperance, balancing and fixes.
 • RunningMan can now stop several vehicles at once.
 • CopterCorpse fixed. Zombie did not sit in the gyrocopter seat.
 • Freezers vomitwarning did not work, cause somehow I had removed it. Probably when I was doing the XML version.
 • FireElfs vomit is now flaming arrows, buff changed to flamingarrow and decreased buffchance to 20%. Also Decreased magazine size.
 • GiantMutated is now black and shiny.
-• Diamond Phoenix has now an electrical appearance.
 • Mini apperance changed. Red transparent jelly like.
 • Reworked entitygroups again. More likely to see some harder special zombies at lower gamestages. (Before 100).
 Buffs
@@ -41,12 +63,6 @@ Other
 • Localization updated to the new buffs and info.
 • Painresist 1 on several of my customzombies, most of the hard ones.
 • Stompspikes set to true on several of my customzombies. Water and flaming zombies should not be affected by spikes.
-
-For XML version: 
-Shock sounds added from original game to shocker, spark and diamondphoenix.
-Buffshocked works and no looping sounds.
-Ak47 reload sounds for gunner, coptercorpse.
-Rocket launcher reload sounds for RPG.
 
 
 2022-01-29
