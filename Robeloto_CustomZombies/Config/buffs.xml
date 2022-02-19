@@ -552,8 +552,9 @@
 		<effect_group>			
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".2,0,0" local_rotation="0,0,-95" parent_transform="RightHand"/> 
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.24,-.03,0" local_rotation="0,180,-95" parent_transform="LeftHand"/>
-			<!--<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/> -->					
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/> 					
 			<!--<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>-->								
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock_small" />
 		</effect_group>
 	</buff>
 	

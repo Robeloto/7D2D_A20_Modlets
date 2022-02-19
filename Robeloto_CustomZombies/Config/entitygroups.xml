@@ -172,87 +172,88 @@
 <!-- Wasteland -->
 <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
 <entity name="animalCopterCorpse" prob="0.03"/>
-<entity name="zombieAnesthesia" prob="0.02"/>
-<entity name="zombieAquaZed" prob="0.02"/>
-<entity name="zombieBurningMan" prob="0.16"/>
-<entity name="zombieCandyGirl" prob="0.04"/>
-<entity name="zombieChroma" prob="0.05"/>
-<entity name="zombieExploder" prob="0.02"/>
-<entity name="zombieFireElf" prob="0.01"/>
-<entity name="zombieCold" prob="0.01"/>
-<entity name="zombieIronMan" prob="0.03"/>
-<entity name="zombieMini" prob="0.16"/>
-<entity name="zombieMoePuker" prob="0.15"/>
-<entity name="zombieMiniMummy" prob="0.1"/>
-<entity name="zombieRadRobot" prob="0.04"/>
-<entity name="zombieSpark" prob="0.13"/>
-<entity name="zombieSpectre" prob="0.12"/>
+<entity name="zombieAnesthesia" prob="0.04"/>
+<entity name="zombieAquaZed" prob="0.05"/>
+<entity name="zombieBurningMan" prob="0.18"/>
+<entity name="zombieCandyGirl" prob="0.08"/>
+<entity name="zombieChroma" prob="0.06"/>
+<entity name="zombieExploder" prob="0.04"/>
+<entity name="zombieFireElf" prob="0.04"/>
+<entity name="zombieCold" prob="0.13"/>
+<entity name="zombieIronMan" prob="0.10"/>
+<entity name="zombieMini" prob="0.18"/>
+<entity name="zombieMoePuker" prob="0.16"/>
+<entity name="zombieMiniMummy" prob="0.15"/>
+<entity name="zombieRadRobot" prob="0.05"/>
+<entity name="zombieSpark" prob="0.14"/>
+<entity name="zombieSpectre" prob="0.14"/>
 </append>
 <!-- WastelandDowntown -->
 <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']">
 <entity name="animalFly" prob="0.13"/>
 <entity name="zombieTheFlyingPlague" prob="0.05"/>
 <entity name="zombieAtrocity" prob="0.007"/>
-<entity name="zombieAnesthesia" prob="0.03"/>
-<entity name="zombieAquaZed" prob="0.04"/>
-<entity name="zombieBurningMan" prob="0.15"/>
-<entity name="zombieBlazingMan" prob="0.03"/>
-<entity name="zombieCandyGirl" prob="0.05"/>
-<entity name="zombieChroma" prob="0.05"/>
-<entity name="zombieExploder" prob="0.05"/>
-<entity name="zombieFireElf" prob="0.03"/>
-<entity name="zombieCold" prob="0.15"/>
-<entity name="zombieIronMan" prob="0.05"/>
-<entity name="zombieMini" prob="0.16"/>
-<entity name="zombieMoePuker" prob="0.17"/>
-<entity name="zombieMiniMummy" prob="0.13"/>
-<entity name="zombieRadRobot" prob="0.05"/>
-<entity name="zombieRPG" prob="0.005"/>
-<entity name="zombieShadow" prob="0.02"/>
-<entity name="zombieShocker" prob="0.02"/>
-<entity name="zombieShockerF" prob="0.01"/>
-<entity name="zombieSpark" prob="0.11"/>
-<entity name="zombieSpectre" prob="0.13"/>
-<entity name="zombieTranslucent" prob="0.05"/>
+<entity name="zombieAnesthesia" prob="0.06"/>
+<entity name="zombieAquaZed" prob="0.07"/>
+<entity name="zombieBurningMan" prob="0.2"/>
+<entity name="zombieBlazingMan" prob="0.04"/>
+<entity name="zombieCandyGirl" prob="0.1"/>
+<entity name="zombieChroma" prob="0.1"/>
+<entity name="zombieExploder" prob="0.07"/>
+<entity name="zombieFireElf" prob="0.07"/>
+<entity name="zombieCold" prob="0.17"/>
+<entity name="zombieIronMan" prob="0.15"/>
+<entity name="zombieMini" prob="0.22"/>
+<entity name="zombieMoePuker" prob="0.23"/>
+<entity name="zombieMiniMummy" prob="0.17"/>
+<entity name="zombieRadRobot" prob="0.1"/>
+<entity name="zombieRPG" prob="0.01"/>
+<entity name="zombieSanguis" prob="0.09"/>
+<entity name="zombieShadow" prob="0.06"/>
+<entity name="zombieShocker" prob="0.07"/>
+<entity name="zombieShockerF" prob="0.05"/>
+<entity name="zombieSpark" prob="0.2"/>
+<entity name="zombieSpectre" prob="0.2"/>
+<entity name="zombieTranslucent" prob="0.08"/>
 </append>
 <!-- Wasteland night-->
 <append xpath="/entitygroups/entitygroup[ starts-with(@name, 'ZombiesWastelandNight')]">
-<entity name="zombieAnesthesia" prob="0.05"/>
-<entity name="zombieAtrocity" prob="0.01"/>
-<entity name="zombieAquaZed" prob="0.06"/>
-<entity name="zombieBlazingMan" prob="0.04"/>
-<entity name="zombieCandyGirl" prob="0.09"/>
-<entity name="zombieChroma" prob="0.07"/>
-<entity name="zombieExploder" prob="0.06"/>
-<entity name="zombieFireBoss" prob="0.01"/>
-<entity name="zombieFireElf" prob="0.06"/>
-<entity name="zombieCold" prob="0.16"/>
-<entity name="zombieGe1st" prob="0.01"/>
-<entity name="zombieIronMan" prob="0.08"/>
-<entity name="zombieMini" prob="0.22"/>
-<entity name="zombieMoePuker" prob="0.22"/>
-<entity name="zombieMiniMummy" prob="0.19"/>
-<entity name="zombiePredator" prob="0.02"/>
-<entity name="zombieRadRobot" prob="0.05"/>
-<entity name="zombieRunningMan" prob="0.04"/>
-<entity name="zombieRPG" prob="0.01"/>
-<entity name="zombieSanguis" prob="0.06"/>
-<entity name="zombieSc4recrow" prob="0.03"/>
-<entity name="zombieShadow" prob="0.06"/>
-<entity name="zombieShocker" prob="0.06"/>
-<entity name="zombieShockerF" prob="0.02"/>
-<entity name="zombieSpark" prob="0.15"/>
-<entity name="zombieSpectre" prob="0.15"/>
-<entity name="zombieTranslucent" prob="0.04"/>
+<entity name="zombieAnesthesia" prob="0.1"/>
+<entity name="zombieAtrocity" prob="0.02"/>
+<entity name="zombieAquaZed" prob="0.14"/>
+<entity name="zombieBlazingMan" prob="0.08"/>
+<entity name="zombieCandyGirl" prob="0.14"/>
+<entity name="zombieChroma" prob="0.14"/>
+<entity name="zombieExploder" prob="0.14"/>
+<entity name="zombieFireBoss" prob="0.02"/>
+<entity name="zombieFireElf" prob="0.14"/>
+<entity name="zombieCold" prob="0.22"/>
+<entity name="zombieGe1st" prob="0.02"/>
+<entity name="zombieIronMan" prob="0.2"/>
+<entity name="zombieMini" prob="0.3"/>
+<entity name="zombieMoePuker" prob="0.3"/>
+<entity name="zombieMiniMummy" prob="0.3"/>
+<entity name="zombiePredator" prob="0.03"/>
+<entity name="zombieRadRobot" prob="0.15"/>
+<entity name="zombieRunningMan" prob="0.06"/>
+<entity name="zombieRPG" prob="0.02"/>
+<entity name="zombieSanguis" prob="0.1"/>
+<entity name="zombieSc4recrow" prob="0.05"/>
+<entity name="zombieShadow" prob="0.1"/>
+<entity name="zombieShocker" prob="0.12"/>
+<entity name="zombieShockerF" prob="0.08"/>
+<entity name="zombieSpark" prob="0.3"/>
+<entity name="zombieSpectre" prob="0.3"/>
+<entity name="zombieTranslucent" prob="0.12"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
-<entity name="animalAnaconda" prob="0.06"/>	
-<entity name="animalChickenDemon" prob="0.07"/>
-<entity name="animalChickenFire" prob="0.1"/>
-<entity name="animalCopterCorpse" prob="0.04"/>
-<entity name="animalBurningPhoenix" prob="0.03"/>
-<entity name="animalFireSnake" prob="0.06"/>	
-<entity name="animalFly" prob="0.1"/>
+<entity name="animalAnaconda" prob="0.09"/>	
+<entity name="animalChickenDemon" prob="0.1"/>
+<entity name="animalChickenFire" prob="0.15"/>
+<entity name="animalCopterCorpse" prob="0.06"/>
+<entity name="animalBurningPhoenix" prob="0.06"/>
+<entity name="animalFireSnake" prob="0.15"/>	
+<entity name="animalFly" prob="0.15"/>
 <entity name="animalHybridPanther" prob="0.03"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
@@ -264,26 +265,25 @@
 <entity name="animalHybridPanther" prob="0.01"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
-<entity name="animalFrostyBall" prob="0.07"/>
-<entity name="animalChickenDemon" prob="0.04"/>
-<entity name="animalCopterCorpse" prob="0.03"/>
-<entity name="animalDiamondPhoenix" prob="0.02"/>
-<entity name="animalHybridPanther" prob="0.01"/>
-<entity name="zombieTheFlyingPlague" prob="0.02"/>
+<entity name="animalFrostyBall" prob="0.1"/>
+<entity name="animalChickenDemon" prob="0.1"/>
+<entity name="animalCopterCorpse" prob="0.04"/>
+<entity name="animalDiamondPhoenix" prob="0.05"/>
+<entity name="animalHybridPanther" prob="0.06"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
-<entity name="animalAnaconda" prob="0.07"/>	
-<entity name="animalBurningPhoenix" prob="0.03"/>
-<entity name="animalDiamondPhoenix" prob="0.05"/>
-<entity name="animalChickenDemon" prob="0.1"/>
-<entity name="animalChickenFire" prob="0.1"/>
-<entity name="animalCopterCorpse" prob="0.065"/>
+<entity name="animalAnaconda" prob="0.08"/>	
+<entity name="animalBurningPhoenix" prob="0.04"/>
+<entity name="animalDiamondPhoenix" prob="0.06"/>
+<entity name="animalChickenDemon" prob="0.11"/>
+<entity name="animalChickenFire" prob="0.11"/>
+<entity name="animalCopterCorpse" prob="0.07"/>
 <entity name="animalFireSnake" prob="0.05"/>
-<entity name="animalFly" prob="0.16"/>
-<entity name="animalFrostyBall" prob="0.05"/>
-<entity name="animalGhastlyPhoenix" prob="0.03"/>
-<entity name="animalHybridPanther" prob="0.06"/>
-<entity name="zombieTheFlyingPlague" prob="0.05"/>
+<entity name="animalFly" prob="0.2"/>
+<entity name="animalFrostyBall" prob="0.06"/>
+<entity name="animalGhastlyPhoenix" prob="0.05"/>
+<entity name="animalHybridPanther" prob="0.08"/>
+<entity name="zombieTheFlyingPlague" prob="0.06"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']">
 <entity name="animalChickenDemon" prob="0.3"/>
@@ -310,14 +310,14 @@
 <entity name="animalFireSnake" prob="0.09"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='VultureGroup']">
-<entity name="animalBurningPhoenix" prob="0.008"/>
-<entity name="animalDiamondPhoenix" prob="0.008"/>
-<entity name="animalGhastlyPhoenix" prob="0.006"/>
-<entity name="animalFly" prob="0.08"/>
+<entity name="animalBurningPhoenix" prob="0.01"/>
+<entity name="animalDiamondPhoenix" prob="0.01"/>
+<entity name="animalGhastlyPhoenix" prob="0.01"/>
+<entity name="animalFly" prob="0.15"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='ZombieFarmGroup']">
-<entity name="zombieBurningMan" prob="0.09"/>
-<entity name="zombieMoePuker" prob="0.1"/>
+<entity name="zombieBurningMan" prob="0.12"/>
+<entity name="zombieMoePuker" prob="0.15"/>
 </append>
 <!-- Badass Group -->
 <append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']">       <entity name="zombieAnesthesia" prob="0.02"/><entity name="zombieAquaZed" prob="0.02"/><entity name="zombieChroma" prob="0.02"/><entity name="zombieExploder" prob="0.02"/><entity name="zombieFireElf" prob="0.02"/><entity name="zombiePredator" prob="0.03"/><entity name="zombieRunningMan" prob="0.03"/><entity name="zombieShadow" prob="0.02"/>	</append>
@@ -423,17 +423,17 @@
 <append xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerGroupGS800']"><entity name="zombieSpark" prob="0.65"/><entity name="zombieBlazingMan" prob="0.35"/><entity name="zombieExploder" prob="0.30"/><entity name="zombieIronMan" prob="0.36"/><entity name="zombieFireElf" prob="0.30"/><entity name="zombieRadRobot" prob="0.35"/><entity name="zombieShockerF" prob="0.31"/></append>
 <!-- Wandering Horde -->
 <append xpath="/entitygroups/entitygroup[contains(@name, 'wanderingHorde')]">
-<entity name="animalChickenFire" prob="0.08"/>
+<entity name="animalChickenFire" prob="0.1"/>
 <entity name="animalFly" prob="0.13"/>
-<entity name="zombieBurningMan" prob="0.2"/>
-<entity name="zombieCold" prob="0.1"/>
-<entity name="zombieMini" prob="0.15"/>
-<entity name="zombieMoePuker" prob="0.15"/>
-<entity name="zombieMiniMummy" prob="0.13"/>
-<entity name="zombieRobot" prob="0.07"/>
-<entity name="zombieSpark" prob="0.13"/>
-<entity name="zombieSpectre" prob="0.13"/>
-<entity name="zombieTranslucent" prob="0.06"/>
+<entity name="zombieBurningMan" prob="0.21"/>
+<entity name="zombieCold" prob="0.15"/>
+<entity name="zombieMini" prob="0.25"/>
+<entity name="zombieMoePuker" prob="0.2"/>
+<entity name="zombieMiniMummy" prob="0.15"/>
+<entity name="zombieRobot" prob="0.15"/>
+<entity name="zombieSpark" prob="0.15"/>
+<entity name="zombieSpectre" prob="0.15"/>
+<entity name="zombieTranslucent" prob="0.1"/>
 </append>
 <append xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS52']"> <entity name="zombieAnesthesia" prob="0.030"/><entity name="zombieAquaZed" prob="0.045"/><entity name="zombieCandyGirl" prob="0.040"/><entity name="zombieChroma" prob="0.040"/><entity name="zombieExploder" prob="0.040"/><entity name="zombieFireElf" prob="0.040"/><entity name="zombieIronMan" prob="0.040"/><entity name="zombieMummy" prob="0.040"/><entity name="zombieRadRobot" prob="0.035"/> <entity name="zombieSanguis" prob="0.040"/><entity name="zombieShadow" prob="0.030"/><entity name="zombieShocker" prob="0.020"/><entity name="zombieTranslucent" prob="0.040"/><entity name="animalDiamondPhoenix" prob="0.013"/><entity name="animalGhastlyPhoenix" prob="0.018"/><entity name="zombieTheFlyingPlague" prob="0.019"/></append>
 <append xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS58']"> <entity name="zombieAnesthesia" prob="0.040"/><entity name="zombieAquaZed" prob="0.055"/><entity name="zombieCandyGirl" prob="0.050"/><entity name="zombieChroma" prob="0.050"/><entity name="zombieExploder" prob="0.050"/><entity name="zombieFireElf" prob="0.050"/><entity name="zombieIronMan" prob="0.050"/><entity name="zombieMummy" prob="0.050"/><entity name="zombieRadRobot" prob="0.045"/> <entity name="zombieSanguis" prob="0.050"/><entity name="zombieShadow" prob="0.040"/><entity name="zombieShocker" prob="0.040"/><entity name="zombieTranslucent" prob="0.050"/><entity name="animalBurningPhoenix" prob="0.029"/><entity name="animalDiamondPhoenix" prob="0.039"/><entity name="zombieTheFlyingPlague" prob="0.035"/></append>
