@@ -1,4 +1,4 @@
-Entitygroups_Harder Zombies at Higher GameStages Only. Vb.01
+Entitygroups_Harder Zombies at Higher GameStages Only. V 0.1
 
 Wastelands have easy and medium zombies. It is a harder biome.
 

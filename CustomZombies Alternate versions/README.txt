@@ -1,4 +1,1 @@
 Install into your ..\7 Days To Die\Mods\Robeloto_CustomZombies\Config and replace the entitygroups with whatever alternate groups you want.
-
-
-
