@@ -1,19 +1,19 @@
 <configs>
 <!-- Club Nerf -->
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">39</set> 
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='70']/@value">53</set> 
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='80']/@value">63</set> 
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='90']/@value">72</set> 
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='100']/@value">83</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">37</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='70']/@value">50</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='80']/@value">60</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='90']/@value">70</set> 
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='100']/@value">80</set> 
 <!-- Sledge Hammers nerf, this nerf is really needed -->
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='15']/@value">11</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='30']/@value">22</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='45']/@value">35</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">48</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='75']/@value">60</set>
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='20']/@value">14</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='35']/@value">28</set> 
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='50']/@value">40</set>  
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='15']/@value">9</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='30']/@value">20</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='45']/@value">32</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='60']/@value">44</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='75']/@value">56</set>
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='20']/@value">12</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='35']/@value">24</set> 
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionRayHit']/requirement[@value='50']/@value">35</set>  
 <!-- Stun baton nerf -->
 <set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='EntityDamage']/@value">.09,.4</set> <!-- original .1,.5 -->
 <!-- You now need to have Advanced Engineering level 3 to be able to craft a forge, workbench, cementmixer and various traps -->
@@ -21,9 +21,9 @@
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@level">3,5</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank1LongDesc']/@long_desc_key">In theory, you only know half of the basics. You need more skill to start crafting something.</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank2LongDesc']/@long_desc_key">Now we are seeing some progress. But you still need more skill to start crafting.</set>
-<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank3LongDesc']/@long_desc_key">You are getting good. Next time you will be able to craft something.</set>
-<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank4LongDesc']/@long_desc_key">You are now skilled enough to craft various traps, forges, workbenches and cementmixers.</set>
-<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank5LongDesc']/@long_desc_key">You are now an engineer and electrician. Learn to craft Electricals. Learn to craft SMG auto turrets for the best ranged base defense, and crucibles to forge steel in forges. Gain 50% XP from Electrical Trap Kills. All forge recipes cost 20% less, crafting Forged Steel and electrical devices costs 35% less.</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank3LongDesc']/@long_desc_key">You are now skilled enough to craft various traps, forges, workbenches and cementmixers..</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank4LongDesc']/@long_desc_key">You are now an electrician. Learn to craft generators and build advanced base defense systems such as electric fences, blade traps. Craft military fiber. Gain 20% XP from electrical trap kills.\nEfficient craftsman. All forge recipes cost 10% less, crafting Forged Steel and electrical devices costs 15% less.</set>
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@long_desc_key='perkAdvancedEngineeringRank5LongDesc']/@long_desc_key">You are now an engineer. Learn to craft shotgun turrets for short range concentrated base defense, battery banks and nail guns. Learn to craft SMG auto turrets for the best ranged base defense and crucibles to forge steel in forges. Gain 50% XP from Electrical Trap Kills. All forge recipes cost 20% less, crafting Forged Steel and electrical devices costs 35% less.</set>
 <!-- Unlock wrench at Salvage Operations level 3 instead of original: 1 -->
 <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@level">3,5</set>
 <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/effect_description[@long_desc_key='perkSalvageOperationsRank1LongDesc']/@long_desc_key">In theory, you don't know much. More skill is needed to craft something useful.</set>
