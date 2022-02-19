@@ -1,3 +1,19 @@
+2022-02-18
+V2.94
+XML version updated.
+Alternate version added: I have added another harder version that will spawn medium to hard zombies/animals with a high chance in every zombie/animalgroup.
+Also a lot of harder zombies added to the wanderinghordes. This version is made for when you reach gamestage 150 or just want it harder right away.
+The only thing you need to replace is the entitygroups.xml. It is in the folder that is named CustomZombies alternate versions.
+
+Burningmans buff was broken due to the bleedingout buff seemed to have a buffchance of 100%. Fixed now! Also decreased firevomit buffchance.
+Chroma HP decreased. Meleedamage decreased and buffchances decreased.
+Fire/Electricfly buffchances decreased again. Now it is 0.1 only. Also decreased damage.
+Fatigue buffchances increased.
+Sanguis buffchances increased.
+Some harder animals/zombies and bosses have now more HP and more PDR. (They were way too easy already at gamestage 100)
+FireElf now has the walkstyle of a spider.
+
+
 2022-02-17
 V2.93
 XML version also updated.
