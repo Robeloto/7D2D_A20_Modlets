@@ -97,7 +97,7 @@
 
 	
 	<buff name="buffAtroScream" hidden="true">
-		<update_rate value="40"/>
+		<update_rate value="48"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="zombiefemalescoutalert"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="15" buff="buffAtro"/>

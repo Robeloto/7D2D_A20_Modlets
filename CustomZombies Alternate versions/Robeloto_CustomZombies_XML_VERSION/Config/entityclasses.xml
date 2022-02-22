@@ -294,7 +294,7 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="CandyPrefab"/>		
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>
 		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="2"/>		
 		<passive_effect name="HealthMax" operation="base_set" value="888"/>
@@ -748,7 +748,7 @@
 
     <entity_class name="zombieMini" extends="zombieSpider"> 
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
-	<property name="ReplaceMaterial0" value="particleeffects/materials/blood_mist_tile_02"/>
+<property name="ReplaceMaterial0" value="shapes/materials/cabinet_old_top_ft"/>
 	<property name="SizeScale" value=".5"/>	
 	<property name="Mass" value="60"/>		
 	<property name="PainResistPerHit" value=".6"/>
@@ -1142,7 +1142,7 @@
 	<effect_group name="Base Effects">	
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BloodParticle"/>		
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>		
-		<passive_effect name="HealthMax" operation="base_set" value="800"/>
+		<passive_effect name="HealthMax" operation="base_set" value="840"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 	</effect_group>
 </entity_class>
@@ -1369,19 +1369,14 @@
 	<property name="MoveSpeedAggro" value="1.8, 2.2"/>
 	<property name="MaxTurnSpeed" value="120"/>
 	<property name="HandItem" value="meleeHandAnimalPlagueFlyer"/>	
-	<property name="SoundRandom" value="tfproam"/>
-	<property name="SoundAlert" value="tfpalert"/>
-	<property name="SoundAttack" value="tfpattack"/>
-	<property name="SoundHurt" value="tfppain"/>
-	<property name="SoundDeath" value="tfpdeath"/>
-	<property name="SoundSense" value="tfpsense"/>	
+	<property name="RightHandJointName" value="Jaw"/>		
 	<property name="Mass" value="210"/>
 	<property name="Weight" value="90"/>
 	<property name="SightRange" value="100"/>		
 	<property name="ExperienceGain" value="13500"/>
 	<property name="DeadBodyHitPoints" value="300"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".7"/>		
+	<property name="LootDropProb" value=".75"/>		
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="0"/> 
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="0"/>
@@ -1455,7 +1450,7 @@
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="777"/>
+		<passive_effect name="HealthMax" operation="base_set" value="900"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
 	</effect_group>
@@ -1498,7 +1493,7 @@
 	<property name="MoveSpeed" value="1.8"/>
 	<property name="MoveSpeedAggro" value="2.7, 3.7"/>
 	<property name="MoveSpeedPanic" value="3.5"/>
-	<property name="ExperienceGain" value="2800"/>
+	<property name="ExperienceGain" value="3000"/>
 	<property name="DeadBodyHitPoints" value="280"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="25"/> <!-- animalChicken -->
@@ -1559,7 +1554,7 @@
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="330"/>
+		<passive_effect name="HealthMax" operation="base_set" value="300"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> 		
 	</effect_group>
 </entity_class>
@@ -1613,13 +1608,13 @@
 	<property name="MoveSpeedAggro" value="1.6, 2.1"/>
 	<property name="MaxTurnSpeed" value="150"/>
 	<property name="HandItem" value="meleeHandAnimalDiamondPhoenix"/>	
-	<property name="ExperienceGain" value="6666"/> 
+	<property name="ExperienceGain" value="6800"/> 
 	<property name="DeadBodyHitPoints" value="350"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="35"/> <!-- animalZombieVulture -->
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="70"/>	
 	<effect_group name="Base Effects">				
-		<passive_effect name="HealthMax" operation="base_set" value="900"/>
+		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
 	</effect_group>
@@ -1652,7 +1647,7 @@
 	<property name="HandItem" value="meleeHandAnimalFireSnake"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
 	<property name="AttackTimeoutNight" value="1.1"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2700"/>
 	<property name="DeadBodyHitPoints" value="350"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodCharredMeat" tag="butcherHarvest" count="30"/> 
@@ -1771,7 +1766,7 @@
 <entity_class name="animalFrostyBall" extends="animalTemplateHostile">
 	<property name="Tags" value="entity,animal,zombie,hostile,radiated"/>
 	<property name="Radiated" value=""/>
-	<!--<property name="Class" value="EntityVulture"/>
+	<!--
 	<property name="SizeScale" value="1.3"/>		
 	<property name="ModelType" value="Standard"/>
 	<property name="HasRagdoll" value="false"/>
@@ -1824,7 +1819,7 @@
 	<property name="MoveSpeedAggro" value="1.6, 2.1"/>
 	<property name="MaxTurnSpeed" value="150"/>
 	<property name="HandItem" value="meleeHandAnimalGhastlyPhoenix"/>	
-	<property name="ExperienceGain" value="4444"/> 
+	<property name="ExperienceGain" value="5000"/> 
 	<property name="DeadBodyHitPoints" value="350"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="30"/> 
@@ -1832,7 +1827,7 @@
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="0"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="0"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="777"/>
+		<passive_effect name="HealthMax" operation="base_set" value="999"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> 
 	</effect_group>
