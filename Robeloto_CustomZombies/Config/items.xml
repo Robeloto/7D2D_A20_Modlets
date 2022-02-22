@@ -911,8 +911,10 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="2.5"/>
-		<property name="DamageEntity" value="20"/>
+		<property name="Delay" value="0.2"/>		
+		<property name="Range" value="2.8"/>
+		<property name="Sphere" value=".2"/>		
+		<property name="DamageEntity" value="40"/>
 		<property name="DamageBlock" value="110"/>
 		<property name="Buff" value="buffShocked2,buffInjuryUnconsciousX,buffDark"/>		
 	</property>
@@ -931,10 +933,10 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>	
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="6"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="8"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="15"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="9"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="7"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".2" tags="buffShocked2"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value=".2" tags="buffInjuryUnconsciousX"/>					
@@ -948,11 +950,11 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>			
-		<property name="DamageEntity" value="5"/>
+		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="6"/>			
-		<property name="Velocity" value="18"/>
-		<property name="FlyTime" value="3"/>
-		<property name="LifeTime" value="5"/>
+		<property name="Velocity" value="16"/>
+		<property name="FlyTime" value="20"/>
+		<property name="LifeTime" value="8"/>
 		<property name="DamageBonus.earth" value="4"/>
 		<property name="DamageBonus.wood" value="0"/>			
 		<property name="DamageBonus.stone" value="0"/>		
@@ -963,8 +965,8 @@
 	<effect_group name="ammoProjectilePlagueVomit" tiered="false">
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".28" tags="buffShocked2"/>					
-		<passive_effect name="BuffProcChance" operation="base_set" value=".17" tags="buffDark"/>		
+		<passive_effect name="BuffProcChance" operation="base_set" value=".35" tags="buffShocked2"/>					
+		<passive_effect name="BuffProcChance" operation="base_set" value=".23" tags="buffDark"/>		
 	</effect_group>	
 </item>	
 <!---->
