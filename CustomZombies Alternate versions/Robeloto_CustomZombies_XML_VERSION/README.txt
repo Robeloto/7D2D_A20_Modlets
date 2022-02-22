@@ -1,3 +1,18 @@
+2022-02-22
+V2.95
+• Atrocitys scream is now every 48 seconds if you are 20 blocks or closer from her.
+• BurningPhoenix HP increased  +123, 
+• DiamondPhoenix HP increased  +200 and Exp  +134
+• Candy PDR increased  +3
+• ChickenDemons Exp increased  +200
+• FireChicken HP decreased -30
+• FireSnake Exp increased  +700
+• GhastlyPhoenix HP increased +233 and Exp +556
+• KaboomPhoenix HP increased +400.
+• Mini appearance changed.
+• Sanguis HP increased by +40
+• TheFlyingPlague attacks changed. Should now attack properly and vomit properly.
+
 2022-02-19
 V2.94
 • XML version updated.
